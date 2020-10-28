@@ -35,12 +35,15 @@ public class Ex3_GuessingGame {
                 if (userGuess < secretNum) { // if they guessed too low
                     lowBound = userGuess + 1;
                     System.out.println("Too low, try again.");
+
                 } else if (userGuess > secretNum) { // if they guessed too high
                     highBound = userGuess - 1;
                     System.out.println("Too high, try again.");
-                } else {
+
+                } else { // they guessed exactly right
                     System.out.print("You got it!. The secret number was " + secretNum + ". Would you like to try again? (y/n): ");
                     boolean again = scan.next().toLowerCase().equals("y"); // valid choices to play again are "y" and "Y"
+
                     if (again) {
                         // reset all of the runtime vars
                         lowBound = LOW_BOUND;
@@ -48,6 +51,7 @@ public class Ex3_GuessingGame {
                         userGuess = LOW_BOUND - 1;
                         rand.setSeed(System.nanoTime());
                         secretNum = rand.nextInt(highBound - lowBound) + lowBound;
+
                     } else { // if the user typed something other than "y" or "Y",
                         System.exit(0); // exit the program
                     }
