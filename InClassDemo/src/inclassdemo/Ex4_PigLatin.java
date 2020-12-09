@@ -52,8 +52,8 @@ public class Ex4_PigLatin {
         scan.useDelimiter("\\Z");
 
         String original = scan.next();
-        System.out.println(englishToPigLatin(original, true));
         System.out.println(original);
+        System.out.println(englishToPigLatin(original, true));
     }
 
     public static String englishToPigLatin(String englishSentence) {
