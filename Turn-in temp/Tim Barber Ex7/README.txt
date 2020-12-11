@@ -1,0 +1,1 @@
+For smooth operation, Ex7.java requires working directory to be it's own location, and for the rsrc folder to be in the same location as well.
