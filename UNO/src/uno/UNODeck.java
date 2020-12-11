@@ -46,7 +46,7 @@ public class UNODeck {
 
     public void drawCardsForPlayer(int player, int amt) {
         for (int i = 0; i < amt; i++) {
-            hands.get(player).receiveCard(removeTopDiscardCard());
+            hands.get(player).receiveCard(removeTopDrawCard());
         }
     }
 

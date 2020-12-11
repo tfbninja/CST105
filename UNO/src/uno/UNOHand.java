@@ -82,6 +82,12 @@ public class UNOHand {
         hand.add(card);
     }
 
+    public void receiveCards(ArrayList<UNOCard> cards) {
+        for (UNOCard card : cards) {
+            hand.add(card);
+        }
+    }
+
     public UNOCard playCard(UNOCard currentCard, String currentColor) {
         boolean cardFound = false;
         for (int i = 0; i < hand.size(); i++) {
@@ -120,6 +126,12 @@ public class UNOHand {
             out += c.getType().charAt(0);
         }
         return out;
+    }
+
+    public static String toCompactString(ArrayList<UNOCard> cards) {
+        UNOHand temp = new UNOHand();
+        temp.receiveCards(cards);
+        return temp.toCompactString();
     }
 
     @Override

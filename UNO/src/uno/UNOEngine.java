@@ -89,6 +89,10 @@ public class UNOEngine {
         }
     }
 
+    public void drawCurrentPlayerCards(int amt) {
+        deck.drawCardsForPlayer(this.currentPlayer, amt);
+    }
+
     public UNOHand getCurrentHand() {
         return deck.getCurrentHand(currentPlayer);
     }
