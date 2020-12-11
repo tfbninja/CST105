@@ -57,7 +57,7 @@ public class UNOCard implements Comparable {
         this.color = color;
     }
 
-    private String getType() {
+    public String getType() {
         return type;
     }
 

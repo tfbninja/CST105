@@ -116,9 +116,10 @@ public class UNODeck {
         return drawPile.get(drawPile.size() - 1);
     }
 
-    public void flipTopCard() {
+    public UNOCard flipTopCard() {
         do {
             discardPile.add(removeTopDrawCard());
         } while (getTopDiscardCard().isWild());
+        return discardPile.get(discardPile.size() - 1);
     }
 }

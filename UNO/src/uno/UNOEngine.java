@@ -65,7 +65,16 @@ public class UNOEngine {
     }
 
     public void beginGame() {
-        deck.flipTopCard();
+        UNOCard result = deck.flipTopCard();
+        if (result.isReverse()) {
+            direction = -direction;
+        } else if (result.isPlus2()) {
+            num2CardsToDraw++;
+        } else if (result.isPlus4()) {
+            num4CardsToDraw++;
+        } else if (result.isSkip()) {
+            assignNextPlayer();
+        }
     }
 
     public void assignNextPlayer() {

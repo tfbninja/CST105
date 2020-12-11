@@ -100,6 +100,28 @@ public class UNOHand {
         Collections.sort(hand);
     }
 
+    public ArrayList<UNOCard> getArrayList() {
+        return hand;
+    }
+
+
+    /*
+     * Returns a string with 2 characters per card, no spaces, so for a hand of
+     * a blue 1, blue 3, green 0, red 2, yellow0, yellow skip, and +4, the
+     * output would be "b1b3g0r2y0ysw+", the plus 2 and plus 4 cards can be
+     * differentiated by the fact that the "color" of a plus 2 card is an actual
+     * color, while the "color" of a +4 card is "wild."
+     */
+    public String toCompactString() {
+        sortByColor();
+        String out = "";
+        for (UNOCard c : hand) {
+            out += c.getColor().charAt(0);
+            out += c.getType().charAt(0);
+        }
+        return out;
+    }
+
     @Override
     public String toString() {
         sortByColor();

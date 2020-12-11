@@ -18,7 +18,7 @@ public class UNOConsoleDriver {
         UNODeck deck = new UNODeck();
         Scanner stdin = new Scanner(System.in);
 
-        //System.out.print("How many players? ");
+        //System.out.print("How many players? (2 - 10): ");
         //UNOEngine engine = new UNOEngine(stdin.nextInt());
         UNOEngine engine = new UNOEngine(2);
         engine.prepareGame();
@@ -32,13 +32,22 @@ public class UNOConsoleDriver {
         System.out.println("Card to play on: " + e.getTopCard());
     }
 
-    private static String getResponse(String regex) {
+    private static String getResponse(String prompt, String regex) {
         String response = "";
         Scanner s = new Scanner(System.in);
         while (!response.matches(regex)) {
             response = s.nextLine();
         }
         return response;
+    }
+
+    private static String generateRegexForHand(UNOHand hand) {
+        String regex = "/";
+        String contents = hand.toCompactString();
+        for (int i = 0; i < contents.length() / 2; i++) {
+            String card = contents.substring(i * 2, i * 2 + 2);
+        }
+        return regex;
     }
 
     private static void displayAndReceiveChoices(UNOEngine e) {
@@ -57,9 +66,12 @@ public class UNOConsoleDriver {
                         out += "+4 card from your hand on top.";
                     }
                     System.out.println(out);
-                    String response = getResponse(""); // FIXME add regex
 
-                    System.out.println("Valid responses: (d)raw or (p)lay");
+                    String response = getResponse("Valid responses: (d)raw or (p)lay", "\\b([d]|draw)\\b|\\b((p|play){1}\\s*(((([y]|yellow)|([g]|green)|([b]|blue)|([r]|red)){1}\\s*([0-9]|s|skip|r|reverse){1})|((\\+\\s*[24]{1}){1})|(w|wild){1})\\b)"); // regex for drawing or playing, valid responses include, but are certainly not limited to: draw, d, play red 3, pr3, p r3, play +2, play wild, pw, and so on and so forth
+                    response = response.trim();
+                    if (response.contains("d")) {
+
+                    }
                 } else {
                     e.receivePendingCards();
                 }
