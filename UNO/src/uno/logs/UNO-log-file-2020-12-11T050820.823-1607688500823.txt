@@ -1,0 +1,1 @@
+2020-12-11T05:08:20.889 (priority normal) ->Regex for current hand: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([006]){1})))\b)"

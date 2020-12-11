@@ -13,6 +13,7 @@ public class UNOConsoleDriver {
     private static final boolean DEBUGMODE = false;
 
     public static void main(String[] args) {
+        Logger log = new Logger("logs/");
         printHeader();
         final boolean RULE_STACKING_SAME = true;
         final boolean RULE_STACKING_ALL = RULE_STACKING_SAME && true;
@@ -29,7 +30,8 @@ public class UNOConsoleDriver {
         engine.beginGame();
         displayTopCard(engine);
         displayAndReceiveChoices(engine);
-        System.out.println(generateRegexForHand(engine.getCurrentHand().getMatches(engine.getTopCard(), engine.getCurrentColor())));
+
+        log.log("Regex for current hand: \"" + generateRegexForHand(engine.getCurrentHand().getMatches(engine.getTopCard(), engine.getCurrentColor())) + "\"");
 
         /*
          * Used for debugging regex generator
