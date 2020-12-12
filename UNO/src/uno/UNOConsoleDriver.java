@@ -22,7 +22,7 @@ public class UNOConsoleDriver {
         UNODeck deck = new UNODeck();
         Scanner stdin = new Scanner(System.in);
 
-        //System.out.print("How many players? (2 - 10): ");
+        //print("How many players? (2 - 10): ");
         //UNOEngine engine = new UNOEngine(stdin.nextInt());
         UNOEngine engine = new UNOEngine(2);
         engine.prepareGame();
@@ -45,15 +45,15 @@ public class UNOConsoleDriver {
          * Used for debugging regex generator
          *
          * UNOHand temp = generateHand(7);
-         * System.out.println(generateRegexForHand(temp.toArrayList()));
-         * System.out.println(getResponse("Playable cards: " + temp.toString() +
+         * println(generateRegexForHand(temp.toArrayList()));
+         * println(getResponse("Playable cards: " + temp.toString() +
          * " | ", generateRegexForHand(temp.toArrayList())));
          *
          */
     }
 
     private static void displayTopCard(UNOEngine e) {
-        System.out.println("Card to play on: " + e.getTopCard());
+        println("Card to play on: " + e.getTopCard());
     }
 
     private static void forceEndGame(String reason) {
@@ -72,24 +72,33 @@ public class UNOConsoleDriver {
                 if (response.equals("exit")) {
                     forceEndGame("User typed \"exit\".");
                 }
-                System.out.print("\"" + response + "\" is not a valid choice. Use either the first letter or the whole word of the command you want to run. " + prompt);
+                print("\"" + response + "\" is not a valid choice. Use either the first letter or the whole word of the command you want to run. " + prompt);
             } else {
-                System.out.print(prompt);
+                print(prompt);
             }
             response = s.nextLine().trim().toLowerCase();
             log.debug("rawish response is \"" + response + "\"");
 
         } while (!Pattern.matches(regex, response));
+        log.debug("response was accepted as a regex match, returning as simplified version");
         String simplified = simplifyUserResponse(response);
-        log.debug("response was accepted as a regex match, returning as simplified version which is \"" + simplified + "\"");
         return simplified;
+    }
+
+    private static void print(String message) {
+        log.log("Printing to screen: \"" + message + "\"", -1);
+        System.out.println(message);
+    }
+
+    private static void println(String message) {
+        print(message + "\n");
     }
 
     private static void displayAndReceiveChoices(UNOEngine e) {
         boolean hasPlus2 = e.getCurrentHand().hasPlus2();
         boolean hasPlus4 = e.getCurrentHand().hasPlus4();
         boolean hasPlus = e.getCurrentHand().hasPlus();
-        System.out.print("P" + (e.getCurrentPlayer() + 1) + ": "); // for player 1, prints: "P1: "
+        print("P" + (e.getCurrentPlayer() + 1) + ": "); // for player 1, prints: "P1: "
         if (e.getPendingCardsToDraw() > 0) {
             if (e.isRULE_STACKING_ALL()) {
                 if (hasPlus) {
@@ -101,7 +110,7 @@ public class UNOConsoleDriver {
                     } else if (!hasPlus2 && hasPlus4) {
                         out += "+4 card from your hand on top.";
                     }
-                    System.out.println(out);
+                    println(out);
 
                     String response = getResponse("Valid responses: (d)raw or (p)lay: ", generateRegexForHand(e.getCurrentPlayerMatches())); // regex for drawing or playing, valid responses include, but are certainly not limited to: draw, d, play red 3, pr3, p r3, play +2, play wild, pw, and so on and so forth
                     if (response.equals("d")) {
@@ -115,20 +124,20 @@ public class UNOConsoleDriver {
                         }
                     }
                 } else {
-                    System.out.println("Automatically drew " + e.getPendingCardsToDraw() + " cards, given no other option.");
+                    println("Automatically drew " + e.getPendingCardsToDraw() + " cards, given no other option.");
                     e.receivePendingCards();
                 }
             } else {
                 if (e.isRULE_STACKING_SAME()) {
                     if (e.getNum2CardsToDraw() > 0) {
                         if (e.getCurrentHand().hasPlus2()) {
-                            System.out.println("Your choices are to draw " + e.getPendingCardsToDraw() + " cards or to defer to the next player along with an additional +2 card from your hand on top.");
+                            println("Your choices are to draw " + e.getPendingCardsToDraw() + " cards or to defer to the next player along with an additional +2 card from your hand on top.");
                         } else {
                             e.receivePendingCards();
                         }
                     } else {
                         if (e.getCurrentHand().hasPlus4()) {
-                            System.out.println("Your choices are to draw " + e.getPendingCardsToDraw() + " cards or to defer to the next player along with an additional +4 card from your hand on top.");
+                            println("Your choices are to draw " + e.getPendingCardsToDraw() + " cards or to defer to the next player along with an additional +4 card from your hand on top.");
                         } else {
                             e.receivePendingCards();
                         }
@@ -145,37 +154,37 @@ public class UNOConsoleDriver {
             }
             log.debug("Options for P" + (e.getCurrentPlayer() + 1) + " are \"" + tempDebugOptions + "\".");
             if (options.size() > 1) {
-                System.out.print("The cards you can play are: ");
+                print("The cards you can play are: ");
             } else if (options.isEmpty()) {
-                System.out.print("You cannot play any cards. ");
+                print("You cannot play any cards. ");
                 if (e.isRULE_DRAW_TILL_PLAYABLE()) {
-                    System.out.println("You must draw until you have a playable card.");
+                    println("You must draw until you have a playable card.");
                     while (e.getCurrentPlayerMatches().isEmpty()) {
                         doDrawCard(e);
                         displayAndReceiveChoices(e);
                     }
                     displayHand(e);
                 } else {
-                    System.out.println("You must draw a card.");
+                    println("You must draw a card.");
                     doDrawCard(e);
                 }
             } else {
-                System.out.print("The only card you can play is: ");
+                print("The only card you can play is: ");
             }
             options = e.getCurrentPlayerMatches();
             for (int i = 0; i < options.size() - 1; i++) {
-                System.out.print(options.get(i));
+                print(options.get(i).toString());
                 if (options.size() > 2) {
-                    System.out.print(", ");
+                    print(", ");
                 }
             }
             if (options.size() > 1) {
                 if (options.size() == 2) {
-                    System.out.print(" ");
+                    print(" ");
                 }
-                System.out.print("and ");
+                print("and ");
             }
-            System.out.println(options.get(options.size() - 1) + ".");
+            println(options.get(options.size() - 1) + ".");
             String response = getResponse("Will you (d)raw or (p)lay a card? ", generateRegexForHand(e.getCurrentPlayerMatches()));
             if (response.charAt(0) == 'd') {
                 doDrawCard(e);
@@ -185,7 +194,7 @@ public class UNOConsoleDriver {
                 log.debug("P" + (e.getCurrentPlayer() + 1) + "'s response: \"" + response + "\"");
                 UNOCard chosen = parseCompactPlayCommand(response);
                 if (chosen.isWild()) {
-                    System.out.println("You've played a wild card which means you get to choose the new color to match.");
+                    println("You've played a wild card which means you get to choose the new color to match.");
                     e.playCurrentPlayersWildCard(chosen, getNewColor());
                 } else {
                     e.playCurrentPlayersNonWildCard(chosen);
@@ -198,7 +207,7 @@ public class UNOConsoleDriver {
         String response = "default";
         Scanner s = new Scanner(System.in);
         do {
-            System.out.println("Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: ");
+            println("Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: ");
             response = s.nextLine().trim().toLowerCase();
             log.debug("response to getNewColor(): \"" + response + "\"");
         } while ("bgry".indexOf(response.charAt(0)) == -1); // while the first char of the response is not one of the valid colors, ask for a valid response
@@ -332,32 +341,32 @@ public class UNOConsoleDriver {
     private static ArrayList<UNOCard> doPendingDraw(UNOEngine e) {
         ArrayList<UNOCard> out = e.drawCurrentPlayerCards(e.getPendingCardsToDraw());
         for (UNOCard c : out) {
-            System.out.println("Drew a " + c.toString() + ".");
+            println("Drew a " + c.toString() + ".");
         }
         return out;
     }
 
     private static UNOCard doDrawCard(UNOEngine e) {
         UNOCard out = e.drawCurrentPlayerCards(1).get(0);
-        System.out.println("Drew a " + out.toString() + ".");
+        println("Drew a " + out.toString() + ".");
         return out;
     }
 
     private static void displayPlayableCards(UNOEngine e) {
         ArrayList<UNOCard> options = e.getCurrentPlayerMatches();
         for (int i = 0; i < options.size() - 1; i++) {
-            System.out.print(options.get(i));
+            print(options.get(i).toString());
             if (options.size() > 2) {
-                System.out.print(", ");
+                print(", ");
             }
         }
         if (options.size() > 1) {
             if (options.size() == 2) {
-                System.out.print(" ");
+                print(" ");
             }
-            System.out.print("and ");
+            print("and ");
         }
-        System.out.println(options.get(options.size() - 1) + ".");
+        println(options.get(options.size() - 1) + ".");
     }
 
     private static String simplifyUserResponse(String userResponse) {
@@ -378,7 +387,7 @@ public class UNOConsoleDriver {
 
     private static void displayHand(UNOEngine e) {
         UNOHand current = e.getCurrentHand();
-        System.out.println("Player " + (e.getCurrentPlayer() + 1) + " " + current.toString());
+        println("Player " + (e.getCurrentPlayer() + 1) + " " + current.toString());
     }
 
     private static String generateRegexForHand(ArrayList<UNOCard> cards) {

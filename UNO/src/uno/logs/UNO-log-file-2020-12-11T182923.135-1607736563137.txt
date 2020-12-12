@@ -1,0 +1,16 @@
+2020-12-11T18:29:23.139 (priority normal) -> ---BEGIN LOG---
+2020-12-11T18:29:23.239 (priority  debug) -> Options for P1 are "yellow 0 yellow 6 ".
+2020-12-11T18:29:23.242 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([06]){1})))\b)"
+2020-12-11T18:29:31.516 (priority  debug) -> rawish response is "py6"
+2020-12-11T18:29:31.518 (priority  debug) -> simplifyUserResponse() received "py6" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T18:29:31.520 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py6"
+2020-12-11T18:29:31.521 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "py6"
+2020-12-11T18:29:31.522 (priority  debug) -> P1's response: "py6"
+2020-12-11T18:29:31.524 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T18:29:31.525 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T18:29:31.526 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T18:29:31.527 (priority  debug) -> Options for P2 are "blue 6 yellow 9 yellow skip +4 ".
+2020-12-11T18:29:31.529 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([6]){1})|((y|yellow)\s*([9s]|skip){1})|(((w|wild(\+4|[+4]))|(\+4)))))\b)"
+2020-12-11T18:29:52.371 (priority  debug) -> rawish response is "exit"
+2020-12-11T18:29:52.372 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-11T18:29:52.373 (priority normal) -> ---END LOG---
