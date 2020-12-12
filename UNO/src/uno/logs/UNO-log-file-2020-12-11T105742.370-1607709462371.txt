@@ -1,0 +1,51 @@
+2020-12-11T10:57:42.372 (priority normal) -> ---BEGIN LOG---
+2020-12-11T10:57:42.452 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T10:57:42.453 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:57:42.454 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:57:42.456 (priority  debug) -> Options for P2 are "green 7 red skip +4 ".
+2020-12-11T10:57:42.459 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([7]){1})|((r|red)\s*([s]|skip){1})|(((w|wild(\+4|[+4]))|(\+4)))))\b)"
+2020-12-11T10:57:57.108 (priority  debug) -> rawish response is "prs"
+2020-12-11T10:57:57.111 (priority  debug) -> simplifyUserResponse() received "prs" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:57:57.112 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "prs"
+2020-12-11T10:57:57.113 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "prs"
+2020-12-11T10:57:57.114 (priority  debug) -> P2's response: "prs"
+2020-12-11T10:57:57.116 (priority  debug) -> Current player 0 indexed is 2
+2020-12-11T10:57:57.117 (priority  debug) -> Current player 0 indexed is now 3
+2020-12-11T10:57:57.118 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:57:57.119 (priority  debug) -> Options for P2 are "red 9 ".
+2020-12-11T10:57:57.139 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([9]){1})))\b)"
+2020-12-11T10:58:32.460 (priority  debug) -> rawish response is "pr9"
+2020-12-11T10:58:32.461 (priority  debug) -> simplifyUserResponse() received "pr9" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:58:32.462 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pr9"
+2020-12-11T10:58:32.463 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pr9"
+2020-12-11T10:58:32.464 (priority  debug) -> P2's response: "pr9"
+2020-12-11T10:58:32.465 (priority  debug) -> Current player 0 indexed is 1
+2020-12-11T10:58:32.466 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-11T10:58:32.467 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-11T10:58:32.468 (priority  debug) -> Options for P1 are "green 9 red 0 red 2 wild ".
+2020-12-11T10:58:32.470 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([9]){1})|((r|red)\s*([02]){1})|((w|wild))))\b)"
+2020-12-11T10:58:38.515 (priority  debug) -> rawish response is "pw"
+2020-12-11T10:58:38.516 (priority  debug) -> simplifyUserResponse() received "pw" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:58:38.518 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pw"
+2020-12-11T10:58:38.519 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pw"
+2020-12-11T10:58:38.520 (priority  debug) -> P1's response: "pw"
+2020-12-11T10:58:44.043 (priority  debug) -> response to getNewColor(): "b"
+2020-12-11T10:58:44.067 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T10:58:44.068 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:58:44.069 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:58:44.070 (priority  debug) -> Options for P2 are "blue 1 ".
+2020-12-11T10:58:44.072 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([1]){1})))\b)"
+2020-12-11T10:58:59.787 (priority  debug) -> rawish response is "py6"
+2020-12-11T10:59:04.283 (priority  debug) -> rawish response is "pb1"
+2020-12-11T10:59:04.284 (priority  debug) -> simplifyUserResponse() received "pb1" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:59:04.286 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pb1"
+2020-12-11T10:59:04.287 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pb1"
+2020-12-11T10:59:04.288 (priority  debug) -> P2's response: "pb1"
+2020-12-11T10:59:04.290 (priority  debug) -> Current player 0 indexed is 1
+2020-12-11T10:59:04.291 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-11T10:59:04.292 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-11T10:59:04.294 (priority  debug) -> Options for P1 are "blue 6 blue skip ".
+2020-12-11T10:59:04.295 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([6s]|skip){1})))\b)"
+2020-12-11T11:01:27.642 (priority  debug) -> rawish response is "exit"
+2020-12-11T11:01:27.931 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-11T11:01:27.947 (priority normal) -> ---END LOG---

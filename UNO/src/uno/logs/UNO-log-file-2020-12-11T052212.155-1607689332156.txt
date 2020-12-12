@@ -1,0 +1,1 @@
+2020-12-11T05:22:12.232 (priority normal) ->Regex for current hand: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([1]){1})|(((w|wild(\+4|[+4]))|(\+4)))))\b)"

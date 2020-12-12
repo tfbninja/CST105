@@ -14,8 +14,8 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 
 /**
- * Basic logging class, valid priorities for messages are -1 for low, 0 for
- * normal, and 1 for high.
+ * Basic logging class, valid priorities for messages are -2 for debug, -1 for
+ * low, 0 for normal, and 1 for high.
  *
  * @author Tim Barber
  */
@@ -36,7 +36,9 @@ public class Logger {
 
             }
         }
+        log("---BEGIN LOG---");
         removeFilesOlderThan1Day(); // That's right, I delete old log files in the logging constructor. deal with it.
+
     }
 
     public String getSAVELOCATION() {
@@ -65,12 +67,14 @@ public class Logger {
 
     private String priorityToString(int priority) {
         switch (priority) {
+            case -2:
+                return " debug";
             case -1:
-                return "low";
+                return "   low";
             case 0:
                 return "normal";
             case 1:
-                return "HIGH";
+                return "  HIGH";
             default:
                 return String.valueOf(priority);
         }
@@ -80,17 +84,30 @@ public class Logger {
         log(message, 0);
     }
 
+    public void debug(String debugMessage) {
+        log(debugMessage, -2);
+    }
+
     public void log(String message, int priority) {
         // The following code is a minimally modified excerpt from https://www.w3schools.com/java/java_files_create.asp
         try {
-            try (FileWriter myWriter = new FileWriter(filename)) {
-                myWriter.write(LocalDateTime.now().toString() + " (priority " + priorityToString(priority) + ") ->" + message);
+            try (FileWriter myWriter = new FileWriter(filename, true)) {
+                for (String line : message.split("\n")) {
+                    myWriter.write(LocalDateTime.now().toString() + " (priority " + priorityToString(priority) + ") -> " + line + "\n");
+                }
+                myWriter.flush();
+                myWriter.close();
             }
-            System.out.println("Successfully wrote to the file.");
+            //System.out.println("Successfully wrote to the file."); //...no
         } catch (IOException e) {
             System.out.println("An error occurred while logging.");
             e.printStackTrace();
         }
+    }
+
+    public void closeLog() {
+        log("---END LOG---");
+        saveLocationFile.setReadOnly();
     }
 
     public void removeFilesOlderThan1Day() {
@@ -101,9 +118,9 @@ public class Logger {
             Instant now = java.time.Clock.systemDefaultZone().instant(); // Where clock is a java.time.Clock, for testability
             Duration difference = Duration.between(fileInstant, now);
             long days = difference.toDays();
-            System.out.println(days);
+            //System.out.println(days);
             if (days > 1) {
-                //f.delete(); //FIXME, notyet
+                f.delete();
             }
         }
 
@@ -118,11 +135,9 @@ public class Logger {
                             .readAttributes();
             FileTime fileTime = view.creationTime();
             return fileTime;
-            //return ("" + new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format((fileTime.toMillis())));
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //return "";
         return null;
     }
 }

@@ -1,0 +1,11 @@
+2020-12-11T11:25:53.346 (priority normal) -> ---BEGIN LOG---
+2020-12-11T11:25:53.494 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T11:25:53.498 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T11:25:53.499 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T11:25:53.501 (priority  debug) -> Options for P2 are "green skip wild ".
+2020-12-11T11:25:53.503 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([s]|skip){1})|((w|wild))))\b)"
+2020-12-11T11:26:10.957 (priority  debug) -> rawish response is "pgs"
+2020-12-11T11:26:10.960 (priority  debug) -> simplifyUserResponse() received "pgs" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T11:26:10.962 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pgs"
+2020-12-11T11:26:10.963 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pgs"
+2020-12-11T11:26:10.965 (priority  debug) -> flushing input

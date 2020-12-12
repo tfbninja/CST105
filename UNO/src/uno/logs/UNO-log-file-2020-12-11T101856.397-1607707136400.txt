@@ -1,0 +1,4 @@
+2020-12-11T10:18:56.402 (priority normal) -> ---BEGIN LOG---
+2020-12-11T10:18:56.522 (priority  debug) -> Options for P1 are "red skip ".
+2020-12-11T10:18:56.524 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([s]|skip){1})))\b)"
+2020-12-11T10:19:01.190 (priority  debug) -> rawish response is "prs"

@@ -1,0 +1,14 @@
+2020-12-11T10:49:50.283 (priority normal) -> ---BEGIN LOG---
+2020-12-11T10:49:50.502 (priority  debug) -> Options for P1 are "green 5 green 6 +4 ".
+2020-12-11T10:49:50.506 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([56]){1})|(((w|wild(\+4|[+4]))|(\+4)))))\b)"
+2020-12-11T10:49:58.671 (priority  debug) -> rawish response is "p+4"
+2020-12-11T10:49:58.674 (priority  debug) -> simplifyUserResponse() received "p+4" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:49:58.677 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "p+4"
+2020-12-11T10:49:58.678 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "p+4"
+2020-12-11T10:49:58.679 (priority  debug) -> P1's response: "p+4"
+2020-12-11T10:50:02.766 (priority  debug) -> response to getNewColor(): "g"
+2020-12-11T10:50:02.768 (priority  debug) -> Options for P2 are "green 0 green 2 green 6 green 7 green skip ".
+2020-12-11T10:50:02.770 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([0267s]|skip){1})))\b)"
+2020-12-11T10:50:28.053 (priority  debug) -> rawish response is "exit"
+2020-12-11T10:50:28.055 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-11T10:50:28.056 (priority normal) -> ---END LOG---

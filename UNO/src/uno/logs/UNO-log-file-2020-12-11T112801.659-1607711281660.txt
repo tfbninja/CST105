@@ -1,0 +1,14 @@
+2020-12-11T11:28:01.663 (priority normal) -> ---BEGIN LOG---
+2020-12-11T11:28:01.790 (priority  debug) -> Options for P1 are "".
+2020-12-11T11:28:01.791 (priority  debug) -> Options for P1 are "".
+2020-12-11T11:28:01.792 (priority  debug) -> Options for P1 are "yellow skip ".
+2020-12-11T11:28:01.794 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([s]|skip){1})))\b)"
+2020-12-11T11:28:23.276 (priority  debug) -> rawish response is "pys"
+2020-12-11T11:28:23.279 (priority  debug) -> simplifyUserResponse() received "pys" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T11:28:23.280 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pys"
+2020-12-11T11:28:23.281 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pys"
+2020-12-11T11:28:23.282 (priority  debug) -> flushing input
+2020-12-11T11:28:41.853 (priority  debug) -> P1's response: "pys"
+2020-12-11T11:28:41.855 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([027]){1})))\b)"
+2020-12-11T11:28:42.070 (priority  debug) -> rawish response is "sd"
+2020-12-11T11:28:42.284 (priority  debug) -> rawish response is "fsdf"

@@ -1,0 +1,28 @@
+2020-12-11T17:04:41.960 (priority normal) -> ---BEGIN LOG---
+2020-12-11T17:04:42.080 (priority  debug) -> Options for P1 are "yellow 2 +4 ".
+2020-12-11T17:04:42.084 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([2]){1})|(((w|wild(\+4|[+4]))|(\+4)))))\b)"
+2020-12-11T17:04:51.354 (priority  debug) -> rawish response is "p+4"
+2020-12-11T17:04:51.355 (priority  debug) -> simplifyUserResponse() received "p+4" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T17:04:51.357 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "p+4"
+2020-12-11T17:04:51.358 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "p+4"
+2020-12-11T17:04:51.359 (priority  debug) -> P1's response: "p+4"
+2020-12-11T17:04:55.274 (priority  debug) -> response to getNewColor(): "r"
+2020-12-11T17:04:55.275 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T17:04:55.277 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T17:04:55.278 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T17:04:55.280 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*(|(\+2|\+)){1})))\b)"
+2020-12-11T17:05:10.505 (priority  debug) -> rawish response is "pg+2"
+2020-12-11T17:05:10.507 (priority  debug) -> simplifyUserResponse() received "pg+2" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T17:05:10.508 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pg+2"
+2020-12-11T17:05:10.509 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pg+2"
+2020-12-11T17:05:10.510 (priority  debug) -> Current player 0 indexed is 1
+2020-12-11T17:05:10.511 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-11T17:05:10.512 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-11T17:05:10.514 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T17:05:10.515 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T17:05:10.516 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T17:05:10.517 (priority  debug) -> Current player 0 indexed is 1
+2020-12-11T17:05:10.518 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-11T17:05:10.519 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-11T17:05:10.520 (priority  debug) -> Options for P1 are "green 9 red 0 red 5 red 6 red +2 yellow +2 ".
+2020-12-11T17:05:10.522 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([9]|(\+2|\+)){1})|((r|red)\s*([056]|(\+2|\+)){1})|((y|yellow)\s*(|(\+2|\+)){1})))\b)"

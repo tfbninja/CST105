@@ -1,5 +1,7 @@
 package uno;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Tim Barber
@@ -65,32 +67,37 @@ public class UNOEngine {
     }
 
     public void beginGame() {
-        UNOCard result = deck.flipTopCard();
+        UNOCard result;
+        do {
+            result = deck.flipTopCard();
+        } while (deck.getTopDiscardCard().isWild());
         if (result.isReverse()) {
+            System.out.println("First card is a reverse, order of play has been reversed.");
             direction = -direction;
-        } else if (result.isPlus2()) {
+        } else if (result.isPlus2()) { // according to UNO rules, if a card is wild you just skip it and do the next one, so no need for a +4 scenario
             num2CardsToDraw++;
-        } else if (result.isPlus4()) {
-            num4CardsToDraw++;
         } else if (result.isSkip()) {
+            System.out.println("First card is a skip, skipping P1.");
             assignNextPlayer();
         }
     }
 
     public void assignNextPlayer() {
+        UNOConsoleDriver.log.debug("Current player 0 indexed is " + currentPlayer);
         currentPlayer += direction;
+        UNOConsoleDriver.log.debug("Current player 0 indexed is now " + currentPlayer);
+        currentPlayer = currentPlayer % NUM_PLAYERS;
+        UNOConsoleDriver.log.debug("Current player 0 indexed is now " + currentPlayer);
         drewCards = false;
-        if (currentPlayer >= NUM_PLAYERS) {
-            currentPlayer = 0;
-        }
+
         if ((num2CardsToDraw > 0 || num4CardsToDraw > 0) && !RULE_STACKING_SAME) {
             deck.drawCardsForPlayer(currentPlayer, getPendingCardsToDraw());
             drewCards = true;
         }
     }
 
-    public void drawCurrentPlayerCards(int amt) {
-        deck.drawCardsForPlayer(this.currentPlayer, amt);
+    public ArrayList<UNOCard> drawCurrentPlayerCards(int amt) {
+        return deck.drawCardsForPlayer(this.currentPlayer, amt);
     }
 
     public UNOHand getCurrentHand() {
@@ -123,8 +130,44 @@ public class UNOEngine {
         }
     }
 
+    public ArrayList<UNOCard> getCurrentPlayerMatches() {
+        ArrayList<UNOCard> out = new ArrayList<>();
+        if (getPendingCardsToDraw() > 0) {
+            if (this.RULE_STACKING_ALL) {
+                if (deck.getCurrentHand(currentPlayer).hasPlus()) {
+                    for (UNOCard c : deck.getCurrentHand(currentPlayer).toArrayList()) {
+                        if (c.isPlus()) {
+                            out.add(c);
+                        }
+                    }
+                } else {
+                    return null;
+                }
+            } else if (this.RULE_STACKING_SAME) {
+                if (deck.getCurrentHand(currentPlayer).hasType(getTopCard())) {
+                    for (UNOCard c : deck.getCurrentHand(currentPlayer).toArrayList()) {
+                        if (c.getType().equals(getTopCard().getType())) {
+                            out.add(c);
+                        }
+                    }
+                } else {
+                    return null;
+                }
+            }
+        } else {
+            for (UNOCard c : deck.getCurrentHand(currentPlayer).toArrayList()) {
+                if (c.getColor().equals(getCurrentColor())) {
+                    out.add(c);
+                } else if (c.isValid(getTopCard())) {
+                    out.add(c);
+                }
+            }
+        }
+        return out;
+    }
+
     public int getPendingCardsToDraw() {
-        return num2CardsToDraw + num4CardsToDraw;
+        return num2CardsToDraw * 2 + num4CardsToDraw * 4;
     }
 
     public int getNum2CardsToDraw() {
@@ -133,6 +176,23 @@ public class UNOEngine {
 
     public int getNum4CardsToDraw() {
         return num4CardsToDraw;
+    }
+
+    public boolean hasAPlayerEmptiedHand() {
+        for (int i = 0; i < NUM_PLAYERS; i++) {
+            if (deck.getCurrentHand(i).getSize() == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void assessPileSizes() {
+        if (deck.getDrawPileSize() < 30) {
+            UNOConsoleDriver.log.log("Reincorporating discard pile into draw pile, as size is under 30, drawPile size is " + deck.getDrawPileSize() + ".");
+            deck.reincorporateDiscardPile();
+            UNOConsoleDriver.log.log("Reincorporated discard pile into draw pile, drawPile size is now " + deck.getDrawPileSize() + ".");
+        }
     }
 
     public boolean playCurrentPlayersNonWildCard(UNOCard card) {
@@ -150,10 +210,17 @@ public class UNOEngine {
             return false;
         } else {
             if (deck.playNonWildCard(currentPlayer, card)) {
+                System.out.println("P" + (getCurrentPlayer() + 1) + " played " + card.toString());
                 if (card.isSkip()) {
+                    System.out.println("Player " + ((getCurrentPlayer() + direction) % NUM_PLAYERS + 1) + " has been skipped.");
                     currentPlayer++;
                 } else if (card.isReverse()) {
-                    direction = -direction;
+                    System.out.println("Order of play has been reversed.");
+                    if (NUM_PLAYERS > 2) {
+                        direction = -direction;
+                    } else {
+                        currentPlayer++;
+                    }
                 } else if (card.isPlus2() && getPendingCardsToDraw() == 0) {
                     num2CardsToDraw++;
                 }
@@ -178,6 +245,8 @@ public class UNOEngine {
             return false;
         } else {
             if (deck.playWildCard(currentPlayer, card, newColor)) {
+                System.out.println("P" + (getCurrentPlayer() + 1) + " played " + card.toString());
+                System.out.println("The new color is now " + deck.getCurrentColor());
                 if (card.isPlus4() && getPendingCardsToDraw() == 0) {
                     num4CardsToDraw++;
                 }

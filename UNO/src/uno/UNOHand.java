@@ -19,19 +19,25 @@ public class UNOHand {
         return hand.size();
     }
 
-    public boolean hasMatch(UNOCard card, String currentcolor) {
+    /*
+     * see the desc for UNOCard.isValid(UNOCard)
+     */
+    public boolean hasMatch(UNOCard card) {
         for (UNOCard c : hand) {
-            if (c.isValid(card, currentcolor)) {
+            if (c.isValid(card)) {
                 return true;
             }
         }
         return false;
     }
 
-    public ArrayList<UNOCard> getMatches(UNOCard card, String currentcolor) {
+    /*
+     * see the desc for UNOCard.isValid(UNOCard)
+     */
+    public ArrayList<UNOCard> getMatches(UNOCard card) {
         ArrayList<UNOCard> out = new ArrayList<>();
         for (UNOCard c : hand) {
-            if (c.isValid(card, currentcolor)) {
+            if (c.isValid(card)) {
                 out.add(c);
             }
         }
@@ -88,12 +94,22 @@ public class UNOHand {
         }
     }
 
-    public UNOCard playCard(UNOCard currentCard, String currentColor) {
+    public boolean hasType(UNOCard card) {
+        for (UNOCard c : hand) {
+            if (c.getType().equals(card.getType())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public UNOCard playCard(UNOCard currentCard) {
         boolean cardFound = false;
         for (int i = 0; i < hand.size(); i++) {
-            if (hand.get(i).isValid(currentCard, currentColor)) {
+            if (hand.get(i).isSameAs(currentCard)) {
                 cardFound = true;
                 hand.remove(i);
+                break;
             }
         }
         if (!cardFound) {
@@ -106,7 +122,7 @@ public class UNOHand {
         Collections.sort(hand);
     }
 
-    public ArrayList<UNOCard> getArrayList() {
+    public ArrayList<UNOCard> toArrayList() {
         return hand;
     }
 

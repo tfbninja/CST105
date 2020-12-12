@@ -40,14 +40,21 @@ public class UNODeck {
         discardPile.add(topCard);
     }
 
+    public int getDrawPileSize() {
+        return drawPile.size();
+    }
+
     public UNOHand getCurrentHand(int player) {
         return hands.get(player);
     }
 
-    public void drawCardsForPlayer(int player, int amt) {
+    public ArrayList<UNOCard> drawCardsForPlayer(int player, int amt) {
+        ArrayList<UNOCard> out = new ArrayList<>();
         for (int i = 0; i < amt; i++) {
-            hands.get(player).receiveCard(removeTopDrawCard());
+            out.add(removeTopDrawCard());
+            hands.get(player).receiveCard(out.get(out.size() - 1));
         }
+        return out;
     }
 
     public UNOCard getTopDiscardCard() {
@@ -63,25 +70,22 @@ public class UNODeck {
     }
 
     public boolean playNonWildCard(int playerNum, UNOCard card) {
-        UNOCard temp = hands.get(playerNum).playCard(card, currentColor);
+        UNOCard temp = hands.get(playerNum).playCard(card);
         if (temp != null) {
-            if (card.isValid(getTopDiscardCard(), currentColor)) {
-                discardPile.add(temp);
-                return true;
-            }
+            discardPile.add(temp);
+            return true;
         }
         return false;
     }
 
     public boolean playWildCard(int playerNum, UNOCard card, String newColor) {
-        UNOCard temp = hands.get(playerNum).playCard(card, currentColor);
+        UNOCard temp = hands.get(playerNum).playCard(card);
         if (temp != null) {
-            if (card.isValid(getTopDiscardCard(), currentColor)) {
-                discardPile.add(temp);
-                currentColor = newColor;
-                return true;
-            }
+            discardPile.add(temp);
+            currentColor = newColor;
+            return true;
         }
+        UNOConsoleDriver.log.log("UNODeck received null card when playing card to a temp variable in playWildCard(), toString() of arg: \"" + card.toString() + "\", toString() of temp: \"" + temp.toString() + "\"");
         return false;
     }
 
@@ -117,9 +121,7 @@ public class UNODeck {
     }
 
     public UNOCard flipTopCard() {
-        do {
-            discardPile.add(removeTopDrawCard());
-        } while (getTopDiscardCard().isWild());
+        discardPile.add(removeTopDrawCard());
         return discardPile.get(discardPile.size() - 1);
     }
 }

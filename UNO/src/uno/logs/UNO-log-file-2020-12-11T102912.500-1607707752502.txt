@@ -1,0 +1,8 @@
+2020-12-11T10:29:12.507 (priority normal) -> ---BEGIN LOG---
+2020-12-11T10:29:12.793 (priority  debug) -> Options for P1 are "red 0 red 2 red 4 red 8 wild wild ".
+2020-12-11T10:29:12.796 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([0248]){1})|((w|wild)|(w|wild))))\b)"
+2020-12-11T10:29:18.867 (priority  debug) -> rawish response is "pw"
+2020-12-11T10:29:18.869 (priority  debug) -> simplifyUserResponse() received "pw" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:29:20.548 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pw"
+2020-12-11T10:29:20.551 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pw"
+2020-12-11T10:29:20.552 (priority  debug) -> P1's response: "pw"

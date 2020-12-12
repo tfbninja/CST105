@@ -1,0 +1,72 @@
+2020-12-11T10:53:50.611 (priority normal) -> ---BEGIN LOG---
+2020-12-11T10:53:50.703 (priority  debug) -> Options for P1 are "blue 8 yellow 1 yellow 3 ".
+2020-12-11T10:53:50.706 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([8]){1})|((y|yellow)\s*([13]){1})))\b)"
+2020-12-11T10:53:59.981 (priority  debug) -> rawish response is "pb8"
+2020-12-11T10:53:59.984 (priority  debug) -> simplifyUserResponse() received "pb8" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:53:59.985 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pb8"
+2020-12-11T10:53:59.987 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pb8"
+2020-12-11T10:53:59.988 (priority  debug) -> P1's response: "pb8"
+2020-12-11T10:53:59.989 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T10:53:59.990 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:53:59.991 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:53:59.993 (priority  debug) -> Options for P2 are "blue 8 +4 ".
+2020-12-11T10:53:59.994 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([8]){1})|(((w|wild(\+4|[+4]))|(\+4)))))\b)"
+2020-12-11T10:54:19.549 (priority  debug) -> rawish response is "pb8"
+2020-12-11T10:54:19.551 (priority  debug) -> simplifyUserResponse() received "pb8" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:54:19.552 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pb8"
+2020-12-11T10:54:19.553 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pb8"
+2020-12-11T10:54:19.554 (priority  debug) -> P2's response: "pb8"
+2020-12-11T10:54:19.555 (priority  debug) -> Current player 0 indexed is 1
+2020-12-11T10:54:19.557 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-11T10:54:19.558 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-11T10:54:19.559 (priority  debug) -> Options for P1 are "blue 6 ".
+2020-12-11T10:54:19.560 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([6]){1})))\b)"
+2020-12-11T10:54:32.660 (priority  debug) -> rawish response is "pb6"
+2020-12-11T10:54:32.662 (priority  debug) -> simplifyUserResponse() received "pb6" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:54:32.664 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pb6"
+2020-12-11T10:54:32.665 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pb6"
+2020-12-11T10:54:32.666 (priority  debug) -> P1's response: "pb6"
+2020-12-11T10:54:32.668 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T10:54:32.669 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:54:32.670 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:54:32.671 (priority  debug) -> Options for P2 are "yellow 6 ".
+2020-12-11T10:54:32.673 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([6]){1})))\b)"
+2020-12-11T10:54:40.772 (priority  debug) -> rawish response is "py6"
+2020-12-11T10:54:40.773 (priority  debug) -> simplifyUserResponse() received "py6" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:54:40.775 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py6"
+2020-12-11T10:54:40.776 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "py6"
+2020-12-11T10:54:40.777 (priority  debug) -> P2's response: "py6"
+2020-12-11T10:54:40.778 (priority  debug) -> Current player 0 indexed is 1
+2020-12-11T10:54:40.779 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-11T10:54:40.780 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-11T10:54:40.782 (priority  debug) -> Options for P1 are "yellow 1 yellow 3 ".
+2020-12-11T10:54:40.784 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([13]){1})))\b)"
+2020-12-11T10:54:46.252 (priority  debug) -> rawish response is "py1"
+2020-12-11T10:54:46.253 (priority  debug) -> simplifyUserResponse() received "py1" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:54:46.255 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py1"
+2020-12-11T10:54:46.256 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "py1"
+2020-12-11T10:54:46.257 (priority  debug) -> P1's response: "py1"
+2020-12-11T10:54:46.259 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T10:54:46.260 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:54:46.261 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:54:46.262 (priority  debug) -> Options for P2 are "yellow 6 ".
+2020-12-11T10:54:46.263 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([6]){1})))\b)"
+2020-12-11T10:54:52.477 (priority  debug) -> rawish response is "py6"
+2020-12-11T10:54:52.478 (priority  debug) -> simplifyUserResponse() received "py6" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:54:52.480 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py6"
+2020-12-11T10:54:52.481 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "py6"
+2020-12-11T10:54:52.482 (priority  debug) -> P2's response: "py6"
+2020-12-11T10:54:52.484 (priority  debug) -> Current player 0 indexed is 1
+2020-12-11T10:54:52.486 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-11T10:54:52.487 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-11T10:54:52.488 (priority  debug) -> Options for P1 are "yellow 3 ".
+2020-12-11T10:54:52.490 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([3]){1})))\b)"
+2020-12-11T10:54:56.988 (priority  debug) -> rawish response is "py3"
+2020-12-11T10:54:56.989 (priority  debug) -> simplifyUserResponse() received "py3" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T10:54:56.991 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py3"
+2020-12-11T10:54:56.992 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "py3"
+2020-12-11T10:54:56.993 (priority  debug) -> P1's response: "py3"
+2020-12-11T10:54:56.995 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T10:54:56.996 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:54:56.997 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T10:54:56.998 (priority  debug) -> Options for P2 are "".

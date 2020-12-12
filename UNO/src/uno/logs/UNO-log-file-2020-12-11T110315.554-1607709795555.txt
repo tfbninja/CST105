@@ -1,0 +1,13 @@
+2020-12-11T11:03:15.557 (priority normal) -> ---BEGIN LOG---
+2020-12-11T11:03:15.653 (priority  debug) -> Options for P1 are "blue skip red 1 ".
+2020-12-11T11:03:15.655 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([s]|skip){1})|((r|red)\s*([1]){1})))\b)"
+2020-12-11T11:09:27.266 (priority  debug) -> rawish response is "pbs"
+2020-12-11T11:09:27.268 (priority  debug) -> simplifyUserResponse() received "pbs" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T11:09:27.269 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pbs"
+2020-12-11T11:09:27.270 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pbs"
+2020-12-11T11:09:27.271 (priority  debug) -> P1's response: "pbs"
+2020-12-11T11:09:27.273 (priority  debug) -> Current player 0 indexed is 0
+2020-12-11T11:09:27.274 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T11:09:27.275 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-11T11:09:27.276 (priority  debug) -> Options for P2 are "blue 2 red 1 +4 ".
+2020-12-11T11:09:27.278 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([2]){1})|((r|red)\s*([1]){1})|(((w|wild(\+4|[+4]))|(\+4)))))\b)"

@@ -1,0 +1,16 @@
+2020-12-11T11:19:09.448 (priority normal) -> ---BEGIN LOG---
+2020-12-11T11:19:09.598 (priority  debug) -> Options for P1 are "red skip ".
+2020-12-11T11:19:09.600 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([s]|skip){1})))\b)"
+2020-12-11T11:19:25.927 (priority  debug) -> rawish response is "prs"
+2020-12-11T11:19:25.929 (priority  debug) -> simplifyUserResponse() received "prs" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-11T11:19:25.931 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "prs"
+2020-12-11T11:19:25.932 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "prs"
+2020-12-11T11:19:25.933 (priority  debug) -> P1's response: "prs"
+2020-12-11T11:19:25.934 (priority  debug) -> Current player 0 indexed is 1
+2020-12-11T11:19:25.935 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-11T11:19:25.936 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-11T11:19:25.938 (priority  debug) -> Options for P1 are "".
+2020-12-11T11:19:25.940 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*((((w|wild(\+4|[+4]))|(\+4)))))\b)"
+2020-12-11T11:22:37.405 (priority  debug) -> rawish response is "exit"
+2020-12-11T11:22:37.407 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-11T11:22:37.409 (priority normal) -> ---END LOG---
