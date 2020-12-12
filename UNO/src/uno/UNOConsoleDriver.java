@@ -87,7 +87,7 @@ public class UNOConsoleDriver {
 
     private static void print(String message) {
         log.log("Printing to screen: \"" + message + "\"", -1);
-        System.out.println(message);
+        System.out.print(message);
     }
 
     private static void println(String message) {
