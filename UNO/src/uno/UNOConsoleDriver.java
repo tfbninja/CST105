@@ -33,7 +33,12 @@ public class UNOConsoleDriver {
             displayTopCard(engine);
             displayHand(engine);
             displayAndReceiveChoices(engine);
-            engine.assignNextPlayer();
+            if (engine.hasCurrentPlayerDrawnOrPlayed()) {
+                log.log("Assigning next player");
+                engine.assignNextPlayer();
+            } else {
+                log.log("Next player has already been assigned, skipping additional assignment.");
+            }
             engine.assessPileSizes();
         }
 
@@ -86,7 +91,7 @@ public class UNOConsoleDriver {
     }
 
     private static void print(String message) {
-        log.log("Printing to screen: \"" + message + "\"", -1);
+        log.log("Printing to screen: " + message.replaceAll("\\n", "/") + "", -1);
         System.out.print(message);
     }
 
@@ -159,11 +164,18 @@ public class UNOConsoleDriver {
                 print("You cannot play any cards. ");
                 if (e.isRULE_DRAW_TILL_PLAYABLE()) {
                     println("You must draw until you have a playable card.");
-                    while (e.getCurrentPlayerMatches().isEmpty()) {
-                        doDrawCard(e);
-                        displayAndReceiveChoices(e);
-                    }
+                    UNOCard lastDrawn;
+                    do {
+                        lastDrawn = doDrawCard(e);
+                    } while (e.getCurrentPlayerMatches().isEmpty());
                     displayHand(e);
+                    if (lastDrawn.isWild()) {
+                        println("You've played a wild card which means you get to choose the new color to match.");
+                        e.playCurrentPlayersWildCard(lastDrawn, getNewColor());
+                    } else {
+                        e.playCurrentPlayersNonWildCard(lastDrawn);
+                    }
+                    return;
                 } else {
                     println("You must draw a card.");
                     doDrawCard(e);
@@ -339,7 +351,7 @@ public class UNOConsoleDriver {
     }
 
     private static ArrayList<UNOCard> doPendingDraw(UNOEngine e) {
-        ArrayList<UNOCard> out = e.drawCurrentPlayerCards(e.getPendingCardsToDraw());
+        ArrayList<UNOCard> out = e.receivePendingCards();
         for (UNOCard c : out) {
             println("Drew a " + c.toString() + ".");
         }

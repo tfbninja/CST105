@@ -1,0 +1,18 @@
+2020-12-11T19:21:50.107 (priority normal) -> ---BEGIN LOG---
+2020-12-11T19:21:50.186 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 7, blue reverse, green 8, green reverse, green +2, yellow 0, wild/
+2020-12-11T19:21:50.188 (priority    low) -> Printing to screen: Card to play on: blue 3/
+2020-12-11T19:21:50.189 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 7, blue reverse, green 8, green reverse, green +2, yellow 0, wild/
+2020-12-11T19:21:50.190 (priority    low) -> Printing to screen: P1: 
+2020-12-11T19:21:50.191 (priority  debug) -> Options for P1 are "blue 7 blue reverse wild ".
+2020-12-11T19:21:50.192 (priority    low) -> Printing to screen: The cards you can play are: 
+2020-12-11T19:21:50.193 (priority    low) -> Printing to screen: blue 7
+2020-12-11T19:21:50.193 (priority    low) -> Printing to screen: , 
+2020-12-11T19:21:50.194 (priority    low) -> Printing to screen: blue reverse
+2020-12-11T19:21:50.195 (priority    low) -> Printing to screen: , 
+2020-12-11T19:21:50.196 (priority    low) -> Printing to screen: and 
+2020-12-11T19:21:50.197 (priority    low) -> Printing to screen: wild./
+2020-12-11T19:21:50.198 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([7r]|reverse){1})|((w|wild))))\b)"
+2020-12-11T19:21:50.199 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-11T19:22:14.721 (priority  debug) -> rawish response is "exit"
+2020-12-11T19:22:14.723 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-11T19:22:14.724 (priority normal) -> ---END LOG---

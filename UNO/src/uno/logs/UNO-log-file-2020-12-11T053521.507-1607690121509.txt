@@ -1,1 +1,0 @@
-2020-12-11T05:35:21.511 (priority normal) -> ---BEGIN LOG---2020-12-11T05:35:21.570 (priority normal) -> Regex for current hand: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([03]){1})))\b)"2020-12-11T05:35:21.572 (priority normal) -> ---END LOG---

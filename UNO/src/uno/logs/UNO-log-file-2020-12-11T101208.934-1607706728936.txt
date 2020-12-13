@@ -1,2 +1,0 @@
-2020-12-11T10:12:08.938 (priority normal) -> ---BEGIN LOG---
-2020-12-11T10:12:09.024 (priority  debug) -> Options for P1 are "blue 5 yellow 0 ".

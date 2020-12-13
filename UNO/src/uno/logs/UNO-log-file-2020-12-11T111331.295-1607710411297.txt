@@ -1,6 +1,0 @@
-2020-12-11T11:13:31.298 (priority normal) -> ---BEGIN LOG---
-2020-12-11T11:13:31.408 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*((((w|wild(\+4|[+4]))|(\+4)))))\b)"
-2020-12-11T11:13:48.192 (priority  debug) -> rawish response is "p+4"
-2020-12-11T11:13:48.194 (priority  debug) -> simplifyUserResponse() received "p+4" as the only argument, proceeding with abbreviations and removing whitespace.
-2020-12-11T11:13:48.196 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "p+4"
-2020-12-11T11:13:48.197 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "p+4"

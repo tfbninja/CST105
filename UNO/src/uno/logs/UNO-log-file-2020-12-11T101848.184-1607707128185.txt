@@ -1,3 +1,0 @@
-2020-12-11T10:18:48.187 (priority normal) -> ---BEGIN LOG---
-2020-12-11T10:18:48.325 (priority  debug) -> Options for P1 are "yellow 1 ".
-2020-12-11T10:18:48.328 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([1]){1})))\b)"

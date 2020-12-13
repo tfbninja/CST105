@@ -1,3 +1,0 @@
-2020-12-11T09:42:55.092 (priority normal) -> ---BEGIN LOG---
-2020-12-11T09:42:55.364 (priority  debug) -> Regex for current hand: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([29r]|reverse){1})))\b)"
-2020-12-11T09:42:55.365 (priority normal) -> ---END LOG---

@@ -23,6 +23,7 @@ public class UNOEngine {
     private int num2CardsToDraw = 0; // counts how many +2's are played in a row
     private int num4CardsToDraw = 0; // counts how many +4's are played in a row
     private boolean drewCards = false;
+    private boolean playedCard = false;
 
     public UNOEngine(int players) {
         NUM_PLAYERS = players;
@@ -86,9 +87,16 @@ public class UNOEngine {
         UNOConsoleDriver.log.debug("Current player 0 indexed is " + currentPlayer);
         currentPlayer += direction;
         UNOConsoleDriver.log.debug("Current player 0 indexed is now " + currentPlayer);
-        currentPlayer = currentPlayer % NUM_PLAYERS;
+        //currentPlayer = currentPlayer % NUM_PLAYERS;
+        while (currentPlayer < 0) {
+            currentPlayer += NUM_PLAYERS;
+        }
+        while (currentPlayer > NUM_PLAYERS - 1) {
+            currentPlayer -= NUM_PLAYERS;
+        }
         UNOConsoleDriver.log.debug("Current player 0 indexed is now " + currentPlayer);
         drewCards = false;
+        playedCard = false;
 
         if ((num2CardsToDraw > 0 || num4CardsToDraw > 0) && !RULE_STACKING_SAME) {
             deck.drawCardsForPlayer(currentPlayer, getPendingCardsToDraw());
@@ -96,8 +104,14 @@ public class UNOEngine {
         }
     }
 
+    public boolean hasCurrentPlayerDrawnOrPlayed() {
+        return drewCards || playedCard;
+    }
+
     public ArrayList<UNOCard> drawCurrentPlayerCards(int amt) {
-        return deck.drawCardsForPlayer(this.currentPlayer, amt);
+        ArrayList<UNOCard> out = deck.drawCardsForPlayer(this.currentPlayer, amt);
+        drewCards = true;
+        return out;
     }
 
     public UNOHand getCurrentHand() {
@@ -120,14 +134,15 @@ public class UNOEngine {
         return drewCards;
     }
 
-    public void receivePendingCards() {
-        deck.drawCardsForPlayer(currentPlayer, getPendingCardsToDraw());
+    public ArrayList<UNOCard> receivePendingCards() {
+        ArrayList<UNOCard> out = deck.drawCardsForPlayer(currentPlayer, getPendingCardsToDraw());
         drewCards = true;
         num2CardsToDraw = 0;
         num4CardsToDraw = 0;
         if (RULE_SKIP_AFTER_DRAW) {
             assignNextPlayer();
         }
+        return out;
     }
 
     public ArrayList<UNOCard> getCurrentPlayerMatches() {
@@ -210,6 +225,7 @@ public class UNOEngine {
             return false;
         } else {
             if (deck.playNonWildCard(currentPlayer, card)) {
+                playedCard = true;
                 System.out.println("P" + (getCurrentPlayer() + 1) + " played " + card.toString());
                 if (card.isSkip()) {
                     System.out.println("Player " + ((getCurrentPlayer() + direction) % NUM_PLAYERS + 1) + " has been skipped.");
@@ -245,6 +261,7 @@ public class UNOEngine {
             return false;
         } else {
             if (deck.playWildCard(currentPlayer, card, newColor)) {
+                playedCard = true;
                 System.out.println("P" + (getCurrentPlayer() + 1) + " played " + card.toString());
                 System.out.println("The new color is now " + deck.getCurrentColor());
                 if (card.isPlus4() && getPendingCardsToDraw() == 0) {

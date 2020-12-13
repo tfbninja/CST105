@@ -1,8 +1,0 @@
-2020-12-11T10:29:55.099 (priority normal) -> ---BEGIN LOG---
-2020-12-11T10:29:55.276 (priority  debug) -> Options for P1 are "blue reverse green 2 ".
-2020-12-11T10:29:55.279 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([r]|reverse){1})|((g|green)\s*([2]){1})))\b)"
-2020-12-11T10:30:00.066 (priority  debug) -> rawish response is "pbr"
-2020-12-11T10:30:00.069 (priority  debug) -> simplifyUserResponse() received "pbr" as the only argument, proceeding with abbreviations and removing whitespace.
-2020-12-11T10:30:00.071 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pbr"
-2020-12-11T10:30:00.073 (priority  debug) -> response was accepted as a regex match, returning as simplified version which is "pbr"
-2020-12-11T10:30:00.074 (priority  debug) -> P1's response: "pbr"

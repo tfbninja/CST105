@@ -1,3 +1,0 @@
-2020-12-11T10:49:42.729 (priority normal) -> ---BEGIN LOG---
-2020-12-11T10:49:42.968 (priority  debug) -> Options for P1 are "yellow 3 yellow 7 ".
-2020-12-11T10:49:42.976 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([37]){1})))\b)"

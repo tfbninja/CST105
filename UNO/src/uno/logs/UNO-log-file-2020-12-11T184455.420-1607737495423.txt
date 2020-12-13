@@ -17,3 +17,6 @@
 2020-12-11T18:44:55.561 (priority    low) -> "
 2020-12-11T18:44:55.563 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([77]){1})|((w|wild))))\b)"
 2020-12-11T18:44:55.564 (priority    low) -> Printing to screen: "Will you (d)raw or (p)lay a card? "
+2020-12-11T18:46:11.752 (priority  debug) -> rawish response is "exit"
+2020-12-11T18:46:11.753 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-11T18:46:11.754 (priority normal) -> ---END LOG---

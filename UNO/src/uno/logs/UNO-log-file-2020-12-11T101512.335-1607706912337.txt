@@ -1,4 +1,0 @@
-2020-12-11T10:15:12.339 (priority normal) -> ---BEGIN LOG---
-2020-12-11T10:15:12.429 (priority  debug) -> Options for P1 are "blue 0 green 0 ".
-2020-12-11T10:15:12.433 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([0]){1})|((g|green)\s*([0]){1})))\b)"
-2020-12-11T10:15:18.040 (priority  debug) -> rawish response is "pb0"

@@ -1,0 +1,15 @@
+2020-12-11T19:03:50.099 (priority normal) -> ---BEGIN LOG---
+2020-12-11T19:03:50.218 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue skip, blue +2, green 2, green 6, red 3, red 4, wild/
+2020-12-11T19:03:50.220 (priority    low) -> Printing to screen: Card to play on: green 6/
+2020-12-11T19:03:50.221 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue skip, blue +2, green 2, green 6, red 3, red 4, wild/
+2020-12-11T19:03:50.223 (priority    low) -> Printing to screen: P1: 
+2020-12-11T19:03:50.224 (priority  debug) -> Options for P1 are "green 2 green 6 wild ".
+2020-12-11T19:03:50.225 (priority    low) -> Printing to screen: The cards you can play are: 
+2020-12-11T19:03:50.226 (priority    low) -> Printing to screen: green 2
+2020-12-11T19:03:50.228 (priority    low) -> Printing to screen: , 
+2020-12-11T19:03:50.229 (priority    low) -> Printing to screen: green 6
+2020-12-11T19:03:50.230 (priority    low) -> Printing to screen: , 
+2020-12-11T19:03:50.232 (priority    low) -> Printing to screen: and 
+2020-12-11T19:03:50.233 (priority    low) -> Printing to screen: wild./
+2020-12-11T19:03:50.238 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([26]){1})|((w|wild))))\b)"
+2020-12-11T19:03:50.239 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
