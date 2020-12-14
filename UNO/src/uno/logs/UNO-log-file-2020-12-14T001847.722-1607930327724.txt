@@ -1,0 +1,6 @@
+2020-12-14T00:18:47.745 (priority normal) -> ---BEGIN LOG---
+2020-12-14T00:18:51.359 (priority normal) -> Shuffling deck.
+2020-12-14T00:18:51.363 (cc of screen   ) -> How many players? (2 - 10): 
+2020-12-14T00:18:51.366 (priority  debug) -> Options for P1 are "yellow 5 +4 ".
+2020-12-14T00:18:51.368 (cc of screen   ) -> Card to play on: red 5 // Player 1 Contents of hand: blue 4, blue 6, green 3, green 7, yellow 5, yellow 7, +4 // P1: The cards you can play are: yellow 5 and +4. // 
+2020-12-14T00:18:51.369 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([5]){1})|(((w|wild(\+4|[+4]))|(\+4)))))\b)"

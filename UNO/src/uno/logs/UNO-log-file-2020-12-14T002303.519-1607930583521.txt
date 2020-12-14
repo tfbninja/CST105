@@ -1,0 +1,99 @@
+2020-12-14T00:23:03.524 (priority normal) -> ---BEGIN LOG---
+2020-12-14T00:23:31.273 (priority normal) -> Shuffling deck.
+2020-12-14T00:23:31.277 (cc of screen   ) -> How many players? (2 - 10): 
+2020-12-14T00:23:31.279 (priority  debug) -> Options for P1 are "red 1 red 4 ".
+2020-12-14T00:23:31.281 (cc of screen   ) -> Card to play on: red 1 // Player 1 Contents of hand: blue 0, green 2, green +2, red 1, red 4, yellow 0, yellow 6 // P1: The cards you can play are: red 1 and red 4. // 
+2020-12-14T00:23:31.284 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([14]){1})))\b)"
+2020-12-14T00:24:00.676 (priority  debug) -> rawish response is "pr1"
+2020-12-14T00:24:00.678 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-14T00:24:00.679 (priority  debug) -> simplifyUserResponse() received "pr1" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-14T00:24:00.681 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pr1"
+2020-12-14T00:24:00.683 (priority  debug) -> P1's response: "pr1"
+2020-12-14T00:24:00.686 (cc of screen   ) -> Will you (d)raw or (p)lay a card? P1 played red 1 // 
+2020-12-14T00:24:00.687 (priority normal) -> Assigning next player
+2020-12-14T00:24:00.688 (priority  debug) -> Current player 0 indexed is 0
+2020-12-14T00:24:00.689 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:24:00.690 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:24:00.691 (priority  debug) -> Options for P2 are "red 7 red 5 ".
+2020-12-14T00:24:00.692 (cc of screen   ) -> Card to play on: red 1The cards you can play are: red 7 and red 5.
+2020-12-14T00:24:00.694 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-14T00:24:00.695 (priority normal) -> AI does believe that it has a match.
+2020-12-14T00:24:00.696 (priority normal) -> AI's hand: b5bsg0r5r7y2y+
+2020-12-14T00:24:00.697 (priority normal) -> AI has chosen to play "pr7"
+2020-12-14T00:24:00.698 (priority  debug) -> P2's response: "pr7"
+2020-12-14T00:24:00.699 (cc of screen   ) -> P2 played red 7 // 
+2020-12-14T00:24:00.699 (priority normal) -> Assigning next player
+2020-12-14T00:24:00.700 (priority  debug) -> Current player 0 indexed is 1
+2020-12-14T00:24:00.701 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-14T00:24:00.702 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-14T00:24:00.704 (priority  debug) -> Options for P1 are "red 4 ".
+2020-12-14T00:24:00.705 (cc of screen   ) -> Card to play on: red 7 // Player 1 Contents of hand: blue 0, green 2, green +2, red 4, yellow 0, yellow 6 // P1: The only card you can play is: red 4. // 
+2020-12-14T00:24:00.706 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([4]){1})))\b)"
+2020-12-14T00:24:24.221 (priority  debug) -> rawish response is "pr4"
+2020-12-14T00:24:24.223 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-14T00:24:24.224 (priority  debug) -> simplifyUserResponse() received "pr4" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-14T00:24:24.226 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pr4"
+2020-12-14T00:24:24.227 (priority  debug) -> P1's response: "pr4"
+2020-12-14T00:24:24.229 (cc of screen   ) -> Will you (d)raw or (p)lay a card? P1 played red 4 // 
+2020-12-14T00:24:24.230 (priority normal) -> Assigning next player
+2020-12-14T00:24:24.231 (priority  debug) -> Current player 0 indexed is 0
+2020-12-14T00:24:24.232 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:24:24.232 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:24:24.233 (priority  debug) -> Options for P2 are "red 5 ".
+2020-12-14T00:24:24.234 (cc of screen   ) -> Card to play on: red 4The only card you can play is: red 5.
+2020-12-14T00:24:24.235 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-14T00:24:24.236 (priority normal) -> AI does believe that it has a match.
+2020-12-14T00:24:24.237 (priority normal) -> AI's hand: b5bsg0r5y2y+
+2020-12-14T00:24:24.238 (priority normal) -> AI has chosen to play "pr5"
+2020-12-14T00:24:24.239 (priority  debug) -> P2's response: "pr5"
+2020-12-14T00:24:24.239 (cc of screen   ) -> P2 played red 5 // 
+2020-12-14T00:24:24.240 (priority normal) -> Assigning next player
+2020-12-14T00:24:24.241 (priority  debug) -> Current player 0 indexed is 1
+2020-12-14T00:24:24.242 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-14T00:24:24.243 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-14T00:24:24.245 (priority  debug) -> Options for P1 are "".
+2020-12-14T00:24:24.250 (priority normal) -> Assigning next player
+2020-12-14T00:24:24.252 (priority  debug) -> Current player 0 indexed is 1
+2020-12-14T00:24:24.253 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-14T00:24:24.255 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-14T00:24:24.258 (priority  debug) -> Options for P1 are "green skip ".
+2020-12-14T00:24:24.262 (cc of screen   ) -> Card to play on: red 5 // Player 1 Contents of hand: blue 0, green 2, green +2, yellow 0, yellow 6 // P1: You cannot play any cards. You must (d)raw until you have a playable card. // P1 drew a yellow 3. // P1 drew a green 9. // P1 drew a blue reverse. // P1 drew a blue 2. // P1 drew a yellow 4. // P1 drew a blue +2. // P1 drew a yellow reverse. // P1 drew a blue 4. // P1 drew a green skip. // P1 drew a green 0. // P1 drew a blue 6. // P1 drew a red skip. // Player 1 Contents of hand: blue 0, blue 2, blue 4, blue 6, blue reverse, blue +2, green 0, green 2, green 9, green skip, green +2, red skip, yellow 0, yellow 3, yellow 4, yellow 6, yellow reverse // P1 played red skip // Player 2 has been skipped. // Card to play on: red skip // Player 1 Contents of hand: blue 0, blue 2, blue 4, blue 6, blue reverse, blue +2, green 0, green 2, green 9, green skip, green +2, yellow 0, yellow 3, yellow 4, yellow 6, yellow reverse // P1: The only card you can play is: green skip. // 
+2020-12-14T00:24:24.263 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([s]|skip){1})))\b)"
+2020-12-14T00:25:13.038 (priority  debug) -> rawish response is "pgs"
+2020-12-14T00:25:13.040 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-14T00:25:13.041 (priority  debug) -> simplifyUserResponse() received "pgs" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-14T00:25:13.043 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pgs"
+2020-12-14T00:25:13.045 (priority  debug) -> P1's response: "pgs"
+2020-12-14T00:25:13.047 (cc of screen   ) -> Will you (d)raw or (p)lay a card? P1 played green skip // Player 2 has been skipped. // 
+2020-12-14T00:25:13.048 (priority normal) -> Assigning next player
+2020-12-14T00:25:13.050 (priority  debug) -> Current player 0 indexed is 1
+2020-12-14T00:25:13.051 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-14T00:25:13.051 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-14T00:25:13.053 (priority  debug) -> Options for P1 are "green 0 green 2 green 9 green +2 ".
+2020-12-14T00:25:13.054 (cc of screen   ) -> Card to play on: green skip // Player 1 Contents of hand: blue 0, blue 2, blue 4, blue 6, blue reverse, blue +2, green 0, green 2, green 9, green +2, yellow 0, yellow 3, yellow 4, yellow 6, yellow reverse // P1: The cards you can play are: green 0, green 2, green 9, and green +2. // 
+2020-12-14T00:25:13.055 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([029]|(\+2|\+)){1})))\b)"
+2020-12-14T00:25:31.317 (priority  debug) -> rawish response is "play green +2"
+2020-12-14T00:25:31.318 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-14T00:25:31.320 (priority  debug) -> simplifyUserResponse() received "play green +2" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-14T00:25:31.322 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pgreen +2"
+2020-12-14T00:25:31.323 (priority  debug) -> P1's response: "pgreen +2"
+2020-12-14T00:25:31.324 (priority   HIGH) -> ---EXCEPTION OCCURRED---
+2020-12-14T00:25:31.326 (priority normal) -> Gen message: null
+2020-12-14T00:25:31.328 (priority normal) -> Localized message: null
+2020-12-14T00:25:31.329 (priority normal) -> Engine state: 
+2020-12-14T00:25:31.331 (priority normal) -> State of UNOEngine:
+2020-12-14T00:25:31.331 (priority normal) -> House rules:
+2020-12-14T00:25:31.331 (priority normal) -> 	Allow stacking of same plus cards, +2 on +2 and +4 on +4: true
+2020-12-14T00:25:31.331 (priority normal) -> 	Allow stacking of all plus cards, +2 on +4 and v.v.: true
+2020-12-14T00:25:31.331 (priority normal) -> 	Is player's turn revoked after being forced to draw via a +2 or +4 card: true
+2020-12-14T00:25:31.331 (priority normal) -> 	When a player has no playable cards, are they forced to draw until they do? If not they only draw one card: true
+2020-12-14T00:25:31.331 (priority normal) -> 	Initial hand size: 7
+2020-12-14T00:25:31.331 (priority normal) -> Number of players: 2
+2020-12-14T00:25:31.331 (priority normal) -> Current player, 0-indexed: 0
+2020-12-14T00:25:31.331 (priority normal) -> Direction of play, should either be 1 or -1: 1
+2020-12-14T00:25:31.331 (priority normal) -> Number of +2 cards pending a draw by the next player: 0
+2020-12-14T00:25:31.331 (priority normal) -> Number of +4 cards pending a draw by the next player: 0
+2020-12-14T00:25:31.331 (priority normal) -> Total number of cards that need to be drawn: 0
+2020-12-14T00:25:31.331 (priority normal) -> Has current player drawn any cards this round: false
+2020-12-14T00:25:31.331 (priority normal) -> Has the current player played any cards this round: false
+2020-12-14T00:25:31.332 (priority normal) -> ---END LOG---

@@ -1,0 +1,52 @@
+2020-12-14T00:21:30.598 (priority normal) -> ---BEGIN LOG---
+2020-12-14T00:21:32.263 (priority normal) -> Shuffling deck.
+2020-12-14T00:21:32.270 (cc of screen   ) -> How many players? (2 - 10): 
+2020-12-14T00:21:32.273 (priority  debug) -> Options for P1 are "blue 3 green 4 ".
+2020-12-14T00:21:32.274 (cc of screen   ) -> Card to play on: green 3 // Player 1 Contents of hand: blue 0, blue 3, blue skip, green 4, yellow 2, yellow 6, yellow skip // P1: The cards you can play are: blue 3 and green 4. // 
+2020-12-14T00:21:32.276 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([3]){1})|((g|green)\s*([4]){1})))\b)"
+2020-12-14T00:21:35.188 (priority  debug) -> rawish response is "pg4"
+2020-12-14T00:21:35.190 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-14T00:21:35.191 (priority  debug) -> simplifyUserResponse() received "pg4" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-14T00:21:35.192 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pg4"
+2020-12-14T00:21:35.194 (priority  debug) -> P1's response: "pg4"
+2020-12-14T00:21:35.195 (cc of screen   ) -> Will you (d)raw or (p)lay a card? P1 played green 4 // 
+2020-12-14T00:21:35.195 (priority normal) -> Assigning next player
+2020-12-14T00:21:35.196 (priority  debug) -> Current player 0 indexed is 0
+2020-12-14T00:21:35.198 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:21:35.198 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:21:35.199 (priority  debug) -> Options for P2 are "wild +4 green 9 ".
+2020-12-14T00:21:35.200 (cc of screen   ) -> Card to play on: green 4The cards you can play are: wild, +4, and green 9.
+2020-12-14T00:21:35.201 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-14T00:21:35.202 (priority normal) -> AI does believe that it has a match.
+2020-12-14T00:21:35.203 (priority normal) -> AI's hand: b9g9r0r1r7www+
+2020-12-14T00:21:35.204 (priority normal) -> AI has chosen to play "pw"
+2020-12-14T00:21:35.205 (priority  debug) -> P2's response: "pw"
+2020-12-14T00:21:35.205 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-14T00:21:35.207 (priority normal) -> AI does believe that it has a match.
+2020-12-14T00:21:35.207 (priority normal) -> AI's hand: b9g9r0r1r7www+
+2020-12-14T00:21:35.208 (priority normal) -> AI has chosen to pick color.
+2020-12-14T00:21:35.209 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild // The new color is now red // 
+2020-12-14T00:21:35.210 (priority normal) -> Assigning next player
+2020-12-14T00:21:35.211 (priority  debug) -> Current player 0 indexed is 1
+2020-12-14T00:21:35.212 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-14T00:21:35.212 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-14T00:21:35.214 (priority  debug) -> Options for P1 are "".
+2020-12-14T00:21:35.215 (priority normal) -> Assigning next player
+2020-12-14T00:21:35.216 (priority  debug) -> Current player 0 indexed is 0
+2020-12-14T00:21:35.217 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:21:35.217 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:21:35.218 (priority  debug) -> Options for P2 are "red 0 red 1 red 7 +4 ".
+2020-12-14T00:21:35.219 (cc of screen   ) -> Card to play on: wild // Player 1 Contents of hand: blue 0, blue 3, blue skip, yellow 2, yellow 6, yellow skip // P1: You cannot play any cards. You must (d)raw until you have a playable card. // P1 drew a yellow 4. // P1 drew a red 5. // Player 1 Contents of hand: blue 0, blue 3, blue skip, red 5, yellow 2, yellow 4, yellow 6, yellow skip // P1 played red 5 // Card to play on: red 5The cards you can play are: red 0, red 1, red 7, and +4.
+2020-12-14T00:21:35.220 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-14T00:21:35.221 (priority normal) -> AI does believe that it has a match.
+2020-12-14T00:21:35.222 (priority normal) -> AI's hand: b9g9r0r1r7w+
+2020-12-14T00:21:35.223 (priority normal) -> AI has chosen to play "pr0"
+2020-12-14T00:21:35.223 (priority  debug) -> P2's response: "pr0"
+2020-12-14T00:21:35.224 (cc of screen   ) -> P2 played red 0 // 
+2020-12-14T00:21:35.225 (priority normal) -> Assigning next player
+2020-12-14T00:21:35.226 (priority  debug) -> Current player 0 indexed is 1
+2020-12-14T00:21:35.227 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-14T00:21:35.227 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-14T00:21:35.228 (priority  debug) -> Options for P1 are "blue 0 ".
+2020-12-14T00:21:35.230 (cc of screen   ) -> Card to play on: red 0 // Player 1 Contents of hand: blue 0, blue 3, blue skip, yellow 2, yellow 4, yellow 6, yellow skip // P1: The only card you can play is: blue 0. // 
+2020-12-14T00:21:35.231 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([0]){1})))\b)"

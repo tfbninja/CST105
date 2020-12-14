@@ -1,0 +1,97 @@
+2020-12-14T00:30:11.185 (priority normal) -> ---BEGIN LOG---
+2020-12-14T00:30:12.898 (priority normal) -> Shuffling deck.
+2020-12-14T00:30:12.903 (cc of screen   ) -> How many players? (2 - 10): 
+2020-12-14T00:30:12.905 (priority  debug) -> Options for P1 are "red 9 yellow 1 yellow 2 ".
+2020-12-14T00:30:12.907 (cc of screen   ) -> Card to play on: yellow 9 // Player 1 Contents of hand: blue 2, blue 6, green 7, red 6, red 9, yellow 1, yellow 2 // P1: The cards you can play are: red 9, yellow 1, and yellow 2. // 
+2020-12-14T00:30:12.909 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([9]){1})|((y|yellow)\s*([12]){1})))\b)"
+2020-12-14T00:30:16.824 (priority  debug) -> rawish response is "play yellow 2"
+2020-12-14T00:30:16.826 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-14T00:30:16.827 (priority  debug) -> simplifyUserResponse() received "play yellow 2" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-14T00:30:16.829 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py2"
+2020-12-14T00:30:16.831 (priority  debug) -> P1's response: "py2"
+2020-12-14T00:30:16.833 (cc of screen   ) -> Will you (d)raw or (p)lay a card? P1 played yellow 2 // 
+2020-12-14T00:30:16.834 (priority normal) -> Assigning next player
+2020-12-14T00:30:16.835 (priority  debug) -> Current player 0 indexed is 0
+2020-12-14T00:30:16.836 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:30:16.837 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:30:16.838 (priority  debug) -> Options for P2 are "yellow +2 yellow skip ".
+2020-12-14T00:30:16.839 (cc of screen   ) -> Card to play on: yellow 2The cards you can play are: yellow +2 and yellow skip.
+2020-12-14T00:30:16.840 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-14T00:30:16.841 (priority normal) -> AI does believe that it has a match.
+2020-12-14T00:30:16.842 (priority normal) -> AI's hand: b5bsr5r8rrysy+
+2020-12-14T00:30:16.843 (priority normal) -> AI has chosen to play "py+"
+2020-12-14T00:30:16.844 (priority  debug) -> P2's response: "py+2"
+2020-12-14T00:30:16.845 (cc of screen   ) -> P2 played yellow +2 // 
+2020-12-14T00:30:16.845 (priority normal) -> Assigning next player
+2020-12-14T00:30:16.846 (priority  debug) -> Current player 0 indexed is 1
+2020-12-14T00:30:16.848 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-14T00:30:16.848 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-14T00:30:16.850 (cc of screen   ) -> Card to play on: yellow +2 // Player 1 Contents of hand: blue 2, blue 6, green 7, red 6, red 9, yellow 1 // P1: Automatically drew 2 cards, given no other option. // 
+2020-12-14T00:30:16.851 (priority  debug) -> Current player 0 indexed is 0
+2020-12-14T00:30:16.851 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:30:16.852 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:30:16.853 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-14T00:30:16.854 (priority  debug) -> Options for P2 are "yellow skip ".
+2020-12-14T00:30:16.860 (cc of screen   ) -> Card to play on: yellow +2The only card you can play is: yellow skip.
+2020-12-14T00:30:16.861 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-14T00:30:16.863 (priority normal) -> AI does believe that it has a match.
+2020-12-14T00:30:16.865 (priority normal) -> AI's hand: b5bsr5r8rrys
+2020-12-14T00:30:16.866 (priority normal) -> AI has chosen to play "pys"
+2020-12-14T00:30:16.867 (priority  debug) -> P2's response: "pys"
+2020-12-14T00:30:16.868 (cc of screen   ) -> P2 played yellow skip // Player 1 has been skipped. // 
+2020-12-14T00:30:16.870 (priority normal) -> Assigning next player
+2020-12-14T00:30:16.871 (priority  debug) -> Current player 0 indexed is 2
+2020-12-14T00:30:16.872 (priority  debug) -> Current player 0 indexed is now 3
+2020-12-14T00:30:16.873 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:30:16.874 (priority  debug) -> Options for P2 are "blue skip ".
+2020-12-14T00:30:16.874 (cc of screen   ) -> Card to play on: yellow skipThe only card you can play is: blue skip.
+2020-12-14T00:30:16.875 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-14T00:30:16.876 (priority normal) -> AI does believe that it has a match.
+2020-12-14T00:30:16.877 (priority normal) -> AI's hand: b5bsr5r8rr
+2020-12-14T00:30:16.878 (priority normal) -> AI has chosen to play "pbs"
+2020-12-14T00:30:16.878 (priority  debug) -> P2's response: "pbs"
+2020-12-14T00:30:16.881 (cc of screen   ) -> P2 played blue skip // Player 1 has been skipped. // 
+2020-12-14T00:30:16.882 (priority normal) -> Assigning next player
+2020-12-14T00:30:16.882 (priority  debug) -> Current player 0 indexed is 2
+2020-12-14T00:30:16.883 (priority  debug) -> Current player 0 indexed is now 3
+2020-12-14T00:30:16.884 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-14T00:30:16.885 (priority  debug) -> Options for P2 are "blue 5 ".
+2020-12-14T00:30:16.886 (cc of screen   ) -> Card to play on: blue skipThe only card you can play is: blue 5.
+2020-12-14T00:30:16.887 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-14T00:30:16.888 (priority normal) -> AI does believe that it has a match.
+2020-12-14T00:30:16.889 (priority normal) -> AI's hand: b5r5r8rr
+2020-12-14T00:30:16.890 (priority normal) -> AI has chosen to play "pb5"
+2020-12-14T00:30:16.891 (priority  debug) -> P2's response: "pb5"
+2020-12-14T00:30:16.892 (cc of screen   ) -> P2 played blue 5 // 
+2020-12-14T00:30:16.893 (priority normal) -> Assigning next player
+2020-12-14T00:30:16.894 (priority  debug) -> Current player 0 indexed is 1
+2020-12-14T00:30:16.895 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-14T00:30:16.897 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-14T00:30:16.899 (priority  debug) -> Options for P1 are "blue 2 blue 6 wild ".
+2020-12-14T00:30:16.901 (cc of screen   ) -> Card to play on: blue 5 // Player 1 Contents of hand: blue 2, blue 6, green 7, green 9, red 6, red 9, yellow 1, wild // P1: The cards you can play are: blue 2, blue 6, and wild. // 
+2020-12-14T00:30:16.902 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([26]){1})|((w|wild))))\b)"
+2020-12-14T00:30:20.574 (priority  debug) -> rawish response is "play wild"
+2020-12-14T00:30:20.575 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-14T00:30:20.576 (priority  debug) -> simplifyUserResponse() received "play wild" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-14T00:30:20.578 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pwild"
+2020-12-14T00:30:20.579 (priority  debug) -> P1's response: "pwild"
+2020-12-14T00:30:20.581 (priority   HIGH) -> ---EXCEPTION OCCURRED---
+2020-12-14T00:30:20.582 (priority normal) -> Gen message: null
+2020-12-14T00:30:20.584 (priority normal) -> Localized message: null
+2020-12-14T00:30:20.585 (priority normal) -> Engine state: 
+2020-12-14T00:30:20.588 (priority normal) -> State of UNOEngine:
+2020-12-14T00:30:20.588 (priority normal) -> House rules:
+2020-12-14T00:30:20.588 (priority normal) -> 	Allow stacking of same plus cards, +2 on +2 and +4 on +4: true
+2020-12-14T00:30:20.588 (priority normal) -> 	Allow stacking of all plus cards, +2 on +4 and v.v.: true
+2020-12-14T00:30:20.588 (priority normal) -> 	Is player's turn revoked after being forced to draw via a +2 or +4 card: true
+2020-12-14T00:30:20.588 (priority normal) -> 	When a player has no playable cards, are they forced to draw until they do? If not they only draw one card: true
+2020-12-14T00:30:20.588 (priority normal) -> 	Initial hand size: 7
+2020-12-14T00:30:20.588 (priority normal) -> Number of players: 2
+2020-12-14T00:30:20.588 (priority normal) -> Current player, 0-indexed: 0
+2020-12-14T00:30:20.588 (priority normal) -> Direction of play, should either be 1 or -1: 1
+2020-12-14T00:30:20.588 (priority normal) -> Number of +2 cards pending a draw by the next player: 0
+2020-12-14T00:30:20.588 (priority normal) -> Number of +4 cards pending a draw by the next player: 0
+2020-12-14T00:30:20.588 (priority normal) -> Total number of cards that need to be drawn: 0
+2020-12-14T00:30:20.588 (priority normal) -> Has current player drawn any cards this round: false
+2020-12-14T00:30:20.588 (priority normal) -> Has the current player played any cards this round: false
+2020-12-14T00:30:20.589 (priority normal) -> ---END LOG---

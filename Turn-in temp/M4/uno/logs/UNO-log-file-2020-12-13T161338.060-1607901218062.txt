@@ -1,0 +1,256 @@
+2020-12-13T16:13:38.064 (priority normal) -> ---BEGIN LOG---
+2020-12-13T16:13:38.151 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 5, green 1, green 8, green skip, red skip, yellow 0, yellow 2/
+2020-12-13T16:13:38.152 (priority    low) -> Printing to screen: Card to play on: red 3/
+2020-12-13T16:13:38.153 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 5, green 1, green 8, green skip, red skip, yellow 0, yellow 2/
+2020-12-13T16:13:38.154 (priority    low) -> Printing to screen: P1: 
+2020-12-13T16:13:38.156 (priority  debug) -> Options for P1 are "red skip ".
+2020-12-13T16:13:38.157 (priority    low) -> Printing to screen: The only card you can play is: 
+2020-12-13T16:13:38.158 (priority    low) -> Printing to screen: red skip./
+2020-12-13T16:13:38.160 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([s]|skip){1})))\b)"
+2020-12-13T16:13:38.161 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:29:12.180 (priority  debug) -> rawish response is "prs"
+2020-12-13T16:29:12.182 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:29:12.183 (priority  debug) -> simplifyUserResponse() received "prs" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:29:12.185 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "prs"
+2020-12-13T16:29:12.186 (priority  debug) -> P1's response: "prs"
+2020-12-13T16:29:12.188 (priority normal) -> Assigning next player
+2020-12-13T16:29:12.189 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T16:29:12.190 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T16:29:12.192 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T16:29:12.193 (priority    low) -> Printing to screen: Card to play on: red skip/
+2020-12-13T16:29:12.194 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 5, green 1, green 8, green skip, yellow 0, yellow 2/
+2020-12-13T16:29:12.196 (priority    low) -> Printing to screen: P1: 
+2020-12-13T16:29:12.197 (priority  debug) -> Options for P1 are "green skip ".
+2020-12-13T16:29:12.198 (priority    low) -> Printing to screen: The only card you can play is: 
+2020-12-13T16:29:12.199 (priority    low) -> Printing to screen: green skip./
+2020-12-13T16:29:12.201 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([s]|skip){1})))\b)"
+2020-12-13T16:29:12.201 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:29:19.192 (priority  debug) -> rawish response is "pgs"
+2020-12-13T16:29:19.193 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:29:19.194 (priority  debug) -> simplifyUserResponse() received "pgs" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:29:19.195 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pgs"
+2020-12-13T16:29:19.195 (priority  debug) -> P1's response: "pgs"
+2020-12-13T16:29:19.196 (priority normal) -> Assigning next player
+2020-12-13T16:29:19.197 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T16:29:19.198 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T16:29:19.199 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T16:29:19.200 (priority    low) -> Printing to screen: Card to play on: green skip/
+2020-12-13T16:29:19.200 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 5, green 1, green 8, yellow 0, yellow 2/
+2020-12-13T16:29:19.201 (priority    low) -> Printing to screen: P1: 
+2020-12-13T16:29:19.202 (priority  debug) -> Options for P1 are "green 1 green 8 ".
+2020-12-13T16:29:19.203 (priority    low) -> Printing to screen: The cards you can play are: 
+2020-12-13T16:29:19.204 (priority    low) -> Printing to screen: green 1
+2020-12-13T16:29:19.205 (priority    low) -> Printing to screen:  
+2020-12-13T16:29:19.206 (priority    low) -> Printing to screen: and 
+2020-12-13T16:29:19.207 (priority    low) -> Printing to screen: green 8./
+2020-12-13T16:29:19.209 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([18]){1})))\b)"
+2020-12-13T16:29:19.210 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:29:27.737 (priority  debug) -> rawish response is "pg8"
+2020-12-13T16:29:27.739 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:29:27.740 (priority  debug) -> simplifyUserResponse() received "pg8" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:29:27.742 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pg8"
+2020-12-13T16:29:27.743 (priority  debug) -> P1's response: "pg8"
+2020-12-13T16:29:27.745 (priority normal) -> Assigning next player
+2020-12-13T16:29:27.746 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T16:29:27.747 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:29:27.748 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:29:27.749 (priority    low) -> Printing to screen: Card to play on: green 8/
+2020-12-13T16:29:27.750 (priority    low) -> Printing to screen: Player 2 Contents of hand: green 1, green 5, green 8, yellow 3, yellow 9, yellow skip, wild/
+2020-12-13T16:29:27.751 (priority    low) -> Printing to screen: P2: 
+2020-12-13T16:29:27.753 (priority  debug) -> Options for P2 are "green 1 green 5 green 8 wild ".
+2020-12-13T16:29:27.755 (priority    low) -> Printing to screen: The cards you can play are: 
+2020-12-13T16:29:27.756 (priority    low) -> Printing to screen: green 1
+2020-12-13T16:29:27.757 (priority    low) -> Printing to screen: , 
+2020-12-13T16:29:27.758 (priority    low) -> Printing to screen: green 5
+2020-12-13T16:29:27.759 (priority    low) -> Printing to screen: , 
+2020-12-13T16:29:27.760 (priority    low) -> Printing to screen: green 8
+2020-12-13T16:29:27.761 (priority    low) -> Printing to screen: , 
+2020-12-13T16:29:27.762 (priority    low) -> Printing to screen: and 
+2020-12-13T16:29:27.763 (priority    low) -> Printing to screen: wild./
+2020-12-13T16:29:27.765 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([158]){1})|((w|wild))))\b)"
+2020-12-13T16:29:27.766 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:29:42 (priority  debug) -> rawish response is "pw"
+2020-12-13T16:29:42.001 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:29:42.002 (priority  debug) -> simplifyUserResponse() received "pw" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:29:42.004 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pw"
+2020-12-13T16:29:42.005 (priority  debug) -> P2's response: "pw"
+2020-12-13T16:29:42.007 (priority    low) -> Printing to screen: You've played a wild card which means you get to choose the new color to match./
+2020-12-13T16:29:42.009 (priority    low) -> Printing to screen: Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: /
+2020-12-13T16:29:45.168 (priority  debug) -> response to getNewColor(): "y"
+2020-12-13T16:29:45.170 (priority normal) -> Assigning next player
+2020-12-13T16:29:45.170 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T16:29:45.171 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T16:29:45.172 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T16:29:45.174 (priority    low) -> Printing to screen: Card to play on: wild/
+2020-12-13T16:29:45.175 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 5, green 1, yellow 0, yellow 2/
+2020-12-13T16:29:45.177 (priority    low) -> Printing to screen: P1: 
+2020-12-13T16:29:45.178 (priority  debug) -> Options for P1 are "yellow 0 yellow 2 ".
+2020-12-13T16:29:45.179 (priority    low) -> Printing to screen: The cards you can play are: 
+2020-12-13T16:29:45.180 (priority    low) -> Printing to screen: yellow 0
+2020-12-13T16:29:45.181 (priority    low) -> Printing to screen:  
+2020-12-13T16:29:45.182 (priority    low) -> Printing to screen: and 
+2020-12-13T16:29:45.183 (priority    low) -> Printing to screen: yellow 2./
+2020-12-13T16:29:45.185 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([02]){1})))\b)"
+2020-12-13T16:29:45.186 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:30:12.160 (priority  debug) -> rawish response is "py2"
+2020-12-13T16:30:12.161 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:30:12.162 (priority  debug) -> simplifyUserResponse() received "py2" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:30:12.164 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py2"
+2020-12-13T16:30:12.165 (priority  debug) -> P1's response: "py2"
+2020-12-13T16:30:12.166 (priority normal) -> Assigning next player
+2020-12-13T16:30:12.168 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T16:30:12.169 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:30:12.170 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:30:12.171 (priority    low) -> Printing to screen: Card to play on: yellow 2/
+2020-12-13T16:30:12.172 (priority    low) -> Printing to screen: Player 2 Contents of hand: green 1, green 5, green 8, yellow 3, yellow 9, yellow skip/
+2020-12-13T16:30:12.173 (priority    low) -> Printing to screen: P2: 
+2020-12-13T16:30:12.174 (priority  debug) -> Options for P2 are "yellow 3 yellow 9 yellow skip ".
+2020-12-13T16:30:12.175 (priority    low) -> Printing to screen: The cards you can play are: 
+2020-12-13T16:30:12.176 (priority    low) -> Printing to screen: yellow 3
+2020-12-13T16:30:12.177 (priority    low) -> Printing to screen: , 
+2020-12-13T16:30:12.178 (priority    low) -> Printing to screen: yellow 9
+2020-12-13T16:30:12.178 (priority    low) -> Printing to screen: , 
+2020-12-13T16:30:12.179 (priority    low) -> Printing to screen: and 
+2020-12-13T16:30:12.180 (priority    low) -> Printing to screen: yellow skip./
+2020-12-13T16:30:12.182 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([39s]|skip){1})))\b)"
+2020-12-13T16:30:12.183 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:30:17.144 (priority  debug) -> rawish response is "pys"
+2020-12-13T16:30:17.145 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:30:17.146 (priority  debug) -> simplifyUserResponse() received "pys" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:30:17.148 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pys"
+2020-12-13T16:30:17.149 (priority  debug) -> P2's response: "pys"
+2020-12-13T16:30:17.150 (priority normal) -> Assigning next player
+2020-12-13T16:30:17.151 (priority  debug) -> Current player 0 indexed is 2
+2020-12-13T16:30:17.152 (priority  debug) -> Current player 0 indexed is now 3
+2020-12-13T16:30:17.153 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:30:17.154 (priority    low) -> Printing to screen: Card to play on: yellow skip/
+2020-12-13T16:30:17.155 (priority    low) -> Printing to screen: Player 2 Contents of hand: green 1, green 5, green 8, yellow 3, yellow 9/
+2020-12-13T16:30:17.157 (priority    low) -> Printing to screen: P2: 
+2020-12-13T16:30:17.158 (priority  debug) -> Options for P2 are "yellow 3 yellow 9 ".
+2020-12-13T16:30:17.159 (priority    low) -> Printing to screen: The cards you can play are: 
+2020-12-13T16:30:17.160 (priority    low) -> Printing to screen: yellow 3
+2020-12-13T16:30:17.161 (priority    low) -> Printing to screen:  
+2020-12-13T16:30:17.162 (priority    low) -> Printing to screen: and 
+2020-12-13T16:30:17.163 (priority    low) -> Printing to screen: yellow 9./
+2020-12-13T16:30:17.164 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([39]){1})))\b)"
+2020-12-13T16:30:17.166 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:30:24.096 (priority  debug) -> rawish response is "py9"
+2020-12-13T16:30:24.097 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:30:24.098 (priority  debug) -> simplifyUserResponse() received "py9" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:30:24.099 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py9"
+2020-12-13T16:30:24.100 (priority  debug) -> P2's response: "py9"
+2020-12-13T16:30:24.101 (priority normal) -> Assigning next player
+2020-12-13T16:30:24.101 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T16:30:24.102 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T16:30:24.103 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T16:30:24.104 (priority    low) -> Printing to screen: Card to play on: yellow 9/
+2020-12-13T16:30:24.105 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 5, green 1, yellow 0/
+2020-12-13T16:30:24.106 (priority    low) -> Printing to screen: P1: 
+2020-12-13T16:30:24.107 (priority  debug) -> Options for P1 are "yellow 0 ".
+2020-12-13T16:30:24.108 (priority    low) -> Printing to screen: The only card you can play is: 
+2020-12-13T16:30:24.109 (priority    low) -> Printing to screen: yellow 0./
+2020-12-13T16:30:24.111 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([0]){1})))\b)"
+2020-12-13T16:30:24.112 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:30:28.880 (priority  debug) -> rawish response is "py0"
+2020-12-13T16:30:28.881 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:30:28.883 (priority  debug) -> simplifyUserResponse() received "py0" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:30:28.884 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py0"
+2020-12-13T16:30:28.886 (priority  debug) -> P1's response: "py0"
+2020-12-13T16:30:28.887 (priority normal) -> Assigning next player
+2020-12-13T16:30:28.888 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T16:30:28.889 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:30:28.889 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:30:28.890 (priority    low) -> Printing to screen: Card to play on: yellow 0/
+2020-12-13T16:30:28.891 (priority    low) -> Printing to screen: Player 2 Contents of hand: green 1, green 5, green 8, yellow 3/
+2020-12-13T16:30:28.892 (priority    low) -> Printing to screen: P2: 
+2020-12-13T16:30:28.893 (priority  debug) -> Options for P2 are "yellow 3 ".
+2020-12-13T16:30:28.894 (priority    low) -> Printing to screen: The only card you can play is: 
+2020-12-13T16:30:28.895 (priority    low) -> Printing to screen: yellow 3./
+2020-12-13T16:30:28.897 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([3]){1})))\b)"
+2020-12-13T16:30:28.898 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:30:33.545 (priority  debug) -> rawish response is "py3"
+2020-12-13T16:30:33.546 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:30:33.546 (priority  debug) -> simplifyUserResponse() received "py3" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:30:33.547 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py3"
+2020-12-13T16:30:33.548 (priority  debug) -> P2's response: "py3"
+2020-12-13T16:30:33.549 (priority normal) -> Assigning next player
+2020-12-13T16:30:33.550 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T16:30:33.551 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T16:30:33.552 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T16:30:33.552 (priority    low) -> Printing to screen: Card to play on: yellow 3/
+2020-12-13T16:30:33.554 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 5, green 1/
+2020-12-13T16:30:33.555 (priority    low) -> Printing to screen: P1: 
+2020-12-13T16:30:33.559 (priority  debug) -> Options for P1 are "".
+2020-12-13T16:30:33.560 (priority    low) -> Printing to screen: You cannot play any cards. 
+2020-12-13T16:30:33.561 (priority    low) -> Printing to screen: You must draw until you have a playable card./
+2020-12-13T16:30:33.562 (priority    low) -> Printing to screen: Drew a blue 3./
+2020-12-13T16:30:33.562 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 3, blue 5, green 1/
+2020-12-13T16:30:33.563 (priority normal) -> Assigning next player
+2020-12-13T16:30:33.564 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T16:30:33.565 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:30:33.566 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:30:33.567 (priority    low) -> Printing to screen: Card to play on: blue 3/
+2020-12-13T16:30:33.568 (priority    low) -> Printing to screen: Player 2 Contents of hand: green 1, green 5, green 8/
+2020-12-13T16:30:33.568 (priority    low) -> Printing to screen: P2: 
+2020-12-13T16:30:33.569 (priority  debug) -> Options for P2 are "".
+2020-12-13T16:30:33.570 (priority    low) -> Printing to screen: You cannot play any cards. 
+2020-12-13T16:30:33.571 (priority    low) -> Printing to screen: You must draw until you have a playable card./
+2020-12-13T16:30:33.572 (priority    low) -> Printing to screen: Drew a blue 7./
+2020-12-13T16:30:33.573 (priority    low) -> Printing to screen: Player 2 Contents of hand: blue 7, green 1, green 5, green 8/
+2020-12-13T16:30:33.574 (priority normal) -> Assigning next player
+2020-12-13T16:30:33.575 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T16:30:33.576 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T16:30:33.577 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T16:30:33.578 (priority    low) -> Printing to screen: Card to play on: blue 7/
+2020-12-13T16:30:33.579 (priority    low) -> Printing to screen: Player 1 Contents of hand: blue 5, green 1/
+2020-12-13T16:30:33.581 (priority    low) -> Printing to screen: P1: 
+2020-12-13T16:30:33.582 (priority  debug) -> Options for P1 are "blue 5 ".
+2020-12-13T16:30:33.582 (priority    low) -> Printing to screen: The only card you can play is: 
+2020-12-13T16:30:33.583 (priority    low) -> Printing to screen: blue 5./
+2020-12-13T16:30:33.584 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([5]){1})))\b)"
+2020-12-13T16:30:33.585 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:30:57.840 (priority  debug) -> rawish response is "pb5"
+2020-12-13T16:30:57.841 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:30:57.842 (priority  debug) -> simplifyUserResponse() received "pb5" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:30:57.844 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pb5"
+2020-12-13T16:30:57.845 (priority  debug) -> P1's response: "pb5"
+2020-12-13T16:30:57.846 (priority normal) -> Assigning next player
+2020-12-13T16:30:57.847 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T16:30:57.848 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:30:57.848 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:30:57.849 (priority    low) -> Printing to screen: Card to play on: blue 5/
+2020-12-13T16:30:57.850 (priority    low) -> Printing to screen: Player 2 Contents of hand: green 1, green 5, green 8/
+2020-12-13T16:30:57.851 (priority    low) -> Printing to screen: P2: 
+2020-12-13T16:30:57.852 (priority  debug) -> Options for P2 are "green 5 ".
+2020-12-13T16:30:57.853 (priority    low) -> Printing to screen: The only card you can play is: 
+2020-12-13T16:30:57.854 (priority    low) -> Printing to screen: green 5./
+2020-12-13T16:30:57.855 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([5]){1})))\b)"
+2020-12-13T16:30:57.855 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:31:04.657 (priority  debug) -> rawish response is "pg5"
+2020-12-13T16:31:04.658 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:31:04.659 (priority  debug) -> simplifyUserResponse() received "pg5" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:31:04.660 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pg5"
+2020-12-13T16:31:04.661 (priority  debug) -> P2's response: "pg5"
+2020-12-13T16:31:04.662 (priority normal) -> Assigning next player
+2020-12-13T16:31:04.662 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T16:31:04.663 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T16:31:04.664 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T16:31:04.665 (priority    low) -> Printing to screen: Card to play on: green 5/
+2020-12-13T16:31:04.666 (priority    low) -> Printing to screen: Player 1 Contents of hand: green 1/
+2020-12-13T16:31:04.667 (priority    low) -> Printing to screen: P1: 
+2020-12-13T16:31:04.669 (priority  debug) -> Options for P1 are "green 1 ".
+2020-12-13T16:31:04.670 (priority    low) -> Printing to screen: The only card you can play is: 
+2020-12-13T16:31:04.670 (priority    low) -> Printing to screen: green 1./
+2020-12-13T16:31:04.672 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([1]){1})))\b)"
+2020-12-13T16:31:04.673 (priority    low) -> Printing to screen: Will you (d)raw or (p)lay a card? 
+2020-12-13T16:31:08.032 (priority  debug) -> rawish response is "pg1"
+2020-12-13T16:31:08.033 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T16:31:08.034 (priority  debug) -> simplifyUserResponse() received "pg1" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T16:31:08.036 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pg1"
+2020-12-13T16:31:08.037 (priority  debug) -> P1's response: "pg1"
+2020-12-13T16:31:08.038 (priority normal) -> Assigning next player
+2020-12-13T16:31:08.039 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T16:31:08.040 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:31:08.041 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T16:31:08.042 (priority  debug) -> Regex for current hand: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([18]){1})))\b)"
+2020-12-13T16:31:08.043 (priority normal) -> ---END LOG---

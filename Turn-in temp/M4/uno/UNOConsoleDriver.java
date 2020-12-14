@@ -37,7 +37,7 @@ public class UNOConsoleDriver {
         numPlayers = stdin.nextInt();
 
         engine = new UNOEngine(numPlayers, ruleStackingSame, ruleStackingAll, ruleDrawTillPlayable, ruleSkipAfterDraw, handSize, deck);
-        isAI.add(false);
+        isAI.add(true);
         isAI.add(true);
         try {
             engine.prepareGame();
@@ -567,19 +567,15 @@ public class UNOConsoleDriver {
     private static String simplifyUserResponse(String userResponse) {
         String compactUserResponse = userResponse;
         log.debug("simplifyUserResponse() received \"" + userResponse + "\" as the only argument, proceeding with abbreviations and removing whitespace.");
-        compactUserResponse = compactUserResponse.replaceFirst("(play)", "p");
-        compactUserResponse = compactUserResponse.replaceFirst("(draw)", "d");
-        compactUserResponse = compactUserResponse.replaceFirst("(blue)", "b");
-        compactUserResponse = compactUserResponse.replaceFirst("(green)", "g");
-        compactUserResponse = compactUserResponse.replaceFirst("(red)", "r");
-        compactUserResponse = compactUserResponse.replaceFirst("(yellow)", "y");
-        compactUserResponse = compactUserResponse.replaceFirst("(plus)", "+");
-        compactUserResponse = compactUserResponse.replaceFirst("(two)", "2");
-        compactUserResponse = compactUserResponse.replaceFirst("(four)", "4");
-        compactUserResponse = compactUserResponse.replaceFirst("(wild)", "w");
-        compactUserResponse = compactUserResponse.replaceFirst("(skip)", "s");
-        compactUserResponse = compactUserResponse.replaceFirst("(reverse)", "r");
-        compactUserResponse = compactUserResponse.replaceAll(" ", "");
+        compactUserResponse = compactUserResponse.replaceFirst("\\b(p|play)\\s*\\b", "p");
+        compactUserResponse = compactUserResponse.replaceFirst("\\b(d|draw)\\s*\\b", "d");
+        compactUserResponse = compactUserResponse.replaceFirst("\\b(b|blue)\\s*\\b", "b");
+        compactUserResponse = compactUserResponse.replaceFirst("\\b(g|green)\\s*\\b", "g");
+        compactUserResponse = compactUserResponse.replaceFirst("\\b(r|red)\\s*\\b", "r");
+        compactUserResponse = compactUserResponse.replaceFirst("\\b(y|yellow)\\s*\\b", "y");
+        compactUserResponse = compactUserResponse.replaceFirst("\\b(\\+|plus)\\s*\\b", "+");
+        compactUserResponse = compactUserResponse.replaceFirst("\\b(two)\\s*\\b", "2");
+        compactUserResponse = compactUserResponse.replaceFirst("\\b(four)\\s*\\b", "4");
         log.debug("simplifyUserResponse() has finished abbreviating and will be returning a final result of \"" + compactUserResponse + "\"");
         return compactUserResponse;
     }

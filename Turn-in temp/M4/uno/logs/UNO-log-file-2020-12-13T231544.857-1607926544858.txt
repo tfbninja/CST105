@@ -1,0 +1,692 @@
+2020-12-13T23:15:44.861 (priority normal) -> ---BEGIN LOG---
+2020-12-13T23:15:47.581 (priority normal) -> Shuffling deck.
+2020-12-13T23:15:47.585 (cc of screen   ) -> How many players? (2 - 10): 
+2020-12-13T23:15:47.586 (cc of screen   ) -> Card to play on: yellow +2Your choices are to (d)raw 2 cards or to defer the penalty to the next player by (p)laying an additional +4 card from your hand on top.
+2020-12-13T23:15:47.588 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.588 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.591 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.592 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.593 (cc of screen   ) -> P1 played +4//The new color is now blue//Card to play on: +4Your choices are to (d)raw 6 cards or to defer the penalty to the next player by (p)laying an additional +4 card from your hand on top.
+2020-12-13T23:15:47.594 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.595 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.596 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.597 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.598 (cc of screen   ) -> P2 played +4//The new color is now green//Card to play on: +4Automatically drew 10 cards, given no other option. // 
+2020-12-13T23:15:47.599 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.600 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.601 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.602 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:15:47.603 (priority  debug) -> Options for P2 are "green 8 green 1 green 8 ".
+2020-12-13T23:15:47.604 (cc of screen   ) -> Card to play on: +4The cards you can play are: green 8, green 1, and green 8.
+2020-12-13T23:15:47.605 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.606 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.607 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.608 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.609 (priority  debug) -> Options for P1 are "green skip ".
+2020-12-13T23:15:47.610 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The only card you can play is: green skip.
+2020-12-13T23:15:47.611 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.612 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.613 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.613 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.615 (priority  debug) -> Options for P2 are "green 8 green 1 green 8 green +2 ".
+2020-12-13T23:15:47.616 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green 8, green 1, green 8, and green +2.
+2020-12-13T23:15:47.618 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.619 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.620 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.622 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.623 (priority  debug) -> Options for P1 are "green skip green 0 ".
+2020-12-13T23:15:47.624 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green skip and green 0.
+2020-12-13T23:15:47.625 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.626 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.627 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.628 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.629 (priority  debug) -> Options for P2 are "green 8 green 1 green 8 green +2 ".
+2020-12-13T23:15:47.630 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green 8, green 1, green 8, and green +2.
+2020-12-13T23:15:47.631 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.632 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.633 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.634 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.634 (priority  debug) -> Options for P1 are "green skip green 0 ".
+2020-12-13T23:15:47.635 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green skip and green 0.
+2020-12-13T23:15:47.636 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.637 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.638 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.639 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.641 (priority  debug) -> Options for P2 are "green 8 green 1 green 8 green +2 ".
+2020-12-13T23:15:47.642 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green 8, green 1, green 8, and green +2.
+2020-12-13T23:15:47.643 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.644 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.645 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.646 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.647 (priority  debug) -> Options for P1 are "green skip green 0 green skip ".
+2020-12-13T23:15:47.649 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green skip, green 0, and green skip.
+2020-12-13T23:15:47.650 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.651 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.652 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.653 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.654 (priority  debug) -> Options for P2 are "green 8 green 1 green 8 green +2 ".
+2020-12-13T23:15:47.655 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green 8, green 1, green 8, and green +2.
+2020-12-13T23:15:47.656 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.657 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.658 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.659 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.660 (priority  debug) -> Options for P1 are "green skip green 0 green skip ".
+2020-12-13T23:15:47.661 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green skip, green 0, and green skip.
+2020-12-13T23:15:47.662 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.663 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.663 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.664 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.665 (priority  debug) -> Options for P2 are "green 8 green 1 green 8 green +2 green reverse ".
+2020-12-13T23:15:47.666 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green 8, green 1, green 8, green +2, and green reverse.
+2020-12-13T23:15:47.667 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.668 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.669 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.670 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.671 (priority  debug) -> Options for P1 are "green skip green 0 green skip ".
+2020-12-13T23:15:47.672 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green skip, green 0, and green skip.
+2020-12-13T23:15:47.673 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.674 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.675 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.676 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.677 (priority  debug) -> Options for P2 are "green 8 green 1 green 8 green +2 green reverse ".
+2020-12-13T23:15:47.678 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green 8, green 1, green 8, green +2, and green reverse.
+2020-12-13T23:15:47.680 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.680 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.681 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.682 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.683 (priority  debug) -> Options for P1 are "green skip green 0 green skip ".
+2020-12-13T23:15:47.684 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green skip, green 0, and green skip.
+2020-12-13T23:15:47.685 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.686 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.687 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.688 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.689 (priority  debug) -> Options for P2 are "green 8 green 1 green 8 green +2 green reverse ".
+2020-12-13T23:15:47.690 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green 8, green 1, green 8, green +2, and green reverse.
+2020-12-13T23:15:47.692 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.693 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.694 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.695 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.696 (priority  debug) -> Options for P1 are "green skip green 0 green skip ".
+2020-12-13T23:15:47.697 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green skip, green 0, and green skip.
+2020-12-13T23:15:47.698 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.699 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.700 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.700 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.701 (priority  debug) -> Options for P2 are "green 8 green 1 green 8 green +2 green reverse ".
+2020-12-13T23:15:47.702 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green 8, green 1, green 8, green +2, and green reverse.
+2020-12-13T23:15:47.703 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.704 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.705 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.706 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.707 (priority  debug) -> Options for P1 are "green skip green 0 green skip +4 ".
+2020-12-13T23:15:47.709 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green skip, green 0, green skip, and +4.
+2020-12-13T23:15:47.710 (priority  debug) -> P1's response: "p+4"
+2020-12-13T23:15:47.711 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P1 played +4//The new color is now blue//
+2020-12-13T23:15:47.712 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.713 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.713 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.714 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.715 (cc of screen   ) -> Card to play on: +4Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:15:47.717 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.718 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.719 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.720 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:15:47.721 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 ".
+2020-12-13T23:15:47.723 (cc of screen   ) -> P1 drew a blue +2. // P1 drew a blue 2. // P1 drew a green +2. // P1 drew a yellow 8. // Card to play on: +4The cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, and blue 4.
+2020-12-13T23:15:47.727 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.728 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.730 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.731 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.732 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 ".
+2020-12-13T23:15:47.733 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, and blue 2.
+2020-12-13T23:15:47.734 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.735 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.735 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.736 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.737 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 ".
+2020-12-13T23:15:47.738 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, and blue 4.
+2020-12-13T23:15:47.739 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.740 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.741 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.742 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.743 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 ".
+2020-12-13T23:15:47.744 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, and blue 2.
+2020-12-13T23:15:47.745 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.746 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.747 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.748 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.749 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 ".
+2020-12-13T23:15:47.750 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, and blue 4.
+2020-12-13T23:15:47.751 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.752 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.756 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.757 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.758 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 ".
+2020-12-13T23:15:47.759 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, and blue 2.
+2020-12-13T23:15:47.760 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.761 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.762 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.762 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.763 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 ".
+2020-12-13T23:15:47.764 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, and blue 4.
+2020-12-13T23:15:47.765 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.766 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.767 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.768 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.769 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 +4 ".
+2020-12-13T23:15:47.770 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, and +4.
+2020-12-13T23:15:47.771 (priority  debug) -> P2's response: "p+4"
+2020-12-13T23:15:47.772 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played +4//The new color is now blue//
+2020-12-13T23:15:47.773 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.774 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.775 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.775 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.776 (cc of screen   ) -> Card to play on: +4Automatically drew 4 cards, given no other option. // 
+2020-12-13T23:15:47.777 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.778 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.779 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.779 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:15:47.780 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 ".
+2020-12-13T23:15:47.781 (cc of screen   ) -> Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, and blue 2.
+2020-12-13T23:15:47.782 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.783 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.783 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.784 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.785 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 ".
+2020-12-13T23:15:47.786 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, and blue 2.
+2020-12-13T23:15:47.787 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.787 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.789 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.790 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.791 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 ".
+2020-12-13T23:15:47.792 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, and blue 2.
+2020-12-13T23:15:47.794 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.795 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.796 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.797 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.799 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 ".
+2020-12-13T23:15:47.800 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, and blue 0.
+2020-12-13T23:15:47.804 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.805 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.807 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.809 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.810 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 ".
+2020-12-13T23:15:47.811 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, and blue 2.
+2020-12-13T23:15:47.813 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.813 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.814 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.815 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.816 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 ".
+2020-12-13T23:15:47.817 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, and blue 8.
+2020-12-13T23:15:47.819 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.820 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.821 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.822 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.823 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 ".
+2020-12-13T23:15:47.824 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, and blue 2.
+2020-12-13T23:15:47.826 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.827 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.828 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.829 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.830 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 ".
+2020-12-13T23:15:47.830 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, and blue 4.
+2020-12-13T23:15:47.831 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.832 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.833 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.834 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.835 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 ".
+2020-12-13T23:15:47.835 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, and blue 2.
+2020-12-13T23:15:47.837 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.838 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.839 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.840 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.841 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 ".
+2020-12-13T23:15:47.842 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, and blue 4.
+2020-12-13T23:15:47.843 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.844 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.845 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.846 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.847 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 ".
+2020-12-13T23:15:47.847 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, and blue 0.
+2020-12-13T23:15:47.849 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.850 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.850 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.851 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.853 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 ".
+2020-12-13T23:15:47.854 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, and blue 4.
+2020-12-13T23:15:47.856 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.857 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.858 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.860 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.860 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 wild ".
+2020-12-13T23:15:47.861 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, and wild.
+2020-12-13T23:15:47.862 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:15:47.863 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild//The new color is now blue//
+2020-12-13T23:15:47.864 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.864 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.865 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.866 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.867 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 ".
+2020-12-13T23:15:47.867 (cc of screen   ) -> Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, and blue 4.
+2020-12-13T23:15:47.869 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.870 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.870 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.871 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.872 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 ".
+2020-12-13T23:15:47.872 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, and blue 0.
+2020-12-13T23:15:47.873 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.874 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.875 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.876 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.877 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 ".
+2020-12-13T23:15:47.877 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, and blue 4.
+2020-12-13T23:15:47.878 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.879 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.880 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.880 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.881 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 ".
+2020-12-13T23:15:47.882 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, and blue 0.
+2020-12-13T23:15:47.883 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.883 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.885 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.885 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.886 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 ".
+2020-12-13T23:15:47.887 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, and blue 4.
+2020-12-13T23:15:47.888 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.889 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.889 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.890 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.891 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 ".
+2020-12-13T23:15:47.892 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, and blue 0.
+2020-12-13T23:15:47.893 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.893 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.894 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.895 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.895 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 ".
+2020-12-13T23:15:47.897 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, and blue 5.
+2020-12-13T23:15:47.898 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.899 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.902 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.905 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.912 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 ".
+2020-12-13T23:15:47.913 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, and blue 0.
+2020-12-13T23:15:47.918 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.919 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.919 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.920 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.921 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 ".
+2020-12-13T23:15:47.922 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, and blue 5.
+2020-12-13T23:15:47.923 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.923 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.924 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.926 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.927 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 ".
+2020-12-13T23:15:47.928 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, and blue 0.
+2020-12-13T23:15:47.929 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.929 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.930 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.931 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.932 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 ".
+2020-12-13T23:15:47.933 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, and blue 5.
+2020-12-13T23:15:47.934 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.935 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.935 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.936 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.937 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 ".
+2020-12-13T23:15:47.938 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, and blue 0.
+2020-12-13T23:15:47.939 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.940 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.940 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.941 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.942 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 ".
+2020-12-13T23:15:47.943 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, and blue 5.
+2020-12-13T23:15:47.944 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.945 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.946 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.946 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.948 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse ".
+2020-12-13T23:15:47.949 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, and blue reverse.
+2020-12-13T23:15:47.950 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.951 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.951 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.952 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.953 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip ".
+2020-12-13T23:15:47.954 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, and blue skip.
+2020-12-13T23:15:47.954 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.955 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.956 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.957 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.957 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 ".
+2020-12-13T23:15:47.958 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, and blue 5.
+2020-12-13T23:15:47.960 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.961 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.962 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.963 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.964 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip ".
+2020-12-13T23:15:47.964 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, and blue skip.
+2020-12-13T23:15:47.966 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.967 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.968 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.969 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.970 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:47.970 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:47.972 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.972 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.973 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.974 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.975 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 29.
+2020-12-13T23:15:47.975 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 34.
+2020-12-13T23:15:47.976 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip ".
+2020-12-13T23:15:47.977 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, and blue skip.
+2020-12-13T23:15:47.978 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.980 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.981 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.982 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.984 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:47.985 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:47.986 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.987 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:47.988 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:47.989 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:47.990 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip ".
+2020-12-13T23:15:47.991 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, and blue skip.
+2020-12-13T23:15:47.992 (priority normal) -> Assigning next player
+2020-12-13T23:15:47.993 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:47.994 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.994 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:47.995 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 wild ".
+2020-12-13T23:15:47.997 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, blue 6, and wild.
+2020-12-13T23:15:47.998 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:15:47.999 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild//The new color is now blue//
+2020-12-13T23:15:48 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.002 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.003 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.004 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.005 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip ".
+2020-12-13T23:15:48.006 (cc of screen   ) -> Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, and blue skip.
+2020-12-13T23:15:48.009 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.010 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.011 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.012 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.013 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.014 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.015 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.015 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.016 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.017 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.018 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 29.
+2020-12-13T23:15:48.019 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 30.
+2020-12-13T23:15:48.020 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 ".
+2020-12-13T23:15:48.020 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, and blue +2.
+2020-12-13T23:15:48.021 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.022 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.023 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.024 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.024 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 29.
+2020-12-13T23:15:48.025 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 29.
+2020-12-13T23:15:48.027 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.028 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.029 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.030 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.030 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.031 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.032 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 28.
+2020-12-13T23:15:48.032 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 28.
+2020-12-13T23:15:48.033 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 ".
+2020-12-13T23:15:48.034 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, and blue +2.
+2020-12-13T23:15:48.035 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.036 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.037 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.037 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.038 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 27.
+2020-12-13T23:15:48.039 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 27.
+2020-12-13T23:15:48.040 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.040 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.042 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.043 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.043 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.044 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.045 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 26.
+2020-12-13T23:15:48.050 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 26.
+2020-12-13T23:15:48.051 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 ".
+2020-12-13T23:15:48.052 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, and blue +2.
+2020-12-13T23:15:48.053 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.054 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.054 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.055 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.055 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 25.
+2020-12-13T23:15:48.056 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 25.
+2020-12-13T23:15:48.057 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.058 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.059 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.060 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.061 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.062 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.063 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 24.
+2020-12-13T23:15:48.063 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 24.
+2020-12-13T23:15:48.064 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 ".
+2020-12-13T23:15:48.065 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, and blue +2.
+2020-12-13T23:15:48.066 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.067 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.068 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.068 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.069 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 23.
+2020-12-13T23:15:48.070 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 23.
+2020-12-13T23:15:48.071 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.072 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.073 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.073 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.074 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.075 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.076 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 22.
+2020-12-13T23:15:48.077 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 22.
+2020-12-13T23:15:48.078 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 ".
+2020-12-13T23:15:48.078 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, and blue 7.
+2020-12-13T23:15:48.079 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.080 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.081 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.081 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.082 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 21.
+2020-12-13T23:15:48.083 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 21.
+2020-12-13T23:15:48.083 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.084 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.085 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.086 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.086 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.087 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.088 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 20.
+2020-12-13T23:15:48.088 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 20.
+2020-12-13T23:15:48.089 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 ".
+2020-12-13T23:15:48.090 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, and blue 7.
+2020-12-13T23:15:48.091 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.092 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.093 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.093 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.094 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 19.
+2020-12-13T23:15:48.095 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 19.
+2020-12-13T23:15:48.095 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.096 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.097 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.098 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.098 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.099 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.100 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 18.
+2020-12-13T23:15:48.101 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 18.
+2020-12-13T23:15:48.102 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 ".
+2020-12-13T23:15:48.102 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, and blue 7.
+2020-12-13T23:15:48.103 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.104 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.105 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.105 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.106 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 17.
+2020-12-13T23:15:48.107 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 17.
+2020-12-13T23:15:48.108 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.109 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.110 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.110 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.111 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.112 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.112 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 16.
+2020-12-13T23:15:48.113 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 16.
+2020-12-13T23:15:48.114 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 ".
+2020-12-13T23:15:48.114 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, and blue 7.
+2020-12-13T23:15:48.115 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.116 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.117 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.118 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.119 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 15.
+2020-12-13T23:15:48.119 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 15.
+2020-12-13T23:15:48.120 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.121 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.122 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.123 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.124 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.126 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.127 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 14.
+2020-12-13T23:15:48.128 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 14.
+2020-12-13T23:15:48.130 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 wild ".
+2020-12-13T23:15:48.131 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, blue 7, and wild.
+2020-12-13T23:15:48.132 (priority  debug) -> P1's response: "pw"
+2020-12-13T23:15:48.133 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P1 played wild//The new color is now blue//
+2020-12-13T23:15:48.134 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.135 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.136 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.136 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.137 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 14.
+2020-12-13T23:15:48.138 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 15.
+2020-12-13T23:15:48.139 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.140 (cc of screen   ) -> Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.141 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.142 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.142 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.143 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.144 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 14.
+2020-12-13T23:15:48.144 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 14.
+2020-12-13T23:15:48.145 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 ".
+2020-12-13T23:15:48.146 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, and blue 7.
+2020-12-13T23:15:48.147 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.148 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.149 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.149 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.150 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 13.
+2020-12-13T23:15:48.151 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 13.
+2020-12-13T23:15:48.152 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.152 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.153 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.154 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.155 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.156 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.157 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 12.
+2020-12-13T23:15:48.159 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 12.
+2020-12-13T23:15:48.160 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 wild ".
+2020-12-13T23:15:48.161 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, blue 7, and wild.
+2020-12-13T23:15:48.162 (priority  debug) -> P1's response: "pw"
+2020-12-13T23:15:48.163 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P1 played wild//The new color is now blue//
+2020-12-13T23:15:48.164 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.164 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.165 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.166 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.167 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 12.
+2020-12-13T23:15:48.167 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 13.
+2020-12-13T23:15:48.168 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.169 (cc of screen   ) -> Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.170 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.171 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.172 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.173 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.174 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 12.
+2020-12-13T23:15:48.175 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 12.
+2020-12-13T23:15:48.175 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 ".
+2020-12-13T23:15:48.176 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, and blue 7.
+2020-12-13T23:15:48.177 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.178 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.180 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.182 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.183 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 11.
+2020-12-13T23:15:48.190 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 11.
+2020-12-13T23:15:48.190 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.191 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.193 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.194 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.196 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.197 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.198 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 10.
+2020-12-13T23:15:48.198 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 10.
+2020-12-13T23:15:48.199 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 ".
+2020-12-13T23:15:48.200 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, and blue 7.
+2020-12-13T23:15:48.201 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.202 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.203 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.204 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.205 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 9.
+2020-12-13T23:15:48.207 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 9.
+2020-12-13T23:15:48.210 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.211 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.213 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.214 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.216 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.218 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.219 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 8.
+2020-12-13T23:15:48.220 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 8.
+2020-12-13T23:15:48.221 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 blue 9 ".
+2020-12-13T23:15:48.222 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, blue 7, and blue 9.
+2020-12-13T23:15:48.223 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.224 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.225 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.226 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.227 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 7.
+2020-12-13T23:15:48.228 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 7.
+2020-12-13T23:15:48.229 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 ".
+2020-12-13T23:15:48.230 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, and blue 6.
+2020-12-13T23:15:48.231 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.232 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.232 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.233 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.234 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 6.
+2020-12-13T23:15:48.235 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 6.
+2020-12-13T23:15:48.236 (priority  debug) -> Options for P1 are "blue 3 blue 0 blue 3 blue 8 blue 9 blue skip blue 4 blue 2 blue 0 blue 8 blue 4 blue 5 blue skip blue +2 blue 7 blue 9 ".
+2020-12-13T23:15:48.237 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue 3, blue 0, blue 3, blue 8, blue 9, blue skip, blue 4, blue 2, blue 0, blue 8, blue 4, blue 5, blue skip, blue +2, blue 7, and blue 9.
+2020-12-13T23:15:48.238 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.239 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.240 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.241 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.242 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 5.
+2020-12-13T23:15:48.243 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 5.
+2020-12-13T23:15:48.244 (priority  debug) -> Options for P2 are "blue 1 blue reverse blue 7 blue 6 blue 1 blue +2 blue 2 blue 0 blue reverse blue 5 blue 6 +4 ".
+2020-12-13T23:15:48.245 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 1, blue reverse, blue 7, blue 6, blue 1, blue +2, blue 2, blue 0, blue reverse, blue 5, blue 6, and +4.
+2020-12-13T23:15:48.246 (priority  debug) -> P2's response: "p+4"
+2020-12-13T23:15:48.247 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played +4//The new color is now red//
+2020-12-13T23:15:48.248 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.249 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:15:48.250 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:15:48.251 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:15:48.252 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 5.
+2020-12-13T23:15:48.253 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 6.
+2020-12-13T23:15:48.254 (cc of screen   ) -> Card to play on: +4Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 or +4 card from your hand on top.
+2020-12-13T23:15:48.256 (priority normal) -> Assigning next player
+2020-12-13T23:15:48.257 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:15:48.258 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.259 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:15:48.260 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 6.
+2020-12-13T23:15:48.261 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 7.
+2020-12-13T23:15:48.263 (cc of screen   ) -> P1 played +4//The new color is now yellow//Card to play on: +4Your choices are to (d)raw 8 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:15:48.265 (priority   HIGH) -> ---EXCEPTION OCCURRED---
+2020-12-13T23:15:48.266 (priority normal) -> Gen message: -1
+2020-12-13T23:15:48.267 (priority normal) -> Localized message: -1
+2020-12-13T23:15:48.268 (priority normal) -> Engine state: 
+2020-12-13T23:15:48.270 (priority normal) -> State of UNOEngine:
+2020-12-13T23:15:48.270 (priority normal) -> House rules:
+2020-12-13T23:15:48.270 (priority normal) -> 	Allow stacking of same plus cards, +2 on +2 and +4 on +4: true
+2020-12-13T23:15:48.270 (priority normal) -> 	Allow stacking of all plus cards, +2 on +4 and v.v.: true
+2020-12-13T23:15:48.270 (priority normal) -> 	Is player's turn revoked after being forced to draw via a +2 or +4 card: true
+2020-12-13T23:15:48.270 (priority normal) -> 	When a player has no playable cards, are they forced to draw until they do? If not they only draw one card: true
+2020-12-13T23:15:48.270 (priority normal) -> 	Initial hand size: 7
+2020-12-13T23:15:48.270 (priority normal) -> Number of players: 2
+2020-12-13T23:15:48.270 (priority normal) -> Current player, 0-indexed: 1
+2020-12-13T23:15:48.270 (priority normal) -> Direction of play, should either be 1 or -1: 1
+2020-12-13T23:15:48.270 (priority normal) -> Number of +2 cards pending a draw by the next player: 0
+2020-12-13T23:15:48.270 (priority normal) -> Number of +4 cards pending a draw by the next player: 2
+2020-12-13T23:15:48.270 (priority normal) -> Total number of cards that need to be drawn: 8
+2020-12-13T23:15:48.270 (priority normal) -> Has current player drawn any cards this round: false
+2020-12-13T23:15:48.270 (priority normal) -> Has the current player played any cards this round: false
+2020-12-13T23:15:48.272 (priority normal) -> ---END LOG---

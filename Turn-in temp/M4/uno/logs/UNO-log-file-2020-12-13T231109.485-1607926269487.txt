@@ -1,0 +1,34 @@
+2020-12-13T23:11:09.489 (priority normal) -> ---BEGIN LOG---
+2020-12-13T23:11:11.412 (priority normal) -> Shuffling deck.
+2020-12-13T23:11:11.416 (cc of screen   ) -> How many players? (2 - 10): 
+2020-12-13T23:11:11.417 (priority  debug) -> Options for P1 are "red reverse blue 9 red +2 ".
+2020-12-13T23:11:11.418 (cc of screen   ) -> How many players? (2 - 10): Hidden from console: Card to play on: red 9Hidden from console: The cards you can play are: Hidden from console: red reverseHidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: and Hidden from console: red +2.
+2020-12-13T23:11:11.421 (priority  debug) -> P1's response: "prr"
+2020-12-13T23:11:11.422 (cc of screen   ) -> How many players? (2 - 10): Hidden from console: Card to play on: red 9Hidden from console: The cards you can play are: Hidden from console: red reverseHidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: and Hidden from console: red +2.P1 played red reverse//Order of play has been reversed.//
+2020-12-13T23:11:11.423 (priority normal) -> Assigning next player
+2020-12-13T23:11:11.424 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:11:11.424 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:11:11.425 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:11:11.426 (priority  debug) -> Options for P1 are "red +2 ".
+2020-12-13T23:11:11.427 (cc of screen   ) -> How many players? (2 - 10): Hidden from console: Card to play on: red 9Hidden from console: The cards you can play are: Hidden from console: red reverseHidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: and Hidden from console: red +2.P1 played red reverse//Order of play has been reversed.//Hidden from console: Card to play on: red reverseHidden from console: The only card you can play is: Hidden from console: red +2.
+2020-12-13T23:11:11.428 (priority  debug) -> P1's response: "pr+"
+2020-12-13T23:11:11.430 (priority   HIGH) -> ---EXCEPTION OCCURRED---
+2020-12-13T23:11:11.430 (priority normal) -> Gen message: null
+2020-12-13T23:11:11.431 (priority normal) -> Localized message: null
+2020-12-13T23:11:11.432 (priority normal) -> Engine state: 
+2020-12-13T23:11:11.435 (priority normal) -> State of UNOEngine:
+2020-12-13T23:11:11.435 (priority normal) -> House rules:
+2020-12-13T23:11:11.435 (priority normal) -> 	Allow stacking of same plus cards, +2 on +2 and +4 on +4: true
+2020-12-13T23:11:11.435 (priority normal) -> 	Allow stacking of all plus cards, +2 on +4 and v.v.: true
+2020-12-13T23:11:11.435 (priority normal) -> 	Is player's turn revoked after being forced to draw via a +2 or +4 card: true
+2020-12-13T23:11:11.435 (priority normal) -> 	When a player has no playable cards, are they forced to draw until they do? If not they only draw one card: true
+2020-12-13T23:11:11.435 (priority normal) -> 	Initial hand size: 7
+2020-12-13T23:11:11.435 (priority normal) -> Number of players: 2
+2020-12-13T23:11:11.435 (priority normal) -> Current player, 0-indexed: 0
+2020-12-13T23:11:11.435 (priority normal) -> Direction of play, should either be 1 or -1: 1
+2020-12-13T23:11:11.435 (priority normal) -> Number of +2 cards pending a draw by the next player: 0
+2020-12-13T23:11:11.435 (priority normal) -> Number of +4 cards pending a draw by the next player: 0
+2020-12-13T23:11:11.435 (priority normal) -> Total number of cards that need to be drawn: 0
+2020-12-13T23:11:11.436 (priority normal) -> Has current player drawn any cards this round: false
+2020-12-13T23:11:11.436 (priority normal) -> Has the current player played any cards this round: false
+2020-12-13T23:11:11.437 (priority normal) -> ---END LOG---

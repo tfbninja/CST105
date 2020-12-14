@@ -1,0 +1,782 @@
+2020-12-13T23:14:15.855 (priority normal) -> ---BEGIN LOG---
+2020-12-13T23:14:18.117 (priority normal) -> Shuffling deck.
+2020-12-13T23:14:18.121 (cc of screen   ) -> How many players? (2 - 10): First card is a reverse, order of play has been reversed.//
+2020-12-13T23:14:18.123 (priority  debug) -> Options for P1 are "green 5 wild green 0 ".
+2020-12-13T23:14:18.124 (cc of screen   ) -> Hidden from console: Card to play on: green reverseHidden from console: The cards you can play are: Hidden from console: green 5Hidden from console: , Hidden from console: wildHidden from console: , Hidden from console: and Hidden from console: green 0.
+2020-12-13T23:14:18.126 (priority  debug) -> P1's response: "pg5"
+2020-12-13T23:14:18.127 (cc of screen   ) -> P1 played green 5//
+2020-12-13T23:14:18.128 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.129 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.130 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.131 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.132 (priority  debug) -> Options for P2 are "wild green 4 wild ".
+2020-12-13T23:14:18.133 (cc of screen   ) -> Hidden from console: Card to play on: green 5Hidden from console: The cards you can play are: Hidden from console: wildHidden from console: , Hidden from console: green 4Hidden from console: , Hidden from console: and Hidden from console: wild.
+2020-12-13T23:14:18.135 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:14:18.137 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild//The new color is now blue//
+2020-12-13T23:14:18.138 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.139 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.140 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.141 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.142 (priority  debug) -> Options for P1 are "wild blue 4 blue +2 ".
+2020-12-13T23:14:18.143 (cc of screen   ) -> Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: wildHidden from console: , Hidden from console: blue 4Hidden from console: , Hidden from console: and Hidden from console: blue +2.
+2020-12-13T23:14:18.144 (priority  debug) -> P1's response: "pw"
+2020-12-13T23:14:18.145 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P1 played wild//The new color is now blue//
+2020-12-13T23:14:18.146 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.147 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.148 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.149 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.150 (priority  debug) -> Options for P2 are "blue 0 wild blue 1 ".
+2020-12-13T23:14:18.151 (cc of screen   ) -> Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: wildHidden from console: , Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.153 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:14:18.154 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild//The new color is now blue//
+2020-12-13T23:14:18.155 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.157 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.158 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.159 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.160 (priority  debug) -> Options for P1 are "blue 4 blue +2 ".
+2020-12-13T23:14:18.162 (cc of screen   ) -> Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console:  Hidden from console: and Hidden from console: blue +2.
+2020-12-13T23:14:18.164 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.165 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.166 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.167 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.168 (priority  debug) -> Options for P2 are "blue 0 blue 1 ".
+2020-12-13T23:14:18.169 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console:  Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.172 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.173 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.174 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.175 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.176 (priority  debug) -> Options for P1 are "blue 4 blue +2 ".
+2020-12-13T23:14:18.178 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console:  Hidden from console: and Hidden from console: blue +2.
+2020-12-13T23:14:18.180 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.181 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.183 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.184 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.186 (priority  debug) -> Options for P2 are "blue 0 blue 1 ".
+2020-12-13T23:14:18.188 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console:  Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.192 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.194 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.195 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.196 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.198 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 ".
+2020-12-13T23:14:18.199 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.202 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.204 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.206 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.207 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.208 (priority  debug) -> Options for P2 are "blue 0 blue 1 ".
+2020-12-13T23:14:18.210 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console:  Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.211 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.212 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.213 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.214 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.216 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 ".
+2020-12-13T23:14:18.217 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.220 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.222 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.224 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.226 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.227 (priority  debug) -> Options for P2 are "blue 0 blue 1 ".
+2020-12-13T23:14:18.229 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console:  Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.231 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.233 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.235 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.236 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.237 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 ".
+2020-12-13T23:14:18.239 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.240 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.241 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.242 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.243 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.244 (priority  debug) -> Options for P2 are "blue 0 blue 1 ".
+2020-12-13T23:14:18.245 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console:  Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.247 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.248 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.249 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.251 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.252 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 ".
+2020-12-13T23:14:18.253 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.255 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.256 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.257 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.259 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.261 (priority  debug) -> Options for P2 are "blue 0 blue 1 ".
+2020-12-13T23:14:18.262 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console:  Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.264 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.265 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.266 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.267 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.269 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 ".
+2020-12-13T23:14:18.271 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.274 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.275 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.276 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.277 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.280 (priority  debug) -> Options for P2 are "blue 0 blue 1 ".
+2020-12-13T23:14:18.282 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console:  Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.283 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.284 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.286 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.287 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.289 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 ".
+2020-12-13T23:14:18.290 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: and Hidden from console: blue 1.
+2020-12-13T23:14:18.292 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.293 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.294 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.295 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.298 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 ".
+2020-12-13T23:14:18.300 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: and Hidden from console: blue 2.
+2020-12-13T23:14:18.303 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.304 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.307 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.309 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.310 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip ".
+2020-12-13T23:14:18.313 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: and Hidden from console: blue skip.
+2020-12-13T23:14:18.316 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.318 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.320 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.321 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.322 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 ".
+2020-12-13T23:14:18.324 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 2.
+2020-12-13T23:14:18.326 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.328 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.330 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.332 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.335 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip ".
+2020-12-13T23:14:18.337 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: and Hidden from console: blue skip.
+2020-12-13T23:14:18.341 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.343 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.345 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.347 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.350 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 +4 ".
+2020-12-13T23:14:18.352 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: +4.
+2020-12-13T23:14:18.355 (priority  debug) -> P2's response: "p+4"
+2020-12-13T23:14:18.357 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played +4//The new color is now blue//
+2020-12-13T23:14:18.358 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.360 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.361 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.362 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.363 (cc of screen   ) -> Hidden from console: Card to play on: +4Hidden from console: Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:14:18.364 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.365 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.366 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.368 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:14:18.372 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 ".
+2020-12-13T23:14:18.374 (cc of screen   ) -> P2 drew a blue 9. // P2 drew a blue 5. // P2 drew a yellow 0. // P2 drew a yellow 0. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 2.
+2020-12-13T23:14:18.375 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.376 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.377 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.378 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.379 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 ".
+2020-12-13T23:14:18.380 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: and Hidden from console: blue 5.
+2020-12-13T23:14:18.382 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.383 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.384 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.385 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.387 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 ".
+2020-12-13T23:14:18.388 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 2.
+2020-12-13T23:14:18.390 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.391 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.392 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.393 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.394 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 wild ".
+2020-12-13T23:14:18.396 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: and Hidden from console: wild.
+2020-12-13T23:14:18.397 (priority  debug) -> P1's response: "pw"
+2020-12-13T23:14:18.398 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P1 played wild//The new color is now blue//
+2020-12-13T23:14:18.399 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.400 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.401 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.402 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.403 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 ".
+2020-12-13T23:14:18.404 (cc of screen   ) -> Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 2.
+2020-12-13T23:14:18.405 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.407 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.409 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.410 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.411 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 ".
+2020-12-13T23:14:18.412 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: and Hidden from console: blue 5.
+2020-12-13T23:14:18.413 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.414 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.415 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.416 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.417 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 ".
+2020-12-13T23:14:18.418 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 2.
+2020-12-13T23:14:18.420 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.421 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.422 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.423 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.424 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 ".
+2020-12-13T23:14:18.425 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: and Hidden from console: blue 5.
+2020-12-13T23:14:18.427 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.428 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.429 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.430 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.431 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 ".
+2020-12-13T23:14:18.432 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 2.
+2020-12-13T23:14:18.433 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.434 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.435 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.436 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.438 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 ".
+2020-12-13T23:14:18.439 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: and Hidden from console: blue 5.
+2020-12-13T23:14:18.441 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.442 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.443 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.444 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.445 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 ".
+2020-12-13T23:14:18.446 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 0.
+2020-12-13T23:14:18.447 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.448 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.449 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.450 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.451 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 ".
+2020-12-13T23:14:18.453 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.455 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.457 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.458 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.459 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.460 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 ".
+2020-12-13T23:14:18.461 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 0.
+2020-12-13T23:14:18.462 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.463 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.464 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.465 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.467 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 ".
+2020-12-13T23:14:18.469 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.472 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.473 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.474 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.475 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.476 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 ".
+2020-12-13T23:14:18.477 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 0.
+2020-12-13T23:14:18.478 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.480 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.481 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.482 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.483 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 ".
+2020-12-13T23:14:18.484 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.486 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.487 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.488 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.489 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.490 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 ".
+2020-12-13T23:14:18.491 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 0.
+2020-12-13T23:14:18.492 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.493 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.494 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.495 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.496 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 ".
+2020-12-13T23:14:18.497 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.498 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.499 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.500 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.501 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.502 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 ".
+2020-12-13T23:14:18.504 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 0.
+2020-12-13T23:14:18.506 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.507 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.508 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.509 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.510 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 ".
+2020-12-13T23:14:18.511 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.512 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.513 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.514 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.515 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.516 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 ".
+2020-12-13T23:14:18.517 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 0.
+2020-12-13T23:14:18.519 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.521 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.521 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.522 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.526 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 ".
+2020-12-13T23:14:18.527 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.528 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.530 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.530 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.531 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.532 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 ".
+2020-12-13T23:14:18.533 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: and Hidden from console: blue 0.
+2020-12-13T23:14:18.540 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.542 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.544 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.545 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.547 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 +4 ".
+2020-12-13T23:14:18.549 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: +4.
+2020-12-13T23:14:18.551 (priority  debug) -> P1's response: "p+4"
+2020-12-13T23:14:18.557 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P1 played +4//The new color is now blue//
+2020-12-13T23:14:18.558 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.559 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.560 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.561 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.562 (cc of screen   ) -> Hidden from console: Card to play on: +4Hidden from console: Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:14:18.563 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.564 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.567 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.570 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:14:18.572 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 ".
+2020-12-13T23:14:18.578 (cc of screen   ) -> P1 drew a blue 7. // P1 drew a yellow 2. // P1 drew a red 0. // P1 drew a green 3. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.579 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.580 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.581 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.582 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.584 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 ".
+2020-12-13T23:14:18.585 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: and Hidden from console: blue 7.
+2020-12-13T23:14:18.586 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.587 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.588 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.589 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.590 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 ".
+2020-12-13T23:14:18.591 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.592 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.593 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.594 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.594 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.595 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse ".
+2020-12-13T23:14:18.596 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: and Hidden from console: blue reverse.
+2020-12-13T23:14:18.597 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.599 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.600 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.601 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.602 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 ".
+2020-12-13T23:14:18.604 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.607 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.610 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.611 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.613 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.615 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse ".
+2020-12-13T23:14:18.617 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: and Hidden from console: blue reverse.
+2020-12-13T23:14:18.620 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.622 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.623 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.624 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.625 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 ".
+2020-12-13T23:14:18.626 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.627 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.628 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.628 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.629 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.631 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse blue 8 ".
+2020-12-13T23:14:18.632 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: and Hidden from console: blue 8.
+2020-12-13T23:14:18.633 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.633 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.634 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.635 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.636 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 ".
+2020-12-13T23:14:18.637 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.639 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.640 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.640 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.641 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.642 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse blue 8 ".
+2020-12-13T23:14:18.643 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: and Hidden from console: blue 8.
+2020-12-13T23:14:18.644 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.645 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.646 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.647 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.648 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 ".
+2020-12-13T23:14:18.649 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 6.
+2020-12-13T23:14:18.650 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.651 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.652 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.653 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.655 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse blue 8 ".
+2020-12-13T23:14:18.656 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: and Hidden from console: blue 8.
+2020-12-13T23:14:18.657 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.659 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.660 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.661 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.663 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 blue 3 ".
+2020-12-13T23:14:18.664 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 3.
+2020-12-13T23:14:18.666 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.667 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.668 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.670 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.671 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse blue 8 blue 5 ".
+2020-12-13T23:14:18.672 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: blue 8Hidden from console: , Hidden from console: and Hidden from console: blue 5.
+2020-12-13T23:14:18.673 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.674 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.675 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.676 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.677 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 blue 3 ".
+2020-12-13T23:14:18.678 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 3.
+2020-12-13T23:14:18.680 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.680 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.681 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.682 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.683 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse blue 8 blue 5 ".
+2020-12-13T23:14:18.684 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: blue 8Hidden from console: , Hidden from console: and Hidden from console: blue 5.
+2020-12-13T23:14:18.684 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.685 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.686 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.687 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.687 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 blue 3 ".
+2020-12-13T23:14:18.688 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 3.
+2020-12-13T23:14:18.689 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.690 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.690 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.691 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.692 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse blue 8 blue 5 blue 4 ".
+2020-12-13T23:14:18.693 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: blue 8Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: and Hidden from console: blue 4.
+2020-12-13T23:14:18.694 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.695 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.696 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.696 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.697 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 blue 3 ".
+2020-12-13T23:14:18.698 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: and Hidden from console: blue 3.
+2020-12-13T23:14:18.699 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.700 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.700 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.701 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.702 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse blue 8 blue 5 blue 4 ".
+2020-12-13T23:14:18.702 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: blue 8Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: and Hidden from console: blue 4.
+2020-12-13T23:14:18.703 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.704 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.705 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.705 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.706 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 blue 3 +4 ".
+2020-12-13T23:14:18.707 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: blue 3Hidden from console: , Hidden from console: and Hidden from console: +4.
+2020-12-13T23:14:18.708 (priority  debug) -> P1's response: "p+4"
+2020-12-13T23:14:18.710 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P1 played +4//The new color is now red//
+2020-12-13T23:14:18.711 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.711 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.712 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.713 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.714 (cc of screen   ) -> Hidden from console: Card to play on: +4Hidden from console: Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:14:18.715 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.716 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.717 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.718 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:14:18.719 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 28.
+2020-12-13T23:14:18.720 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 36.
+2020-12-13T23:14:18.720 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 ".
+2020-12-13T23:14:18.721 (cc of screen   ) -> P1 drew a green 3. // P1 drew a red 8. // P1 drew a yellow reverse. // P1 drew a red 3. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: and Hidden from console: red 1.
+2020-12-13T23:14:18.722 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.723 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.723 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.724 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.726 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 ".
+2020-12-13T23:14:18.727 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: and Hidden from console: red 3.
+2020-12-13T23:14:18.728 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.730 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.730 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.731 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.732 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 ".
+2020-12-13T23:14:18.733 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: and Hidden from console: red 1.
+2020-12-13T23:14:18.733 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.734 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.735 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.736 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.736 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 ".
+2020-12-13T23:14:18.737 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: and Hidden from console: red 3.
+2020-12-13T23:14:18.738 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.739 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.740 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.740 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.741 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 ".
+2020-12-13T23:14:18.743 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: and Hidden from console: red 1.
+2020-12-13T23:14:18.745 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.746 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.747 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.748 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.750 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 ".
+2020-12-13T23:14:18.751 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: and Hidden from console: red 3.
+2020-12-13T23:14:18.753 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.754 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.755 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.755 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.756 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 ".
+2020-12-13T23:14:18.757 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: and Hidden from console: red 1.
+2020-12-13T23:14:18.759 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.760 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.760 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.761 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.762 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 29.
+2020-12-13T23:14:18.762 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 29.
+2020-12-13T23:14:18.763 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 ".
+2020-12-13T23:14:18.764 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: and Hidden from console: red 3.
+2020-12-13T23:14:18.765 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.766 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.767 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.767 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.768 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 28.
+2020-12-13T23:14:18.769 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 28.
+2020-12-13T23:14:18.770 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 red 0 ".
+2020-12-13T23:14:18.771 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: and Hidden from console: red 0.
+2020-12-13T23:14:18.772 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.773 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.774 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.774 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.775 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 27.
+2020-12-13T23:14:18.776 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 27.
+2020-12-13T23:14:18.776 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 ".
+2020-12-13T23:14:18.778 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: and Hidden from console: red 3.
+2020-12-13T23:14:18.779 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.779 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.780 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.781 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.781 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 26.
+2020-12-13T23:14:18.782 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 26.
+2020-12-13T23:14:18.783 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 red 0 ".
+2020-12-13T23:14:18.784 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: and Hidden from console: red 0.
+2020-12-13T23:14:18.785 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.785 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.787 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.787 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.788 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 25.
+2020-12-13T23:14:18.789 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 25.
+2020-12-13T23:14:18.790 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 red 4 ".
+2020-12-13T23:14:18.791 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: and Hidden from console: red 4.
+2020-12-13T23:14:18.791 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.792 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.793 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.793 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.794 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 24.
+2020-12-13T23:14:18.795 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 24.
+2020-12-13T23:14:18.795 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 red 0 ".
+2020-12-13T23:14:18.796 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: and Hidden from console: red 0.
+2020-12-13T23:14:18.797 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.798 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.799 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.799 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.800 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 23.
+2020-12-13T23:14:18.801 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 23.
+2020-12-13T23:14:18.801 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 red 4 ".
+2020-12-13T23:14:18.803 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: and Hidden from console: red 4.
+2020-12-13T23:14:18.804 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.805 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.806 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.807 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.808 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 22.
+2020-12-13T23:14:18.810 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 22.
+2020-12-13T23:14:18.811 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 red 0 ".
+2020-12-13T23:14:18.812 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: and Hidden from console: red 0.
+2020-12-13T23:14:18.813 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.814 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.815 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.815 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.816 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 21.
+2020-12-13T23:14:18.817 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 21.
+2020-12-13T23:14:18.818 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 red 4 red reverse ".
+2020-12-13T23:14:18.819 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: and Hidden from console: red reverse.
+2020-12-13T23:14:18.820 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.821 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.822 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.823 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.824 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 20.
+2020-12-13T23:14:18.825 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 20.
+2020-12-13T23:14:18.825 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 red 0 ".
+2020-12-13T23:14:18.827 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: and Hidden from console: red 0.
+2020-12-13T23:14:18.827 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.828 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.829 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.830 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.830 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 19.
+2020-12-13T23:14:18.831 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 19.
+2020-12-13T23:14:18.832 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 red 4 red reverse ".
+2020-12-13T23:14:18.833 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: and Hidden from console: red reverse.
+2020-12-13T23:14:18.833 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.834 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.835 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.835 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.836 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 18.
+2020-12-13T23:14:18.837 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 18.
+2020-12-13T23:14:18.838 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 red 0 ".
+2020-12-13T23:14:18.839 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: and Hidden from console: red 0.
+2020-12-13T23:14:18.840 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.840 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.841 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.842 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.842 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 17.
+2020-12-13T23:14:18.843 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 17.
+2020-12-13T23:14:18.844 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 red 4 red reverse ".
+2020-12-13T23:14:18.845 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: and Hidden from console: red reverse.
+2020-12-13T23:14:18.846 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.846 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.847 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.848 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.848 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 16.
+2020-12-13T23:14:18.849 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 16.
+2020-12-13T23:14:18.850 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 red 0 ".
+2020-12-13T23:14:18.851 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: and Hidden from console: red 0.
+2020-12-13T23:14:18.852 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.853 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.854 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.855 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.856 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 15.
+2020-12-13T23:14:18.857 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 15.
+2020-12-13T23:14:18.858 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 red 4 red reverse ".
+2020-12-13T23:14:18.859 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: and Hidden from console: red reverse.
+2020-12-13T23:14:18.860 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.861 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.862 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.863 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.863 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 14.
+2020-12-13T23:14:18.864 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 14.
+2020-12-13T23:14:18.865 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 red 0 ".
+2020-12-13T23:14:18.866 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: and Hidden from console: red 0.
+2020-12-13T23:14:18.867 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.867 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.868 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.869 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.870 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 13.
+2020-12-13T23:14:18.871 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 13.
+2020-12-13T23:14:18.872 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 red 4 red reverse red 6 ".
+2020-12-13T23:14:18.873 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: and Hidden from console: red 6.
+2020-12-13T23:14:18.874 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.875 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.876 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.877 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.878 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 12.
+2020-12-13T23:14:18.878 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 12.
+2020-12-13T23:14:18.879 (priority  debug) -> Options for P1 are "red skip red +2 red 5 red 7 red 1 red 8 red +2 red 6 red 7 red 9 red 0 red 1 red 0 ".
+2020-12-13T23:14:18.880 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red skipHidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red +2Hidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: red 7Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red 1Hidden from console: , Hidden from console: and Hidden from console: red 0.
+2020-12-13T23:14:18.882 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.883 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.883 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.884 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.886 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 11.
+2020-12-13T23:14:18.887 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 11.
+2020-12-13T23:14:18.888 (priority  debug) -> Options for P2 are "red 2 red 2 red 4 red 3 red 5 red 9 red 0 red reverse red 8 red 3 red 4 red reverse red 6 +4 ".
+2020-12-13T23:14:18.889 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: red 2Hidden from console: , Hidden from console: red 2Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 5Hidden from console: , Hidden from console: red 9Hidden from console: , Hidden from console: red 0Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 8Hidden from console: , Hidden from console: red 3Hidden from console: , Hidden from console: red 4Hidden from console: , Hidden from console: red reverseHidden from console: , Hidden from console: red 6Hidden from console: , Hidden from console: and Hidden from console: +4.
+2020-12-13T23:14:18.890 (priority  debug) -> P2's response: "p+4"
+2020-12-13T23:14:18.891 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played +4//The new color is now yellow//
+2020-12-13T23:14:18.892 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.893 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.894 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.894 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.895 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 11.
+2020-12-13T23:14:18.896 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 12.
+2020-12-13T23:14:18.897 (cc of screen   ) -> Hidden from console: Card to play on: +4Hidden from console: Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:14:18.898 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.900 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.901 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.903 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:14:18.904 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 8.
+2020-12-13T23:14:18.905 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 8.
+2020-12-13T23:14:18.906 (priority  debug) -> Options for P2 are "yellow 9 yellow +2 yellow 3 yellow 7 yellow 0 yellow 4 yellow 2 yellow 6 yellow 6 yellow reverse yellow 7 yellow 8 yellow reverse yellow skip yellow skip ".
+2020-12-13T23:14:18.907 (cc of screen   ) -> P2 drew a blue 0. // P2 drew a blue 7. // P2 drew a yellow 4. // P2 drew a +4. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: yellow 9Hidden from console: , Hidden from console: yellow +2Hidden from console: , Hidden from console: yellow 3Hidden from console: , Hidden from console: yellow 7Hidden from console: , Hidden from console: yellow 0Hidden from console: , Hidden from console: yellow 4Hidden from console: , Hidden from console: yellow 2Hidden from console: , Hidden from console: yellow 6Hidden from console: , Hidden from console: yellow 6Hidden from console: , Hidden from console: yellow reverseHidden from console: , Hidden from console: yellow 7Hidden from console: , Hidden from console: yellow 8Hidden from console: , Hidden from console: yellow reverseHidden from console: , Hidden from console: yellow skipHidden from console: , Hidden from console: and Hidden from console: yellow skip.
+2020-12-13T23:14:18.908 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.909 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.910 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.911 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.912 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 7.
+2020-12-13T23:14:18.913 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 7.
+2020-12-13T23:14:18.913 (priority  debug) -> Options for P1 are "yellow 5 yellow 1 yellow 0 yellow 0 yellow 8 yellow 3 yellow 1 yellow +2 yellow 9 yellow 2 yellow 5 yellow 4 +4 ".
+2020-12-13T23:14:18.914 (cc of screen   ) -> P2 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: yellow 5Hidden from console: , Hidden from console: yellow 1Hidden from console: , Hidden from console: yellow 0Hidden from console: , Hidden from console: yellow 0Hidden from console: , Hidden from console: yellow 8Hidden from console: , Hidden from console: yellow 3Hidden from console: , Hidden from console: yellow 1Hidden from console: , Hidden from console: yellow +2Hidden from console: , Hidden from console: yellow 9Hidden from console: , Hidden from console: yellow 2Hidden from console: , Hidden from console: yellow 5Hidden from console: , Hidden from console: yellow 4Hidden from console: , Hidden from console: and Hidden from console: +4.
+2020-12-13T23:14:18.916 (priority  debug) -> P1's response: "p+4"
+2020-12-13T23:14:18.917 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P1 played +4//The new color is now blue//
+2020-12-13T23:14:18.918 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.920 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.921 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.922 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.923 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 7.
+2020-12-13T23:14:18.923 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 8.
+2020-12-13T23:14:18.924 (cc of screen   ) -> Hidden from console: Card to play on: +4Hidden from console: Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:14:18.925 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.926 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.927 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.929 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:14:18.930 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 4.
+2020-12-13T23:14:18.931 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 4.
+2020-12-13T23:14:18.932 (priority  debug) -> Options for P1 are "blue 4 blue +2 blue 1 blue skip blue +2 blue 9 blue 5 blue 6 blue 6 blue 3 blue 8 blue 9 blue skip blue 0 blue 7 ".
+2020-12-13T23:14:18.933 (cc of screen   ) -> P1 drew a wild. // P1 drew a wild. // P1 drew a wild. // P1 drew a +4. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 4Hidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue +2Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: blue 6Hidden from console: , Hidden from console: blue 3Hidden from console: , Hidden from console: blue 8Hidden from console: , Hidden from console: blue 9Hidden from console: , Hidden from console: blue skipHidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: and Hidden from console: blue 7.
+2020-12-13T23:14:18.934 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.935 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.936 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.937 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.938 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 3.
+2020-12-13T23:14:18.938 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 3.
+2020-12-13T23:14:18.939 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse blue 8 blue 5 blue 4 blue reverse blue 3 wild wild wild +4 ".
+2020-12-13T23:14:18.941 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: blue 8Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 4Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: blue 3Hidden from console: , Hidden from console: wildHidden from console: , Hidden from console: wildHidden from console: , Hidden from console: wildHidden from console: , Hidden from console: and Hidden from console: +4.
+2020-12-13T23:14:18.942 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:14:18.943 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild//The new color is now green//
+2020-12-13T23:14:18.944 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.945 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.946 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.947 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.948 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 3.
+2020-12-13T23:14:18.948 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 4.
+2020-12-13T23:14:18.950 (priority  debug) -> Options for P1 are "green 0 green +2 green 1 green reverse green skip green 8 green 9 green 0 green 1 green 2 green 8 green reverse ".
+2020-12-13T23:14:18.951 (cc of screen   ) -> Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: green 0Hidden from console: , Hidden from console: green +2Hidden from console: , Hidden from console: green 1Hidden from console: , Hidden from console: green reverseHidden from console: , Hidden from console: green skipHidden from console: , Hidden from console: green 8Hidden from console: , Hidden from console: green 9Hidden from console: , Hidden from console: green 0Hidden from console: , Hidden from console: green 1Hidden from console: , Hidden from console: green 2Hidden from console: , Hidden from console: green 8Hidden from console: , Hidden from console: and Hidden from console: green reverse.
+2020-12-13T23:14:18.953 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.954 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.955 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.957 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.958 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 3.
+2020-12-13T23:14:18.960 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 3.
+2020-12-13T23:14:18.961 (priority  debug) -> Options for P2 are "green 4 green 7 green +2 green 0 green 7 green 2 green 6 green 6 green 3 green 9 green 5 green 3 green 4 green skip green 5 wild wild +4 ".
+2020-12-13T23:14:18.962 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: green 4Hidden from console: , Hidden from console: green 7Hidden from console: , Hidden from console: green +2Hidden from console: , Hidden from console: green 0Hidden from console: , Hidden from console: green 7Hidden from console: , Hidden from console: green 2Hidden from console: , Hidden from console: green 6Hidden from console: , Hidden from console: green 6Hidden from console: , Hidden from console: green 3Hidden from console: , Hidden from console: green 9Hidden from console: , Hidden from console: green 5Hidden from console: , Hidden from console: green 3Hidden from console: , Hidden from console: green 4Hidden from console: , Hidden from console: green skipHidden from console: , Hidden from console: green 5Hidden from console: , Hidden from console: wildHidden from console: , Hidden from console: wildHidden from console: , Hidden from console: and Hidden from console: +4.
+2020-12-13T23:14:18.963 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:14:18.965 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild//The new color is now green//
+2020-12-13T23:14:18.967 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.968 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.969 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.971 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.973 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 3.
+2020-12-13T23:14:18.974 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 4.
+2020-12-13T23:14:18.975 (priority  debug) -> Options for P1 are "green 0 green +2 green 1 green reverse green skip green 8 green 9 green 0 green 1 green 2 green 8 green reverse wild ".
+2020-12-13T23:14:18.975 (cc of screen   ) -> Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: green 0Hidden from console: , Hidden from console: green +2Hidden from console: , Hidden from console: green 1Hidden from console: , Hidden from console: green reverseHidden from console: , Hidden from console: green skipHidden from console: , Hidden from console: green 8Hidden from console: , Hidden from console: green 9Hidden from console: , Hidden from console: green 0Hidden from console: , Hidden from console: green 1Hidden from console: , Hidden from console: green 2Hidden from console: , Hidden from console: green 8Hidden from console: , Hidden from console: green reverseHidden from console: , Hidden from console: and Hidden from console: wild.
+2020-12-13T23:14:18.976 (priority  debug) -> P1's response: "pw"
+2020-12-13T23:14:18.978 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P1 played wild//The new color is now blue//
+2020-12-13T23:14:18.978 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.979 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.980 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.981 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.981 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 4.
+2020-12-13T23:14:18.982 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 5.
+2020-12-13T23:14:18.983 (priority  debug) -> Options for P2 are "blue 0 blue 1 blue 2 blue 2 blue 0 blue 7 blue reverse blue 8 blue 5 blue 4 blue reverse blue 3 wild +4 ".
+2020-12-13T23:14:18.984 (cc of screen   ) -> Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: blue 0Hidden from console: , Hidden from console: blue 1Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 2Hidden from console: , Hidden from console: blue 0Hidden from console: , Hidden from console: blue 7Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: blue 8Hidden from console: , Hidden from console: blue 5Hidden from console: , Hidden from console: blue 4Hidden from console: , Hidden from console: blue reverseHidden from console: , Hidden from console: blue 3Hidden from console: , Hidden from console: wildHidden from console: , Hidden from console: and Hidden from console: +4.
+2020-12-13T23:14:18.984 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:14:18.986 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild//The new color is now green//
+2020-12-13T23:14:18.988 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.989 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:18.989 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.990 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:18.991 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 5.
+2020-12-13T23:14:18.992 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 6.
+2020-12-13T23:14:18.992 (priority  debug) -> Options for P1 are "green 0 green +2 green 1 green reverse green skip green 8 green 9 green 0 green 1 green 2 green 8 green reverse ".
+2020-12-13T23:14:18.993 (cc of screen   ) -> Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: green 0Hidden from console: , Hidden from console: green +2Hidden from console: , Hidden from console: green 1Hidden from console: , Hidden from console: green reverseHidden from console: , Hidden from console: green skipHidden from console: , Hidden from console: green 8Hidden from console: , Hidden from console: green 9Hidden from console: , Hidden from console: green 0Hidden from console: , Hidden from console: green 1Hidden from console: , Hidden from console: green 2Hidden from console: , Hidden from console: green 8Hidden from console: , Hidden from console: and Hidden from console: green reverse.
+2020-12-13T23:14:18.994 (priority normal) -> Assigning next player
+2020-12-13T23:14:18.995 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:18.996 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:18.997 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:18.998 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 5.
+2020-12-13T23:14:18.999 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 5.
+2020-12-13T23:14:19.001 (priority  debug) -> Options for P2 are "green 4 green 7 green +2 green 0 green 7 green 2 green 6 green 6 green 3 green 9 green 5 green 3 green 4 green skip green 5 +4 ".
+2020-12-13T23:14:19.002 (cc of screen   ) -> P1 drew a card. // Hidden from console: Card to play on: wildHidden from console: The cards you can play are: Hidden from console: green 4Hidden from console: , Hidden from console: green 7Hidden from console: , Hidden from console: green +2Hidden from console: , Hidden from console: green 0Hidden from console: , Hidden from console: green 7Hidden from console: , Hidden from console: green 2Hidden from console: , Hidden from console: green 6Hidden from console: , Hidden from console: green 6Hidden from console: , Hidden from console: green 3Hidden from console: , Hidden from console: green 9Hidden from console: , Hidden from console: green 5Hidden from console: , Hidden from console: green 3Hidden from console: , Hidden from console: green 4Hidden from console: , Hidden from console: green skipHidden from console: , Hidden from console: green 5Hidden from console: , Hidden from console: and Hidden from console: +4.
+2020-12-13T23:14:19.004 (priority  debug) -> P2's response: "p+4"
+2020-12-13T23:14:19.006 (cc of screen   ) -> Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played +4//The new color is now green//
+2020-12-13T23:14:19.007 (priority normal) -> Assigning next player
+2020-12-13T23:14:19.008 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:14:19.010 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:19.012 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:14:19.013 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 5.
+2020-12-13T23:14:19.014 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 6.
+2020-12-13T23:14:19.016 (cc of screen   ) -> Hidden from console: Card to play on: +4Hidden from console: Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 or +4 card from your hand on top.
+2020-12-13T23:14:19.017 (priority normal) -> Assigning next player
+2020-12-13T23:14:19.018 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:14:19.019 (priority  debug) -> Current player 0 indexed is now -1
+2020-12-13T23:14:19.020 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:14:19.021 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 6.
+2020-12-13T23:14:19.022 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 7.
+2020-12-13T23:14:19.023 (cc of screen   ) -> P1 played +4//The new color is now blue//Hidden from console: Card to play on: +4Hidden from console: Your choices are to (d)raw 8 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:14:19.024 (priority   HIGH) -> ---EXCEPTION OCCURRED---
+2020-12-13T23:14:19.025 (priority normal) -> Gen message: -1
+2020-12-13T23:14:19.026 (priority normal) -> Localized message: -1
+2020-12-13T23:14:19.027 (priority normal) -> Engine state: 
+2020-12-13T23:14:19.028 (priority normal) -> State of UNOEngine:
+2020-12-13T23:14:19.028 (priority normal) -> House rules:
+2020-12-13T23:14:19.028 (priority normal) -> 	Allow stacking of same plus cards, +2 on +2 and +4 on +4: true
+2020-12-13T23:14:19.028 (priority normal) -> 	Allow stacking of all plus cards, +2 on +4 and v.v.: true
+2020-12-13T23:14:19.028 (priority normal) -> 	Is player's turn revoked after being forced to draw via a +2 or +4 card: true
+2020-12-13T23:14:19.028 (priority normal) -> 	When a player has no playable cards, are they forced to draw until they do? If not they only draw one card: true
+2020-12-13T23:14:19.029 (priority normal) -> 	Initial hand size: 7
+2020-12-13T23:14:19.029 (priority normal) -> Number of players: 2
+2020-12-13T23:14:19.029 (priority normal) -> Current player, 0-indexed: 1
+2020-12-13T23:14:19.029 (priority normal) -> Direction of play, should either be 1 or -1: -1
+2020-12-13T23:14:19.029 (priority normal) -> Number of +2 cards pending a draw by the next player: 0
+2020-12-13T23:14:19.029 (priority normal) -> Number of +4 cards pending a draw by the next player: 2
+2020-12-13T23:14:19.029 (priority normal) -> Total number of cards that need to be drawn: 8
+2020-12-13T23:14:19.029 (priority normal) -> Has current player drawn any cards this round: false
+2020-12-13T23:14:19.029 (priority normal) -> Has the current player played any cards this round: false
+2020-12-13T23:14:19.030 (priority normal) -> ---END LOG---

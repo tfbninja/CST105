@@ -1,0 +1,31 @@
+2020-12-14T00:11:00.678 (priority normal) -> ---BEGIN LOG---
+2020-12-14T00:11:02.600 (priority normal) -> Shuffling deck.
+2020-12-14T00:11:02.606 (cc of screen   ) -> How many players? (2 - 10): 
+2020-12-14T00:11:02.609 (priority  debug) -> Options for P1 are "blue 1 blue 4 ".
+2020-12-14T00:11:02.610 (cc of screen   ) -> Card to play on: blue 2 // Player 1 Contents of hand: blue 1, blue 4, green 3, green 5, red 9, red reverse, yellow 0 // P1: The cards you can play are: blue 1 and blue 4. // 
+2020-12-14T00:11:02.612 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([14]){1})))\b)"
+2020-12-14T00:11:38.579 (priority  debug) -> rawish response is "play blue 4"
+2020-12-14T00:11:38.581 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-14T00:11:38.584 (priority  debug) -> simplifyUserResponse() received "play blue 4" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-14T00:11:38.586 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pblue 4"
+2020-12-14T00:11:38.588 (priority  debug) -> P1's response: "pblue 4"
+2020-12-14T00:11:38.589 (priority   HIGH) -> ---EXCEPTION OCCURRED---
+2020-12-14T00:11:38.590 (priority normal) -> Gen message: null
+2020-12-14T00:11:38.591 (priority normal) -> Localized message: null
+2020-12-14T00:11:38.592 (priority normal) -> Engine state: 
+2020-12-14T00:11:38.594 (priority normal) -> State of UNOEngine:
+2020-12-14T00:11:38.594 (priority normal) -> House rules:
+2020-12-14T00:11:38.594 (priority normal) -> 	Allow stacking of same plus cards, +2 on +2 and +4 on +4: true
+2020-12-14T00:11:38.594 (priority normal) -> 	Allow stacking of all plus cards, +2 on +4 and v.v.: true
+2020-12-14T00:11:38.594 (priority normal) -> 	Is player's turn revoked after being forced to draw via a +2 or +4 card: true
+2020-12-14T00:11:38.594 (priority normal) -> 	When a player has no playable cards, are they forced to draw until they do? If not they only draw one card: true
+2020-12-14T00:11:38.594 (priority normal) -> 	Initial hand size: 7
+2020-12-14T00:11:38.594 (priority normal) -> Number of players: 2
+2020-12-14T00:11:38.594 (priority normal) -> Current player, 0-indexed: 0
+2020-12-14T00:11:38.595 (priority normal) -> Direction of play, should either be 1 or -1: 1
+2020-12-14T00:11:38.595 (priority normal) -> Number of +2 cards pending a draw by the next player: 0
+2020-12-14T00:11:38.595 (priority normal) -> Number of +4 cards pending a draw by the next player: 0
+2020-12-14T00:11:38.595 (priority normal) -> Total number of cards that need to be drawn: 0
+2020-12-14T00:11:38.595 (priority normal) -> Has current player drawn any cards this round: false
+2020-12-14T00:11:38.595 (priority normal) -> Has the current player played any cards this round: false
+2020-12-14T00:11:38.596 (priority normal) -> ---END LOG---

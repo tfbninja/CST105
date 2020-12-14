@@ -1,0 +1,25 @@
+2020-12-13T19:25:43.304 (priority normal) -> ---BEGIN LOG---
+2020-12-13T19:25:43.428 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 6, blue reverse, green 2, red 4, red 7, yellow 3, wild//
+2020-12-13T19:25:43.431 (priority  debug) -> Options for P1 are "red 4 red 7 wild ".
+2020-12-13T19:25:43.436 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 6, blue reverse, green 2, red 4, red 7, yellow 3, wild//Card to play on: red 0//Player 1 Contents of hand: blue 6, blue reverse, green 2, red 4, red 7, yellow 3, wild//P1: The cards you can play are: red 4, red 7, and wild.//
+2020-12-13T19:25:43.439 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([47]){1})|((w|wild))))\b)"
+2020-12-13T19:25:46.583 (priority  debug) -> rawish response is "pw"
+2020-12-13T19:25:46.584 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T19:25:46.585 (priority  debug) -> simplifyUserResponse() received "pw" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T19:25:46.586 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pw"
+2020-12-13T19:25:46.587 (priority  debug) -> P1's response: "pw"
+2020-12-13T19:25:49.550 (priority  debug) -> response to getNewColor(): "green"
+2020-12-13T19:25:49.552 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 6, blue reverse, green 2, red 4, red 7, yellow 3, wild//Card to play on: red 0//Player 1 Contents of hand: blue 6, blue reverse, green 2, red 4, red 7, yellow 3, wild//P1: The cards you can play are: red 4, red 7, and wild.//Will you (d)raw or (p)lay a card? You've played a wild card which means you get to (c)hoose the new color to match.//Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: //P1 played wild//The new color is now green//
+2020-12-13T19:25:49.553 (priority normal) -> Assigning next player
+2020-12-13T19:25:49.553 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T19:25:49.554 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T19:25:49.555 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T19:25:49.556 (priority  debug) -> Options for P2 are "green 7 wild ".
+2020-12-13T19:25:49.557 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 6, blue reverse, green 2, red 4, red 7, yellow 3, wild//Card to play on: red 0//Player 1 Contents of hand: blue 6, blue reverse, green 2, red 4, red 7, yellow 3, wild//P1: The cards you can play are: red 4, red 7, and wild.//Will you (d)raw or (p)lay a card? You've played a wild card which means you get to (c)hoose the new color to match.//Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: //P1 played wild//The new color is now green//Card to play on: wild//Hidden from console: The cards you can play are: Hidden from console: green 7Hidden from console:  Hidden from console: and Hidden from console: wild.
+2020-12-13T19:25:49.558 (priority  debug) -> P2's response: "pw"
+2020-12-13T19:25:49.559 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 6, blue reverse, green 2, red 4, red 7, yellow 3, wild//Card to play on: red 0//Player 1 Contents of hand: blue 6, blue reverse, green 2, red 4, red 7, yellow 3, wild//P1: The cards you can play are: red 4, red 7, and wild.//Will you (d)raw or (p)lay a card? You've played a wild card which means you get to (c)hoose the new color to match.//Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: //P1 played wild//The new color is now green//Card to play on: wild//Hidden from console: The cards you can play are: Hidden from console: green 7Hidden from console:  Hidden from console: and Hidden from console: wild.Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild//The new color is now r//
+2020-12-13T19:25:49.560 (priority normal) -> Assigning next player
+2020-12-13T19:25:49.560 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T19:25:49.561 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T19:25:49.562 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T19:25:49.563 (priority  debug) -> Options for P1 are "".

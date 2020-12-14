@@ -1,0 +1,871 @@
+2020-12-13T23:24:25.750 (priority normal) -> ---BEGIN LOG---
+2020-12-13T23:24:27.673 (priority normal) -> Shuffling deck.
+2020-12-13T23:24:27.678 (cc of screen   ) -> How many players? (2 - 10): 
+2020-12-13T23:24:27.679 (priority  debug) -> Options for P1 are "green 1 +4 yellow 0 green 1 green 9 ".
+2020-12-13T23:24:27.681 (cc of screen   ) -> Card to play on: green 0The cards you can play are: green 1, +4, yellow 0, green 1, and green 9.
+2020-12-13T23:24:27.683 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.684 (priority  debug) -> P1's response: "pg1"
+2020-12-13T23:24:27.687 (cc of screen   ) -> P1 played green 1 // 
+2020-12-13T23:24:27.688 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.689 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.690 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.691 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.692 (priority  debug) -> Options for P2 are "green 5 ".
+2020-12-13T23:24:27.693 (cc of screen   ) -> Card to play on: green 1The only card you can play is: green 5.
+2020-12-13T23:24:27.695 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.695 (priority  debug) -> P2's response: "pg5"
+2020-12-13T23:24:27.697 (cc of screen   ) -> P2 played green 5 // 
+2020-12-13T23:24:27.699 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.700 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.701 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.702 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.703 (priority  debug) -> Options for P1 are "+4 green 1 green 9 ".
+2020-12-13T23:24:27.705 (cc of screen   ) -> Card to play on: green 5The cards you can play are: +4, green 1, and green 9.
+2020-12-13T23:24:27.707 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.708 (priority  debug) -> P1's response: "p+4"
+2020-12-13T23:24:27.709 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:27.711 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P1 played +4 // The new color is now green // 
+2020-12-13T23:24:27.712 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.713 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.714 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.715 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.717 (cc of screen   ) -> Card to play on: +4Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:24:27.719 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.721 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.722 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.723 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.725 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:24:27.726 (priority  debug) -> Options for P1 are "green 1 green 9 ".
+2020-12-13T23:24:27.727 (cc of screen   ) -> P1 drew a red 6. // P1 drew a blue 7. // P1 drew a yellow 4. // P1 drew a green +2. // Card to play on: +4The cards you can play are: green 1 and green 9.
+2020-12-13T23:24:27.728 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.729 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.731 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.732 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.733 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.734 (priority  debug) -> Options for P2 are "green +2 ".
+2020-12-13T23:24:27.735 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The only card you can play is: green +2.
+2020-12-13T23:24:27.736 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.738 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.739 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.740 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.742 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.743 (priority  debug) -> Options for P1 are "green 1 green 9 ".
+2020-12-13T23:24:27.744 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1 and green 9.
+2020-12-13T23:24:27.746 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.748 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.749 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.750 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.751 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.752 (priority  debug) -> Options for P2 are "green +2 ".
+2020-12-13T23:24:27.753 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The only card you can play is: green +2.
+2020-12-13T23:24:27.755 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.756 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.758 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.759 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.760 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.761 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 ".
+2020-12-13T23:24:27.762 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, and green 2.
+2020-12-13T23:24:27.763 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.765 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.766 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.767 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.767 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.768 (priority  debug) -> Options for P2 are "green +2 ".
+2020-12-13T23:24:27.769 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The only card you can play is: green +2.
+2020-12-13T23:24:27.770 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.772 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.772 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.773 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.774 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.776 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 ".
+2020-12-13T23:24:27.777 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, and green 6.
+2020-12-13T23:24:27.778 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.780 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.781 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.782 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.783 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.784 (priority  debug) -> Options for P2 are "green +2 ".
+2020-12-13T23:24:27.785 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The only card you can play is: green +2.
+2020-12-13T23:24:27.786 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.787 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.788 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.789 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.789 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.790 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 ".
+2020-12-13T23:24:27.791 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, and green 6.
+2020-12-13T23:24:27.792 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.793 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.794 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.795 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.795 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.796 (priority  debug) -> Options for P2 are "green +2 ".
+2020-12-13T23:24:27.799 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The only card you can play is: green +2.
+2020-12-13T23:24:27.800 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.803 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.805 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.806 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.807 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.808 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 ".
+2020-12-13T23:24:27.810 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, and green 6.
+2020-12-13T23:24:27.811 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.812 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.814 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.815 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.816 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.817 (priority  debug) -> Options for P2 are "green +2 ".
+2020-12-13T23:24:27.819 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The only card you can play is: green +2.
+2020-12-13T23:24:27.820 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.821 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.822 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.823 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.824 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.825 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 ".
+2020-12-13T23:24:27.827 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, and green 6.
+2020-12-13T23:24:27.828 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.829 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.830 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.831 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.832 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.833 (priority  debug) -> Options for P2 are "green +2 ".
+2020-12-13T23:24:27.834 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The only card you can play is: green +2.
+2020-12-13T23:24:27.835 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.836 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.837 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.838 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.838 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.839 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 ".
+2020-12-13T23:24:27.840 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, green 6, and green 0.
+2020-12-13T23:24:27.841 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.842 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.843 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.843 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.844 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.846 (priority  debug) -> Options for P2 are "green +2 green 5 ".
+2020-12-13T23:24:27.852 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green +2 and green 5.
+2020-12-13T23:24:27.857 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.859 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.860 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.862 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.863 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.864 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 ".
+2020-12-13T23:24:27.865 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, green 6, green 0, and green 7.
+2020-12-13T23:24:27.866 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.868 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.869 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.870 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.871 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.872 (priority  debug) -> Options for P2 are "green +2 green 5 ".
+2020-12-13T23:24:27.877 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green +2 and green 5.
+2020-12-13T23:24:27.878 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.880 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.882 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.883 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.884 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.886 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 ".
+2020-12-13T23:24:27.889 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, green 6, green 0, and green 7.
+2020-12-13T23:24:27.890 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.892 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.895 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.898 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.899 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.901 (priority  debug) -> Options for P2 are "green +2 green 5 ".
+2020-12-13T23:24:27.902 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green +2 and green 5.
+2020-12-13T23:24:27.904 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.905 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.906 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.908 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.910 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.912 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 ".
+2020-12-13T23:24:27.915 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, green 6, green 0, and green 7.
+2020-12-13T23:24:27.917 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.919 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.920 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.922 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.923 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.924 (priority  debug) -> Options for P2 are "green +2 green 5 ".
+2020-12-13T23:24:27.925 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green +2 and green 5.
+2020-12-13T23:24:27.927 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.928 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.929 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.931 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.932 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.933 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 ".
+2020-12-13T23:24:27.935 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, green 6, green 0, and green 7.
+2020-12-13T23:24:27.937 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.938 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.940 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.941 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.942 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.943 (priority  debug) -> Options for P2 are "green +2 green 5 ".
+2020-12-13T23:24:27.944 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green +2 and green 5.
+2020-12-13T23:24:27.946 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.948 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.950 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.951 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.952 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.953 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 ".
+2020-12-13T23:24:27.955 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, green 6, green 0, and green 7.
+2020-12-13T23:24:27.956 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.960 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.961 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.962 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.964 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.965 (priority  debug) -> Options for P2 are "green +2 green 5 ".
+2020-12-13T23:24:27.967 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green +2 and green 5.
+2020-12-13T23:24:27.969 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.970 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.971 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:27.973 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:27.974 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:27.976 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 ".
+2020-12-13T23:24:27.977 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, green 6, green 0, and green 7.
+2020-12-13T23:24:27.979 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.981 (priority normal) -> Assigning next player
+2020-12-13T23:24:27.983 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:27.983 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.984 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:27.986 (priority  debug) -> Options for P2 are "green +2 green 5 wild ".
+2020-12-13T23:24:27.987 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green +2, green 5, and wild.
+2020-12-13T23:24:27.988 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:27.991 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:24:27.992 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:27.994 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild // The new color is now blue // 
+2020-12-13T23:24:27.995 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.001 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.003 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.005 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.007 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip ".
+2020-12-13T23:24:28.010 (cc of screen   ) -> Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, and blue skip.
+2020-12-13T23:24:28.012 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.013 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.015 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.016 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.017 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.019 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 ".
+2020-12-13T23:24:28.021 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, and blue 2.
+2020-12-13T23:24:28.023 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.025 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.026 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.027 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.028 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.030 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip ".
+2020-12-13T23:24:28.033 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, and blue skip.
+2020-12-13T23:24:28.034 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.036 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.039 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.040 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.042 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.043 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 ".
+2020-12-13T23:24:28.044 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, and blue 4.
+2020-12-13T23:24:28.045 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.047 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.048 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.049 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.050 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.051 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip ".
+2020-12-13T23:24:28.052 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, and blue skip.
+2020-12-13T23:24:28.054 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.056 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.057 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.059 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.062 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.064 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 ".
+2020-12-13T23:24:28.067 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, and blue 7.
+2020-12-13T23:24:28.069 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.070 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.072 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.073 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.074 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.075 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip ".
+2020-12-13T23:24:28.076 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, and blue skip.
+2020-12-13T23:24:28.077 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.078 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.079 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.080 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.082 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.083 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 +4 ".
+2020-12-13T23:24:28.084 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, and +4.
+2020-12-13T23:24:28.087 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.088 (priority  debug) -> P2's response: "p+4"
+2020-12-13T23:24:28.089 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:28.090 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played +4 // The new color is now blue // 
+2020-12-13T23:24:28.091 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.093 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.094 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.095 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.098 (cc of screen   ) -> Card to play on: +4Automatically drew 4 cards, given no other option. // 
+2020-12-13T23:24:28.099 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.100 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.101 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.104 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:24:28.105 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 ".
+2020-12-13T23:24:28.107 (cc of screen   ) -> Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, and blue 7.
+2020-12-13T23:24:28.108 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.111 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.112 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.115 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.117 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.120 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 +4 ".
+2020-12-13T23:24:28.121 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, and +4.
+2020-12-13T23:24:28.122 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.124 (priority  debug) -> P1's response: "p+4"
+2020-12-13T23:24:28.124 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:28.126 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P1 played +4 // The new color is now green // 
+2020-12-13T23:24:28.127 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.128 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.130 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.131 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.133 (cc of screen   ) -> Card to play on: +4Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:24:28.135 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.136 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.137 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.138 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.139 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:24:28.142 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 green 8 green 0 ".
+2020-12-13T23:24:28.143 (cc of screen   ) -> P1 drew a yellow +2. // P1 drew a yellow 4. // P1 drew a green +2. // P1 drew a yellow 1. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, green 6, green 0, green 7, green 8, and green 0.
+2020-12-13T23:24:28.144 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.147 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.149 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.151 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.152 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.153 (priority  debug) -> Options for P2 are "green +2 green 5 green +2 ".
+2020-12-13T23:24:28.155 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green +2, green 5, and green +2.
+2020-12-13T23:24:28.156 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.158 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.160 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.163 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.164 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.169 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 green 8 green 0 ".
+2020-12-13T23:24:28.171 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, green 6, green 0, green 7, green 8, and green 0.
+2020-12-13T23:24:28.172 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.174 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.175 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.178 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.179 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.180 (priority  debug) -> Options for P2 are "green +2 green 5 green +2 ".
+2020-12-13T23:24:28.181 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green +2, green 5, and green +2.
+2020-12-13T23:24:28.182 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.183 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.184 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.185 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.186 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.187 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 green 8 green 0 ".
+2020-12-13T23:24:28.188 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: green 1, green 9, green 2, green 6, green 0, green 7, green 8, and green 0.
+2020-12-13T23:24:28.190 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.191 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.192 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.193 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.194 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.195 (priority  debug) -> Options for P2 are "green +2 green 5 green +2 wild ".
+2020-12-13T23:24:28.196 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: green +2, green 5, green +2, and wild.
+2020-12-13T23:24:28.198 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.199 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:24:28.200 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:28.202 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild // The new color is now blue // 
+2020-12-13T23:24:28.203 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.204 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.205 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.207 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.208 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 ".
+2020-12-13T23:24:28.209 (cc of screen   ) -> Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, and blue 5.
+2020-12-13T23:24:28.210 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.218 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.221 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.222 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.223 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.224 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 ".
+2020-12-13T23:24:28.225 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, and blue 7.
+2020-12-13T23:24:28.226 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.227 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.228 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.231 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.232 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.234 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 ".
+2020-12-13T23:24:28.236 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, and blue 5.
+2020-12-13T23:24:28.238 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.240 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.243 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.248 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.249 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.251 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 ".
+2020-12-13T23:24:28.252 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, and blue 7.
+2020-12-13T23:24:28.254 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.256 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.257 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.259 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.260 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.261 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 ".
+2020-12-13T23:24:28.263 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, and blue 5.
+2020-12-13T23:24:28.265 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.267 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.269 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.270 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.271 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.273 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 ".
+2020-12-13T23:24:28.275 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, and blue 9.
+2020-12-13T23:24:28.277 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.281 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.283 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.285 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.288 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.290 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 ".
+2020-12-13T23:24:28.292 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, and blue 5.
+2020-12-13T23:24:28.295 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.298 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.301 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.303 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.305 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.309 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse ".
+2020-12-13T23:24:28.311 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, and blue reverse.
+2020-12-13T23:24:28.314 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.316 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.317 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.320 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.321 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.323 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 ".
+2020-12-13T23:24:28.325 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, and blue 5.
+2020-12-13T23:24:28.327 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.329 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.333 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.338 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.339 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.341 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse ".
+2020-12-13T23:24:28.342 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, and blue reverse.
+2020-12-13T23:24:28.343 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.344 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.345 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.345 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.346 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.347 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 ".
+2020-12-13T23:24:28.349 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, and blue 5.
+2020-12-13T23:24:28.350 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.351 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.352 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.353 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.354 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.354 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 ".
+2020-12-13T23:24:28.356 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, and blue 6.
+2020-12-13T23:24:28.356 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.357 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.358 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.359 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.359 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.360 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 ".
+2020-12-13T23:24:28.361 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, and blue 5.
+2020-12-13T23:24:28.362 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.364 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.365 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.366 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.367 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.367 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 ".
+2020-12-13T23:24:28.368 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, and blue 6.
+2020-12-13T23:24:28.369 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.370 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.371 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.372 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.373 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.374 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 ".
+2020-12-13T23:24:28.375 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, and blue 0.
+2020-12-13T23:24:28.375 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.377 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.377 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.378 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.379 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.380 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 ".
+2020-12-13T23:24:28.381 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, and blue 6.
+2020-12-13T23:24:28.381 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.382 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.383 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.384 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.384 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.385 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 ".
+2020-12-13T23:24:28.386 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, and blue 0.
+2020-12-13T23:24:28.387 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.388 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.388 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.389 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.390 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.390 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 +4 ".
+2020-12-13T23:24:28.391 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, blue 6, and +4.
+2020-12-13T23:24:28.392 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.393 (priority  debug) -> P2's response: "p+4"
+2020-12-13T23:24:28.393 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:28.394 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played +4 // The new color is now blue // 
+2020-12-13T23:24:28.395 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.396 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.396 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.397 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.398 (cc of screen   ) -> Card to play on: +4Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:24:28.399 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.400 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.400 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.401 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.402 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:24:28.403 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 28.
+2020-12-13T23:24:28.404 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 36.
+2020-12-13T23:24:28.405 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 ".
+2020-12-13T23:24:28.406 (cc of screen   ) -> P2 drew a green reverse. // P2 drew a red skip. // P2 drew a green 8. // P2 drew a red 5. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, and blue 6.
+2020-12-13T23:24:28.407 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.408 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.409 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.410 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.411 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.412 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 ".
+2020-12-13T23:24:28.413 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, and blue 0.
+2020-12-13T23:24:28.414 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.415 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.416 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.416 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.417 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.418 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 ".
+2020-12-13T23:24:28.419 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, and blue 6.
+2020-12-13T23:24:28.420 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.421 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.422 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.423 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.424 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.425 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 ".
+2020-12-13T23:24:28.425 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, and blue 0.
+2020-12-13T23:24:28.426 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.427 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.428 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.429 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.429 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.430 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 ".
+2020-12-13T23:24:28.431 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, and blue 6.
+2020-12-13T23:24:28.432 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.433 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.435 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.436 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.436 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.437 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 ".
+2020-12-13T23:24:28.438 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, and blue 0.
+2020-12-13T23:24:28.439 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.440 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.441 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.442 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.442 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.443 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 ".
+2020-12-13T23:24:28.444 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, and blue 6.
+2020-12-13T23:24:28.445 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.446 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.447 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.448 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.449 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.450 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 29.
+2020-12-13T23:24:28.451 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 29.
+2020-12-13T23:24:28.452 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 ".
+2020-12-13T23:24:28.453 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, and blue 2.
+2020-12-13T23:24:28.454 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.455 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.455 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.456 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.457 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.457 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 28.
+2020-12-13T23:24:28.458 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 28.
+2020-12-13T23:24:28.459 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 ".
+2020-12-13T23:24:28.460 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, and blue 6.
+2020-12-13T23:24:28.460 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.461 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.462 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.463 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.464 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.465 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 27.
+2020-12-13T23:24:28.465 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 27.
+2020-12-13T23:24:28.467 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 ".
+2020-12-13T23:24:28.468 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, and blue 2.
+2020-12-13T23:24:28.469 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.470 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.471 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.471 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.472 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.473 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 26.
+2020-12-13T23:24:28.474 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 26.
+2020-12-13T23:24:28.475 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 ".
+2020-12-13T23:24:28.476 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, and blue 6.
+2020-12-13T23:24:28.477 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.478 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.479 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.480 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.481 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.482 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 25.
+2020-12-13T23:24:28.483 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 25.
+2020-12-13T23:24:28.484 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 ".
+2020-12-13T23:24:28.486 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, and blue 2.
+2020-12-13T23:24:28.487 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.489 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.490 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.490 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.491 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.492 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 24.
+2020-12-13T23:24:28.493 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 24.
+2020-12-13T23:24:28.494 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 blue 1 ".
+2020-12-13T23:24:28.495 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, blue 6, and blue 1.
+2020-12-13T23:24:28.496 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.497 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.499 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.501 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.502 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.504 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 23.
+2020-12-13T23:24:28.505 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 23.
+2020-12-13T23:24:28.507 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 blue 0 ".
+2020-12-13T23:24:28.508 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, blue 2, and blue 0.
+2020-12-13T23:24:28.509 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.511 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.512 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.515 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.519 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.520 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 22.
+2020-12-13T23:24:28.522 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 22.
+2020-12-13T23:24:28.523 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 blue 1 blue 8 ".
+2020-12-13T23:24:28.525 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, blue 6, blue 1, and blue 8.
+2020-12-13T23:24:28.528 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.534 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.536 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.538 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.540 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.542 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 21.
+2020-12-13T23:24:28.544 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 21.
+2020-12-13T23:24:28.546 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 blue 0 ".
+2020-12-13T23:24:28.550 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, blue 2, and blue 0.
+2020-12-13T23:24:28.552 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.554 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.556 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.558 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.559 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.561 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 20.
+2020-12-13T23:24:28.565 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 20.
+2020-12-13T23:24:28.568 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 blue 1 blue 8 ".
+2020-12-13T23:24:28.570 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, blue 6, blue 1, and blue 8.
+2020-12-13T23:24:28.572 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.574 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.577 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.579 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.583 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.585 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 19.
+2020-12-13T23:24:28.592 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 19.
+2020-12-13T23:24:28.597 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 blue 0 ".
+2020-12-13T23:24:28.609 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, blue 2, and blue 0.
+2020-12-13T23:24:28.612 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.617 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.619 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.620 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.621 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.623 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 18.
+2020-12-13T23:24:28.624 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 18.
+2020-12-13T23:24:28.626 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 blue 1 blue 8 blue 9 ".
+2020-12-13T23:24:28.627 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, blue 6, blue 1, blue 8, and blue 9.
+2020-12-13T23:24:28.629 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.634 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.635 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.637 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.639 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.640 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 17.
+2020-12-13T23:24:28.641 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 17.
+2020-12-13T23:24:28.643 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 blue 0 ".
+2020-12-13T23:24:28.645 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, blue 2, and blue 0.
+2020-12-13T23:24:28.646 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.648 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.649 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.650 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.651 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.652 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 16.
+2020-12-13T23:24:28.653 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 16.
+2020-12-13T23:24:28.654 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 blue 1 blue 8 blue 9 ".
+2020-12-13T23:24:28.655 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, blue 6, blue 1, blue 8, and blue 9.
+2020-12-13T23:24:28.657 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.659 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.660 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.661 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.665 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.668 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 15.
+2020-12-13T23:24:28.669 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 15.
+2020-12-13T23:24:28.670 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 blue 0 wild ".
+2020-12-13T23:24:28.672 (cc of screen   ) -> P2 drew a card. // Card to play on: +4The cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, blue 2, blue 0, and wild.
+2020-12-13T23:24:28.674 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.675 (priority  debug) -> P1's response: "pw"
+2020-12-13T23:24:28.676 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:28.680 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P1 played wild // The new color is now green // 
+2020-12-13T23:24:28.683 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.684 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.685 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.687 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.689 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 15.
+2020-12-13T23:24:28.691 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 16.
+2020-12-13T23:24:28.692 (priority  debug) -> Options for P2 are "green +2 green 5 green +2 green skip green reverse green 3 green 4 ".
+2020-12-13T23:24:28.694 (cc of screen   ) -> Card to play on: wildThe cards you can play are: green +2, green 5, green +2, green skip, green reverse, green 3, and green 4.
+2020-12-13T23:24:28.696 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.698 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.700 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.702 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.703 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.704 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 15.
+2020-12-13T23:24:28.707 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 15.
+2020-12-13T23:24:28.710 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 green 8 green 0 green 2 green 9 green 4 green reverse green 8 green 7 green 6 ".
+2020-12-13T23:24:28.712 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: green 1, green 9, green 2, green 6, green 0, green 7, green 8, green 0, green 2, green 9, green 4, green reverse, green 8, green 7, and green 6.
+2020-12-13T23:24:28.714 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.716 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.717 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.718 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.719 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.720 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 14.
+2020-12-13T23:24:28.721 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 14.
+2020-12-13T23:24:28.723 (priority  debug) -> Options for P2 are "green +2 green 5 green +2 green skip green reverse green 3 green 4 ".
+2020-12-13T23:24:28.724 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: green +2, green 5, green +2, green skip, green reverse, green 3, and green 4.
+2020-12-13T23:24:28.726 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.729 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.732 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.733 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.734 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.736 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 13.
+2020-12-13T23:24:28.739 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 13.
+2020-12-13T23:24:28.740 (priority  debug) -> Options for P1 are "green 1 green 9 green 2 green 6 green 0 green 7 green 8 green 0 green 2 green 9 green 4 green reverse green 8 green 7 green 6 ".
+2020-12-13T23:24:28.742 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: green 1, green 9, green 2, green 6, green 0, green 7, green 8, green 0, green 2, green 9, green 4, green reverse, green 8, green 7, and green 6.
+2020-12-13T23:24:28.743 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.744 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.745 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.746 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.747 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.749 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 12.
+2020-12-13T23:24:28.750 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 12.
+2020-12-13T23:24:28.753 (priority  debug) -> Options for P2 are "green +2 green 5 green +2 green skip green reverse green 3 green 4 wild ".
+2020-12-13T23:24:28.754 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: green +2, green 5, green +2, green skip, green reverse, green 3, green 4, and wild.
+2020-12-13T23:24:28.755 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.757 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:24:28.758 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:28.759 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild // The new color is now blue // 
+2020-12-13T23:24:28.760 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.762 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.763 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.764 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.765 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 12.
+2020-12-13T23:24:28.766 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 13.
+2020-12-13T23:24:28.768 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 blue 0 ".
+2020-12-13T23:24:28.770 (cc of screen   ) -> Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, blue 2, and blue 0.
+2020-12-13T23:24:28.772 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.773 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.774 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.775 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.776 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.777 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 12.
+2020-12-13T23:24:28.778 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 12.
+2020-12-13T23:24:28.779 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 blue 1 blue 8 blue 9 blue 0 ".
+2020-12-13T23:24:28.780 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, blue 6, blue 1, blue 8, blue 9, and blue 0.
+2020-12-13T23:24:28.782 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.784 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.785 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.787 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.788 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.788 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 11.
+2020-12-13T23:24:28.789 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 11.
+2020-12-13T23:24:28.791 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 blue 0 ".
+2020-12-13T23:24:28.792 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, blue 2, and blue 0.
+2020-12-13T23:24:28.793 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.793 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.795 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.796 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.797 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.798 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 10.
+2020-12-13T23:24:28.799 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 10.
+2020-12-13T23:24:28.800 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 blue 1 blue 8 blue 9 blue 0 ".
+2020-12-13T23:24:28.801 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, blue 6, blue 1, blue 8, blue 9, and blue 0.
+2020-12-13T23:24:28.802 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.803 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.804 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.804 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.805 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.806 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 9.
+2020-12-13T23:24:28.807 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 9.
+2020-12-13T23:24:28.808 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 blue 0 ".
+2020-12-13T23:24:28.809 (cc of screen   ) -> P2 drew a card. // Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, blue 2, and blue 0.
+2020-12-13T23:24:28.810 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.810 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.811 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.812 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.813 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.813 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 8.
+2020-12-13T23:24:28.814 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 8.
+2020-12-13T23:24:28.815 (priority  debug) -> Options for P2 are "blue 8 blue +2 blue +2 blue 7 blue skip blue 1 blue 4 blue 3 blue 2 blue 4 blue 7 blue 9 blue reverse blue 6 blue 1 blue 8 blue 9 blue 0 wild ".
+2020-12-13T23:24:28.816 (cc of screen   ) -> P1 drew a card. // Card to play on: wildThe cards you can play are: blue 8, blue +2, blue +2, blue 7, blue skip, blue 1, blue 4, blue 3, blue 2, blue 4, blue 7, blue 9, blue reverse, blue 6, blue 1, blue 8, blue 9, blue 0, and wild.
+2020-12-13T23:24:28.817 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.819 (priority  debug) -> P2's response: "pw"
+2020-12-13T23:24:28.820 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:28.821 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild // The new color is now blue // 
+2020-12-13T23:24:28.822 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.822 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.823 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.824 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.825 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 8.
+2020-12-13T23:24:28.826 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 9.
+2020-12-13T23:24:28.826 (priority  debug) -> Options for P1 are "blue reverse blue 5 blue 3 blue 6 blue skip blue 5 blue 0 blue 2 blue 0 +4 ".
+2020-12-13T23:24:28.827 (cc of screen   ) -> Card to play on: wildThe cards you can play are: blue reverse, blue 5, blue 3, blue 6, blue skip, blue 5, blue 0, blue 2, blue 0, and +4.
+2020-12-13T23:24:28.829 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.829 (priority  debug) -> P1's response: "p+4"
+2020-12-13T23:24:28.830 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:28.832 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P1 played +4 // The new color is now yellow // 
+2020-12-13T23:24:28.832 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.834 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.836 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.837 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.842 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 9.
+2020-12-13T23:24:28.843 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 10.
+2020-12-13T23:24:28.844 (cc of screen   ) -> Card to play on: +4Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:24:28.845 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.846 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.847 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.849 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.851 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T23:24:28.853 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 6.
+2020-12-13T23:24:28.854 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 6.
+2020-12-13T23:24:28.855 (priority  debug) -> Options for P1 are "yellow 0 yellow reverse yellow 7 yellow 3 yellow 6 yellow 0 yellow 9 yellow 3 yellow +2 yellow 1 yellow 0 yellow 2 yellow reverse yellow 2 yellow skip yellow 5 yellow 6 ".
+2020-12-13T23:24:28.856 (cc of screen   ) -> P1 drew a +4. // P1 drew a green 5. // P1 drew a green 0. // P1 drew a green 1. // Card to play on: +4The cards you can play are: yellow 0, yellow reverse, yellow 7, yellow 3, yellow 6, yellow 0, yellow 9, yellow 3, yellow +2, yellow 1, yellow 0, yellow 2, yellow reverse, yellow 2, yellow skip, yellow 5, and yellow 6.
+2020-12-13T23:24:28.857 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.859 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.860 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.861 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.862 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.863 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 5.
+2020-12-13T23:24:28.864 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 5.
+2020-12-13T23:24:28.866 (priority  debug) -> Options for P2 are "yellow 9 yellow 7 yellow 4 yellow 5 yellow skip yellow 8 yellow +2 yellow 4 yellow 1 yellow 8 +4 ".
+2020-12-13T23:24:28.867 (cc of screen   ) -> P1 drew a card. // Card to play on: +4The cards you can play are: yellow 9, yellow 7, yellow 4, yellow 5, yellow skip, yellow 8, yellow +2, yellow 4, yellow 1, yellow 8, and +4.
+2020-12-13T23:24:28.867 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.868 (priority  debug) -> P2's response: "p+4"
+2020-12-13T23:24:28.869 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:28.871 (cc of screen   ) -> You've played a wild card which means you get to (c)hoose the new color to match.P2 played +4 // The new color is now blue // 
+2020-12-13T23:24:28.872 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.873 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T23:24:28.873 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T23:24:28.874 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T23:24:28.875 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 5.
+2020-12-13T23:24:28.876 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 6.
+2020-12-13T23:24:28.876 (cc of screen   ) -> Card to play on: +4Your choices are to (d)raw 4 cards or to defer the penalty to the next player by (p)laying an additional +2 or +4 card from your hand on top.
+2020-12-13T23:24:28.877 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.878 (priority normal) -> AI was told that it cannot draw, it cannot play and that it does need to pick a color
+2020-12-13T23:24:28.879 (priority normal) -> Assigning next player
+2020-12-13T23:24:28.880 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T23:24:28.882 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.882 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T23:24:28.883 (priority normal) -> Reincorporating discard pile into draw pile, as size is under 30, drawPile size is 6.
+2020-12-13T23:24:28.884 (priority normal) -> Reincorporated discard pile into draw pile, drawPile size is now 7.
+2020-12-13T23:24:28.885 (cc of screen   ) -> P1 played +4 // The new color is now yellow // Card to play on: +4Your choices are to (d)raw 8 cards or to defer the penalty to the next player by (p)laying an additional +2 card from your hand on top.
+2020-12-13T23:24:28.887 (priority normal) -> AI was told that it can draw, it can play and that it does not need to pick a color
+2020-12-13T23:24:28.888 (priority   HIGH) -> ---EXCEPTION OCCURRED---
+2020-12-13T23:24:28.889 (priority normal) -> Gen message: -1
+2020-12-13T23:24:28.890 (priority normal) -> Localized message: -1
+2020-12-13T23:24:28.890 (priority normal) -> Engine state: 
+2020-12-13T23:24:28.892 (priority normal) -> State of UNOEngine:
+2020-12-13T23:24:28.892 (priority normal) -> House rules:
+2020-12-13T23:24:28.892 (priority normal) -> 	Allow stacking of same plus cards, +2 on +2 and +4 on +4: true
+2020-12-13T23:24:28.892 (priority normal) -> 	Allow stacking of all plus cards, +2 on +4 and v.v.: true
+2020-12-13T23:24:28.892 (priority normal) -> 	Is player's turn revoked after being forced to draw via a +2 or +4 card: true
+2020-12-13T23:24:28.892 (priority normal) -> 	When a player has no playable cards, are they forced to draw until they do? If not they only draw one card: true
+2020-12-13T23:24:28.892 (priority normal) -> 	Initial hand size: 7
+2020-12-13T23:24:28.892 (priority normal) -> Number of players: 2
+2020-12-13T23:24:28.892 (priority normal) -> Current player, 0-indexed: 1
+2020-12-13T23:24:28.892 (priority normal) -> Direction of play, should either be 1 or -1: 1
+2020-12-13T23:24:28.892 (priority normal) -> Number of +2 cards pending a draw by the next player: 0
+2020-12-13T23:24:28.892 (priority normal) -> Number of +4 cards pending a draw by the next player: 2
+2020-12-13T23:24:28.892 (priority normal) -> Total number of cards that need to be drawn: 8
+2020-12-13T23:24:28.892 (priority normal) -> Has current player drawn any cards this round: false
+2020-12-13T23:24:28.892 (priority normal) -> Has the current player played any cards this round: false
+2020-12-13T23:24:28.893 (priority normal) -> ---END LOG---

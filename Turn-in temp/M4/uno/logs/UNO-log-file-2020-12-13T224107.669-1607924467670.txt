@@ -1,0 +1,39 @@
+2020-12-13T22:41:07.672 (priority normal) -> ---BEGIN LOG---
+2020-12-13T22:41:07.727 (priority normal) -> Shuffling deck.
+2020-12-13T22:41:07.732 (priority  debug) -> Options for P1 are "red 8 red +2 ".
+2020-12-13T22:41:07.733 (cc of screen   ) -> Card to play on: red 5 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, red +2, yellow 2 // P1: The cards you can play are: red 8 and red +2. // 
+2020-12-13T22:41:07.734 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([8]|(\+2|\+)){1})))\b)"
+2020-12-13T22:41:14.346 (priority  debug) -> rawish response is "pr+2"
+2020-12-13T22:41:14.348 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T22:41:14.349 (priority  debug) -> simplifyUserResponse() received "pr+2" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T22:41:14.351 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pr+2"
+2020-12-13T22:41:14.352 (priority  debug) -> P1's response: "pr+2"
+2020-12-13T22:41:14.353 (cc of screen   ) -> Card to play on: red 5 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, red +2, yellow 2 // P1: The cards you can play are: red 8 and red +2. // Will you (d)raw or (p)lay a card? P1 played red +2//
+2020-12-13T22:41:14.354 (priority normal) -> Assigning next player
+2020-12-13T22:41:14.355 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T22:41:14.355 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T22:41:14.356 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T22:41:14.357 (cc of screen   ) -> Card to play on: red 5 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, red +2, yellow 2 // P1: The cards you can play are: red 8 and red +2. // Will you (d)raw or (p)lay a card? P1 played red +2//Hidden from console: Card to play on: red +2Hidden from console: Your choices are to (d)raw 2 cards or to defer the penalty to the next player by (p)laying an additional +4 card from your hand on top.
+2020-12-13T22:41:14.359 (priority normal) -> Assigning next player
+2020-12-13T22:41:14.360 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T22:41:14.361 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T22:41:14.362 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T22:41:14.364 (cc of screen   ) -> Card to play on: red 5 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, red +2, yellow 2 // P1: The cards you can play are: red 8 and red +2. // Will you (d)raw or (p)lay a card? P1 played red +2//Hidden from console: Card to play on: red +2Hidden from console: Your choices are to (d)raw 2 cards or to defer the penalty to the next player by (p)laying an additional +4 card from your hand on top.P2 played +4//The new color is now green//Card to play on: +4 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, yellow 2 // P1: P1 automatically drew 6 cards, given no other option. // 
+2020-12-13T22:41:14.365 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T22:41:14.365 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T22:41:14.366 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T22:41:14.367 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T22:41:14.368 (priority  debug) -> Options for P2 are "wild green 0 green 2 ".
+2020-12-13T22:41:14.369 (cc of screen   ) -> Card to play on: red 5 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, red +2, yellow 2 // P1: The cards you can play are: red 8 and red +2. // Will you (d)raw or (p)lay a card? P1 played red +2//Hidden from console: Card to play on: red +2Hidden from console: Your choices are to (d)raw 2 cards or to defer the penalty to the next player by (p)laying an additional +4 card from your hand on top.P2 played +4//The new color is now green//Card to play on: +4 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, yellow 2 // P1: P1 automatically drew 6 cards, given no other option. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: wildHidden from console: , Hidden from console: green 0Hidden from console: , Hidden from console: and Hidden from console: green 2.
+2020-12-13T22:41:14.370 (priority  debug) -> P2's response: "pw"
+2020-12-13T22:41:14.371 (cc of screen   ) -> Card to play on: red 5 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, red +2, yellow 2 // P1: The cards you can play are: red 8 and red +2. // Will you (d)raw or (p)lay a card? P1 played red +2//Hidden from console: Card to play on: red +2Hidden from console: Your choices are to (d)raw 2 cards or to defer the penalty to the next player by (p)laying an additional +4 card from your hand on top.P2 played +4//The new color is now green//Card to play on: +4 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, yellow 2 // P1: P1 automatically drew 6 cards, given no other option. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: wildHidden from console: , Hidden from console: green 0Hidden from console: , Hidden from console: and Hidden from console: green 2.Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild//The new color is now green//
+2020-12-13T22:41:14.372 (priority normal) -> Assigning next player
+2020-12-13T22:41:14.373 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T22:41:14.374 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T22:41:14.374 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T22:41:14.376 (priority  debug) -> Options for P1 are "green 3 green 9 ".
+2020-12-13T22:41:14.378 (cc of screen   ) -> Card to play on: red 5 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, red +2, yellow 2 // P1: The cards you can play are: red 8 and red +2. // Will you (d)raw or (p)lay a card? P1 played red +2//Hidden from console: Card to play on: red +2Hidden from console: Your choices are to (d)raw 2 cards or to defer the penalty to the next player by (p)laying an additional +4 card from your hand on top.P2 played +4//The new color is now green//Card to play on: +4 // Player 1 Contents of hand: blue 7, blue 8, blue reverse, green 3, red 8, yellow 2 // P1: P1 automatically drew 6 cards, given no other option. // Hidden from console: Card to play on: +4Hidden from console: The cards you can play are: Hidden from console: wildHidden from console: , Hidden from console: green 0Hidden from console: , Hidden from console: and Hidden from console: green 2.Hidden from console: You've played a wild card which means you get to (c)hoose the new color to match.P2 played wild//The new color is now green//Card to play on: wild // Player 1 Contents of hand: blue 1, blue 3, blue 4, blue 6, blue 7, blue 8, blue skip, blue reverse, green 3, green 9, red 8, yellow 2 // P1: The cards you can play are: green 3 and green 9. // 
+2020-12-13T22:41:14.379 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([39]){1})))\b)"
+2020-12-13T22:44:23.587 (priority  debug) -> rawish response is "exit"
+2020-12-13T22:44:23.589 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-13T22:44:23.590 (priority normal) -> ---END LOG---

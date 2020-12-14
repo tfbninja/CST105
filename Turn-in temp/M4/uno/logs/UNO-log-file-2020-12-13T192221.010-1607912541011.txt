@@ -1,0 +1,5 @@
+2020-12-13T19:22:21.013 (priority normal) -> ---BEGIN LOG---
+2020-12-13T19:22:21.067 (cc of screen   ) -> nullPlayer 1 Contents of hand: green skip, red 0, red 7, red skip, red reverse, yellow 5, yellow 8//
+2020-12-13T19:22:21.069 (priority  debug) -> Options for P1 are "red 0 red 7 red skip red reverse ".
+2020-12-13T19:22:21.071 (cc of screen   ) -> nullPlayer 1 Contents of hand: green skip, red 0, red 7, red skip, red reverse, yellow 5, yellow 8//Card to play on: red 0//Player 1 Contents of hand: green skip, red 0, red 7, red skip, red reverse, yellow 5, yellow 8//P1: The cards you can play are: red 0, red 7, red skip, and red reverse.//
+2020-12-13T19:22:21.073 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([07sr]|skip|reverse){1})))\b)"
