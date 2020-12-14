@@ -15,29 +15,33 @@ public class UNOConsoleDriver {
     private static final boolean DEBUGMODE = false;
     public static Logger log = new Logger("logs/");
     private static ArrayList<Boolean> isAI = new ArrayList<>();
-    private static final int NUM_PLAYERS = 2;
+    private static int numPlayers;
+    private static boolean ruleStackingSame = true;
+    private static boolean ruleStackingAll = ruleStackingSame && true;
+    private static boolean ruleDrawTillPlayable = true;
+    private static boolean ruleSkipAfterDraw = true;
+    private static int handSize = 7;
+    private static UNODeck deck;
     private static UNOEngine engine;
 
     public static void main(String[] args) {
 
-        printHeader();
-        final boolean RULE_STACKING_SAME = true;
-        final boolean RULE_STACKING_ALL = RULE_STACKING_SAME && true;
-        final boolean RULE_DRAW_TILL_PLAYABLE = true;
+        handSize = 7;
+        deck = new UNODefaultDeck();
 
-        UNODeck deck = new UNODeck();
+        printHeader();
+
         Scanner stdin = new Scanner(System.in);
 
-        //print("How many players? (2 - 10): ");
-        //NUM_PLAYERS = stdin.nextInt();
-        engine = new UNOEngine(NUM_PLAYERS);
-        isAI.add(false);
+        print("How many players? (2 - 10): ");
+        numPlayers = stdin.nextInt();
+
+        engine = new UNOEngine(numPlayers, ruleStackingSame, ruleStackingAll, ruleDrawTillPlayable, ruleSkipAfterDraw, handSize, deck);
+        isAI.add(true);
         isAI.add(true);
         try {
             engine.prepareGame();
-            //displayHand(engine);
             engine.beginGame();
-
             while (!engine.hasAPlayerEmptiedHand()) {
                 displayTopCard(engine);
                 displayHand(engine);
@@ -53,16 +57,6 @@ public class UNOConsoleDriver {
             print("Player " + engine.getWinner() + " has won!");
 
             log.closeLog();
-
-            /*
-             * Used for debugging regex generator
-             *
-             * UNOHand temp = generateHand(7);
-             * println(generateRegexForHand(temp.toArrayList()));
-             * println(getHumanResponse("Playable cards: " + temp.toString() +
-             * " | ", generateRegexForHand(temp.toArrayList())));
-             *
-             */
         } catch (Exception e) {
             System.out.println("EXCEPTION OCCURRED");
             exceptionOccurredLog(engine, e);
@@ -86,14 +80,18 @@ public class UNOConsoleDriver {
 
     private static String getResponse(String prompt, String regex, int currentPlayer, UNOEngine e) {
         if (isAI.get(currentPlayer)) {
-            return getAIResponse(prompt.contains("(d)"), prompt.contains("(p)"), prompt.contains("(c)"), e.getCurrentHand(), e.getTopCard());
+            return getAIResponse(prompt.contains("(d)"), prompt.contains("(p)"), prompt.contains("(c)"), e.getCurrentHand(), e.getTopCard(), e.getCurrentPlayerMatches());
         }
         return getHumanResponse(prompt, regex);
     }
 
-    private static String getAIResponse(boolean canDraw, boolean canPlay, boolean needToPickColor, UNOHand selfHand, UNOCard top) {
+    private static String getAIResponse(boolean canDraw, boolean canPlay, boolean needToPickColor, UNOHand selfHand, UNOCard top, ArrayList<UNOCard> matches) {
+        log.log("AI was told that it can" + (canDraw ? "" : "not") + " draw, it can" + (canPlay ? "" : "not") + " play and that it does" + (needToPickColor ? "" : " not") + " need to pick a color");
+        log.log("AI does" + (!matches.isEmpty() ? "" : " not") + " believe that it has a match.");
+        log.log("AI's hand: " + selfHand.toCompactString());
         Random rnd = new Random();
         if (needToPickColor) {
+            log.log("AI has chosen to pick color.");
             ArrayList<Integer> colorCount = new ArrayList<>(4); // count of cards in hand by color, in alphabetical order (b,g,r,y)
             colorCount.add(0);
             colorCount.add(0);
@@ -131,15 +129,18 @@ public class UNOConsoleDriver {
                     return bestColorForHand;
                 }
             }
-        } else if (canPlay) {
-            ArrayList<UNOCard> matches = selfHand.getMatches(top);
+        } else if (canPlay && !matches.isEmpty()) {
             if (rnd.nextInt(1) > 0.6) {
                 Collections.shuffle(matches);
             }
-            return "p" + matches.get(0).toCompactString();
+            log.log("AI has chosen to play \"p" + matches.get(0).toCompactString() + "\"");
+            return "p" + matches.get(0).toInstruction();
         } else if (canDraw) {
+            log.log("AI has chosen to draw.");
             return "d";
         }
+        System.out.println("No available choice, exiting.");
+        System.exit(0);
         return "No available choice.";
     }
 
@@ -180,7 +181,7 @@ public class UNOConsoleDriver {
     }
 
     private static void silentPrint(String message) {
-        log.ccBuffer("Hidden from console: " + message.replaceAll("\\n", "//"));
+        log.ccBuffer(message.replaceAll("\\n", " // "));
     }
 
     private static void displayAndReceiveChoices(UNOEngine e) {
@@ -395,7 +396,7 @@ public class UNOConsoleDriver {
     }
 
     private static String getNewColorFromAI(UNOEngine e) {
-        return getAIResponse(false, false, true, e.getCurrentHand(), e.getTopCard());
+        return getAIResponse(false, false, true, e.getCurrentHand(), e.getTopCard(), e.getCurrentPlayerMatches());
     }
 
     private static String getNewColor(UNOEngine e) {

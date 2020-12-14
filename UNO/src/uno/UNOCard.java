@@ -200,9 +200,21 @@ public class UNOCard implements Comparable {
         return !getType().equals("wild");
     }
 
+    public String toInstruction() {
+        if (isPlus4()) {
+            return "+4";
+        } else if (isPlus2()) {
+            return getColor().charAt(0) + "+2";
+        } else if (isWild()) {
+            return "w";
+        }
+        return getColor().charAt(0) + "" + getType().charAt(0);
+    }
+
     public String toCompactString() {
         if (isPlus4()) {
             return "+4";
+
         } else if (isWild()) {
             return "w";
         }

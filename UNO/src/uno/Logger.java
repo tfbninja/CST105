@@ -39,7 +39,7 @@ public class Logger {
             }
         }
         log("---BEGIN LOG---");
-        removeFilesOlderThan1Day(); // That's right, I delete old log files in the logging constructor. deal with it.
+        removeFilesOlderThanDays(1); // That's right, I delete old log files in the logging constructor. deal with it.
 
     }
 
@@ -53,6 +53,7 @@ public class Logger {
 
     public void flushCCBuffer() {
         cc(ccBuffer);
+        ccBuffer = ""; // Wow, what an important line of code. I sure hope the developer didn't forget to add it for the first several hours of this method's existence, making his log files an unbearable mess. That would be bad.
     }
 
     private boolean createLogFile() {
@@ -144,7 +145,7 @@ public class Logger {
         saveLocationFile.setReadOnly();
     }
 
-    public void removeFilesOlderThan1Day() {
+    public void removeFilesOlderThanDays(int amt) {
         // The following code is a minimally modified excerpt from https://stackoverflow.com/questions/48386912/determine-file-age-in-days/48386985
         // It's 5 am, alright? I ain't aboutta read the javadocs on 'iNsTaNtS' when I can just google the answer
         for (File f : saveLocationFile.listFiles()) {
@@ -153,7 +154,7 @@ public class Logger {
             Duration difference = Duration.between(fileInstant, now);
             long days = difference.toDays();
             //System.out.println(days);
-            if (days > 1) {
+            if (days > amt) {
                 f.delete();
             }
         }

@@ -1,7 +1,6 @@
 package uno;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  *
@@ -95,7 +94,7 @@ public class UNOEngine {
     }
 
     private void print(String message) {
-        UNOConsoleDriver.log.ccBuffer(message.replaceAll("\n", "//"));
+        UNOConsoleDriver.log.ccBuffer(message.replaceAll("\n", " // "));
         System.out.print(message);
     }
 
@@ -283,7 +282,12 @@ public class UNOEngine {
 
     // returns 1-indexed winner
     public int getWinner() {
-        return Arrays.binarySearch(deck.getHandSizes(), 0) + 1; // May error if winner is last player, or not, idk
+        for (int i : deck.getHandSizes()) {
+            if (i == 0) {
+                return i + 1;
+            }
+        }
+        return -1; // shouldn't happen...hopefully
     }
 
     public boolean playCurrentPlayersWildCard(UNOCard card, String newColor) {
