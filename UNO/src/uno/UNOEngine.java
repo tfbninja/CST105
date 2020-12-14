@@ -1,6 +1,7 @@
 package uno;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  *
@@ -73,28 +74,61 @@ public class UNOEngine {
             result = deck.flipTopCard();
         } while (deck.getTopDiscardCard().isWild());
         if (result.isReverse()) {
-            System.out.println("First card is a reverse, order of play has been reversed.");
+            println("First card is a reverse, order of play has been reversed.");
             direction = -direction;
         } else if (result.isPlus2()) { // according to UNO rules, if a card is wild you just skip it and do the next one, so no need for a +4 scenario
             num2CardsToDraw++;
         } else if (result.isSkip()) {
-            System.out.println("First card is a skip, skipping P1.");
+            println("First card is a skip, skipping P1.");
             assignNextPlayer();
         }
+        flush();
+    }
+
+    private void flush() {
+        UNOConsoleDriver.log.flushCCBuffer();
+    }
+
+    private void printFlush(String message) {
+        print(message);
+        flush();
+    }
+
+    private void print(String message) {
+        UNOConsoleDriver.log.ccBuffer(message.replaceAll("\n", "//"));
+        System.out.print(message);
+    }
+
+    private void println(String message) {
+        print(message + "\n");
+    }
+
+    private void debug(String message) {
+        UNOConsoleDriver.log.debug(message);
+    }
+
+    public int[] getPlayersBySmallestHand() { // FIXME not done
+        int[] out = new int[NUM_PLAYERS];
+        for (int i = 0; i < NUM_PLAYERS; i++) {
+            out[i] = deck.getHandSizes()[i];
+        }
+        return out;
     }
 
     public void assignNextPlayer() {
-        UNOConsoleDriver.log.debug("Current player 0 indexed is " + currentPlayer);
+        debug("Current player 0 indexed is " + currentPlayer);
         currentPlayer += direction;
-        UNOConsoleDriver.log.debug("Current player 0 indexed is now " + currentPlayer);
+        debug("Current player 0 indexed is now " + currentPlayer);
         //currentPlayer = currentPlayer % NUM_PLAYERS;
+        // { <- encompassed in these brackets is the replacement for the commented out line above
         while (currentPlayer < 0) {
             currentPlayer += NUM_PLAYERS;
         }
         while (currentPlayer > NUM_PLAYERS - 1) {
             currentPlayer -= NUM_PLAYERS;
         }
-        UNOConsoleDriver.log.debug("Current player 0 indexed is now " + currentPlayer);
+        // }
+        debug("Current player 0 indexed is now " + currentPlayer);
         drewCards = false;
         playedCard = false;
 
@@ -226,12 +260,12 @@ public class UNOEngine {
         } else {
             if (deck.playNonWildCard(currentPlayer, card)) {
                 playedCard = true;
-                System.out.println("P" + (getCurrentPlayer() + 1) + " played " + card.toString());
+                println("P" + (getCurrentPlayer() + 1) + " played " + card.toString());
                 if (card.isSkip()) {
-                    System.out.println("Player " + ((getCurrentPlayer() + direction) % NUM_PLAYERS + 1) + " has been skipped.");
+                    println("Player " + ((getCurrentPlayer() + direction) % NUM_PLAYERS + 1) + " has been skipped.");
                     currentPlayer++;
                 } else if (card.isReverse()) {
-                    System.out.println("Order of play has been reversed.");
+                    println("Order of play has been reversed.");
                     if (NUM_PLAYERS > 2) {
                         direction = -direction;
                     } else {
@@ -245,6 +279,11 @@ public class UNOEngine {
 
         }
         return false;
+    }
+
+    // returns 1-indexed winner
+    public int getWinner() {
+        return Arrays.binarySearch(deck.getHandSizes(), 0) + 1; // May error if winner is last player, or not, idk
     }
 
     public boolean playCurrentPlayersWildCard(UNOCard card, String newColor) {
@@ -262,8 +301,8 @@ public class UNOEngine {
         } else {
             if (deck.playWildCard(currentPlayer, card, newColor)) {
                 playedCard = true;
-                System.out.println("P" + (getCurrentPlayer() + 1) + " played " + card.toString());
-                System.out.println("The new color is now " + deck.getCurrentColor());
+                println("P" + (getCurrentPlayer() + 1) + " played " + card.toString());
+                println("The new color is now " + deck.getCurrentColor());
                 if (card.isPlus4() && getPendingCardsToDraw() == 0) {
                     num4CardsToDraw++;
                 }
@@ -274,4 +313,23 @@ public class UNOEngine {
         return false;
     }
 
+    public String getState() {
+        String out = "State of UNOEngine:\n";
+        out += "House rules:\n";
+        out += "\tAllow stacking of same plus cards, +2 on +2 and +4 on +4: " + RULE_STACKING_SAME + "\n";
+        out += "\tAllow stacking of all plus cards, +2 on +4 and v.v.: " + RULE_STACKING_ALL + "\n";
+        out += "\tIs player's turn revoked after being forced to draw via a +2 or +4 card: " + RULE_SKIP_AFTER_DRAW + "\n";
+        out += "\tWhen a player has no playable cards, are they forced to draw until they do? If not they only draw one card: " + RULE_DRAW_TILL_PLAYABLE + "\n";
+        out += "\tInitial hand size: " + HAND_SIZE + "\n";
+        out += "Number of players: " + NUM_PLAYERS + "\n";
+        out += "Current player, 0-indexed: " + currentPlayer + "\n";
+        out += "Direction of play, should either be 1 or -1: " + direction + "\n";
+        out += "Number of +2 cards pending a draw by the next player: " + num2CardsToDraw + "\n";
+        out += "Number of +4 cards pending a draw by the next player: " + num4CardsToDraw + "\n";
+        out += "Total number of cards that need to be drawn: " + (num2CardsToDraw * 2 + num4CardsToDraw * 4) + "\n";
+        out += "Has current player drawn any cards this round: " + drewCards + "\n";
+        out += "Has the current player played any cards this round: " + playedCard + "\n";
+
+        return out;
+    }
 }

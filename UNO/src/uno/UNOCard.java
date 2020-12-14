@@ -8,8 +8,9 @@ public class UNOCard implements Comparable {
 
     private String color;
     private String type;
-    private final String[] COLORS = {"blue", "green", "red", "yellow", "wild"};
-    private final String[] TYPES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "skip", "reverse", "wild", "+2", "+4"};
+    public static final String[] REAL_COLORS = {"blue", "green", "red", "yellow"};
+    public static final String[] COLORS = {"blue", "green", "red", "yellow", "wild"};
+    public static final String[] TYPES = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "skip", "reverse", "wild", "+2", "+4"};
     public static final UNOCard PLUS4 = new UNOCard("wild", "+4");
     public static final UNOCard WILD = new UNOCard("wild", "wild");
     public static final UNOCard BLUE0 = new UNOCard("blue", "0"); // thank you, Dennis
@@ -95,7 +96,7 @@ public class UNOCard implements Comparable {
         return rank;
     }
 
-    public String[] getAllColors() {
+    public static String[] getAllColors() {
         return COLORS;
     }
 
@@ -197,6 +198,15 @@ public class UNOCard implements Comparable {
     public boolean isColored() {
         // i PrOmIsE i'M nOt RaCiSt
         return !getType().equals("wild");
+    }
+
+    public String toCompactString() {
+        if (isPlus4()) {
+            return "+4";
+        } else if (isWild()) {
+            return "w";
+        }
+        return getColor().charAt(0) + "" + getType().charAt(0);
     }
 
     @Override

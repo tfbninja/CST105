@@ -48,6 +48,14 @@ public class UNODeck {
         return hands.get(player);
     }
 
+    public int[] getHandSizes() {
+        int[] handSizesOrderedByPlayerNum = new int[hands.size()];
+        for (int i = 0; i < hands.size(); i++) {
+            handSizesOrderedByPlayerNum[i] = hands.get(i).getSize();
+        }
+        return handSizesOrderedByPlayerNum;
+    }
+
     public ArrayList<UNOCard> drawCardsForPlayer(int player, int amt) {
         ArrayList<UNOCard> out = new ArrayList<>();
         for (int i = 0; i < amt; i++) {
@@ -66,6 +74,7 @@ public class UNODeck {
     }
 
     public void shuffleDrawPile() {
+        UNOConsoleDriver.log.log("Shuffling deck.");
         Collections.shuffle(drawPile);
     }
 
@@ -123,5 +132,37 @@ public class UNODeck {
     public UNOCard flipTopCard() {
         discardPile.add(removeTopDrawCard());
         return discardPile.get(discardPile.size() - 1);
+    }
+
+    public String getState() {
+        String out = "State of UNODeck:\n";
+        out += "Draw pile:\n";
+        out += "\tsize: " + drawPile.size() + "\n";
+        out += "\tcontents: ";
+        for (UNOCard c : drawPile) {
+            out += c.toString() + " ";
+        }
+        out += "\n";
+        out += "Discard pile:\n";
+        out += "\tsize: " + discardPile.size() + "\n";
+        out += "\tcontents: ";
+        for (UNOCard c : discardPile) {
+            out += c.toString() + " ";
+        }
+        out += "\n";
+        out += "Hands:\n";
+        int index = 0;
+        for (UNOHand h : hands) {
+            out += "\tHand " + index + ":\n";
+            out += "\t\tsize: " + h.getSize() + "\n";
+            out += "\t\tcontents: ";
+            for (UNOCard c : h.toArrayList()) {
+                out += c.toString() + " ";
+            }
+            out += "\n";
+            index++;
+        }
+        out += "current color: " + currentColor + "\n";
+        return out;
     }
 }

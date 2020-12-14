@@ -24,10 +24,12 @@ public class Logger {
     private final String SAVELOCATION;
     private File saveLocationFile;
     private String filename;
+    private String ccBuffer;
 
     public Logger(String saveLocation) {
         SAVELOCATION = saveLocation;
         saveLocationFile = new File(SAVELOCATION);
+        ccBuffer = "";
         if (!createLogFile()) {
             if (!createLogFile()) {
                 if (!createLogFile()) {
@@ -43,6 +45,14 @@ public class Logger {
 
     public String getSAVELOCATION() {
         return SAVELOCATION;
+    }
+
+    public void ccBuffer(String message) {
+        ccBuffer += message;
+    }
+
+    public void flushCCBuffer() {
+        cc(ccBuffer);
     }
 
     private boolean createLogFile() {
@@ -88,12 +98,36 @@ public class Logger {
         log(debugMessage, -2);
     }
 
+    public void cc(String messageThatWasPrintedToScreen) {
+        //cc, carbon copy of screen
+        // The following code is a minimally modified excerpt from https://www.w3schools.com/java/java_files_create.asp
+        if (messageThatWasPrintedToScreen != null) {
+            try {
+                try (FileWriter myWriter = new FileWriter(filename, true)) {
+                    for (String line : messageThatWasPrintedToScreen.split("\n")) {
+                        if (!line.isEmpty()) {
+                            myWriter.write(LocalDateTime.now().toString() + " (cc of screen   ) -> " + line + System.lineSeparator());
+                        }
+                    }
+                    myWriter.flush();
+                    myWriter.close();
+                }
+                //System.out.println("Successfully wrote to the file."); //...no
+            } catch (IOException e) {
+                System.out.println("An error occurred while logging.");
+                e.printStackTrace();
+            }
+        }
+    }
+
     public void log(String message, int priority) {
         // The following code is a minimally modified excerpt from https://www.w3schools.com/java/java_files_create.asp
         try {
             try (FileWriter myWriter = new FileWriter(filename, true)) {
                 for (String line : message.split("\n")) {
-                    myWriter.write(LocalDateTime.now().toString() + " (priority " + priorityToString(priority) + ") -> " + line + "\n");
+                    if (!line.isEmpty()) {
+                        myWriter.write(LocalDateTime.now().toString() + " (priority " + priorityToString(priority) + ") -> " + line + System.lineSeparator());
+                    }
                 }
                 myWriter.flush();
                 myWriter.close();

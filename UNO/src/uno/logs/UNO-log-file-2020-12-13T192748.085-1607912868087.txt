@@ -1,0 +1,27 @@
+2020-12-13T19:27:48.089 (priority normal) -> ---BEGIN LOG---
+2020-12-13T19:27:48.174 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 3, green 7, red 5, red 7, red skip, yellow 1, +4//
+2020-12-13T19:27:48.176 (priority  debug) -> Options for P1 are "yellow 1 +4 ".
+2020-12-13T19:27:48.179 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 3, green 7, red 5, red 7, red skip, yellow 1, +4//Card to play on: yellow 8//Player 1 Contents of hand: blue 3, green 7, red 5, red 7, red skip, yellow 1, +4//P1: The cards you can play are: yellow 1 and +4.//
+2020-12-13T19:27:48.183 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([1]){1})|(((w|wild(\+4|[+4]))|(\+4)))))\b)"
+2020-12-13T19:27:51.983 (priority  debug) -> rawish response is "p+4"
+2020-12-13T19:27:51.985 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-13T19:27:51.985 (priority  debug) -> simplifyUserResponse() received "p+4" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-13T19:27:51.987 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "p+4"
+2020-12-13T19:27:51.987 (priority  debug) -> P1's response: "p+4"
+2020-12-13T19:27:54.799 (priority  debug) -> response to getNewColor(): "red"
+2020-12-13T19:27:54.801 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 3, green 7, red 5, red 7, red skip, yellow 1, +4//Card to play on: yellow 8//Player 1 Contents of hand: blue 3, green 7, red 5, red 7, red skip, yellow 1, +4//P1: The cards you can play are: yellow 1 and +4.//Will you (d)raw or (p)lay a card? You've played a wild card which means you get to (c)hoose the new color to match.//Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: //P1 played +4//The new color is now red//
+2020-12-13T19:27:54.802 (priority normal) -> Assigning next player
+2020-12-13T19:27:54.802 (priority  debug) -> Current player 0 indexed is 0
+2020-12-13T19:27:54.803 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T19:27:54.804 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-13T19:27:54.805 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 3, green 7, red 5, red 7, red skip, yellow 1, +4//Card to play on: yellow 8//Player 1 Contents of hand: blue 3, green 7, red 5, red 7, red skip, yellow 1, +4//P1: The cards you can play are: yellow 1 and +4.//Will you (d)raw or (p)lay a card? You've played a wild card which means you get to (c)hoose the new color to match.//Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: //P1 played +4//The new color is now red//Card to play on: +4//Automatically drew 4 cards, given no other option.//
+2020-12-13T19:27:54.806 (priority  debug) -> Current player 0 indexed is 1
+2020-12-13T19:27:54.807 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-13T19:27:54.808 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-13T19:27:54.809 (priority normal) -> Next player has already been assigned, skipping additional assignment.
+2020-12-13T19:27:54.810 (priority  debug) -> Options for P1 are "red 5 red 7 red skip ".
+2020-12-13T19:27:54.812 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 3, green 7, red 5, red 7, red skip, yellow 1, +4//Card to play on: yellow 8//Player 1 Contents of hand: blue 3, green 7, red 5, red 7, red skip, yellow 1, +4//P1: The cards you can play are: yellow 1 and +4.//Will you (d)raw or (p)lay a card? You've played a wild card which means you get to (c)hoose the new color to match.//Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: //P1 played +4//The new color is now red//Card to play on: +4//Automatically drew 4 cards, given no other option.//Card to play on: +4//Player 1 Contents of hand: blue 3, green 7, red 5, red 7, red skip, yellow 1//P1: The cards you can play are: red 5, red 7, and red skip.//
+2020-12-13T19:27:54.813 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([57s]|skip){1})))\b)"
+2020-12-13T19:28:56.671 (priority  debug) -> rawish response is "exit"
+2020-12-13T19:28:56.673 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-13T19:28:56.673 (priority normal) -> ---END LOG---
