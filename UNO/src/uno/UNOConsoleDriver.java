@@ -47,6 +47,9 @@ public class UNOConsoleDriver {
             if (response.matches("^(\\d)+$")) { // response must be comprised solely of digits
                 numPlayers = Integer.valueOf(response);
             }
+            if (response.equals("exit")) {
+                forceEndGame("User typed \"exit\".");
+            }
         }
 
         engine = new UNOEngine(numPlayers, ruleStackingSame, ruleStackingAll, ruleDrawTillPlayable, ruleSkipAfterDraw, handSize, deck);
