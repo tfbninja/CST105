@@ -38,8 +38,14 @@ public class UNOConsoleDriver {
 
         Scanner stdin = new Scanner(System.in);
 
-        print("How many players? (2 - 10): ");
-        numPlayers = stdin.nextInt();
+        numPlayers = 0;
+        while (numPlayers < 2 || numPlayers > 10) { // response must be between 2 & 10 inclusive
+            print("How many players? (2 - 10): ");
+            String response = stdin.nextLine().trim();
+            if (response.matches("^(\\d)+$")) { // response must be comprised solely of digits
+                numPlayers = Integer.valueOf(response);
+            }
+        }
 
         engine = new UNOEngine(numPlayers, ruleStackingSame, ruleStackingAll, ruleDrawTillPlayable, ruleSkipAfterDraw, handSize, deck);
         isAI.add(false);
@@ -734,10 +740,19 @@ public class UNOConsoleDriver {
             java.util.logging.Logger.getLogger(UNOConsoleDriver.class.getName()).log(Level.SEVERE, null, ex);
         }
         if (!returned.isEmpty()) {
-            int lastModifiedLineIndex = returned.indexOf("Last-Modified:") + 15;
-            int endIndex = returned.indexOf("X-OAuth-Scopes:");
-            String lastModified = returned.substring(lastModifiedLineIndex, endIndex);
-            updateDate = lastModified;
+            if (returned.contains("Last-Modified:") && returned.contains("X-OAuth-Scopes:")) {
+                int lastModifiedLineIndex = returned.indexOf("Last-Modified:") + 15;
+                int endIndex = returned.indexOf("X-OAuth-Scopes:");
+                String lastModified = returned.substring(lastModifiedLineIndex, endIndex);
+                updateDate = lastModified;
+            } else if (returned.contains("message")) {
+                int messageIndex = returned.indexOf("\"message\": ") + 12;
+                int endIndex = returned.indexOf("\"documentation_url\":") - 5;
+                String message = returned.substring(messageIndex, endIndex);
+                log.log("Could not retrieve last modified date, reason: " + message);
+                log.log("--Full Message--");
+                log.log(returned);
+            }
         }
         System.out.println("\nConsole UNO, created by Tim Barber for CST-105\nUpdated " + updateDate + "\nThis line left intentionally blank. (except for this (and that))\n"); //Header
     }

@@ -1,0 +1,6 @@
+2020-12-14T18:27:31.339 (priority normal) -> ---BEGIN LOG---
+2020-12-14T18:27:47.282 (priority normal) -> Shuffling deck.
+2020-12-14T18:27:47.287 (cc of screen   ) -> How many players? (2 - 10): How many players? (2 - 10): How many players? (2 - 10): How many players? (2 - 10): How many players? (2 - 10): How many players? (2 - 10): How many players? (2 - 10): 
+2020-12-14T18:27:47.292 (priority  debug) -> Options for P1 are "green 9 red 7 red 8 ".
+2020-12-14T18:27:47.293 (cc of screen   ) -> Card to play on: red 9 // Player 1 Contents of hand: blue 4, green 4, green 9, green +2, red 7, red 8, yellow 7 // P1: The cards you can play are: green 9, red 7, and red 8. // 
+2020-12-14T18:27:47.295 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([9]){1})|((r|red)\s*([78]){1})))\b)"
