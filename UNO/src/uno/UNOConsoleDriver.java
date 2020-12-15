@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
@@ -744,8 +746,15 @@ public class UNOConsoleDriver {
             if (returned.contains("Last-Modified:") && returned.contains("X-OAuth-Scopes:")) {
                 int lastModifiedLineIndex = returned.indexOf("Last-Modified:") + 15;
                 int endIndex = returned.indexOf("X-OAuth-Scopes:");
-                String lastModified = returned.substring(lastModifiedLineIndex, endIndex);
-                updateDate = lastModified;
+                String lastModified = returned.substring(lastModifiedLineIndex, endIndex).trim();
+                //lastModified = lastModified.substring(0, lastModified.length() - 4);
+                //System.out.println("\"" + lastModified + "\"");
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE, dd MMM uuuu HH:mm:ss zzz");
+
+                LocalDateTime toMST = LocalDateTime.parse(lastModified, formatter).minusHours(7);
+
+                DateTimeFormatter newFormatter = DateTimeFormatter.ofPattern("MMMM dd, HH:mm");
+                updateDate = toMST.format(newFormatter) + " MST";
             } else if (returned.contains("message")) {
                 int messageIndex = returned.indexOf("\"message\": ") + 12;
                 int endIndex = returned.indexOf("\"documentation_url\":") - 5;
