@@ -720,7 +720,8 @@ public class UNOConsoleDriver {
                 + "████████▀   ▀██████▀   ▀█   █▀   ▄████████▀   ▀██████▀  █████▄▄██   ██████████      ████████▀   ▀█   █▀   ▀██████▀  \n"
                 + "                                                        ▀                                                           ");
         String updateDate = "Dec 14, 2020";
-        String command = "curl -i -u tfbninja:c61ec052640e6cceff9ef914f64217f0373da79f https://api.github.com/repos/tfbninja/CST105/contents/UNO";
+        String PAT = ""; // FIXME
+        String command = "curl -i -u tfbninja:" + PAT + " https://api.github.com/repos/tfbninja/CST105/contents/UNO"; // this command painfully pieced together after arriving at https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-repository-content
         String returned = "";
         ProcessBuilder processBuilder = new ProcessBuilder(command.split(" ")); // these next few beautiful lines of code brought to you in part by https://www.baeldung.com/java-curl
         //processBuilder.directory(new File("/home/"));
