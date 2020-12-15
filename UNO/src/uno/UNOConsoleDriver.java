@@ -1,9 +1,14 @@
 package uno;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.regex.Pattern;
 
 /**
@@ -708,7 +713,33 @@ public class UNOConsoleDriver {
                 + "███    ███ ███    ███ ███   ███    ▄█    ███ ███    ███ ███▌    ▄   ███    ███      ███    ███ ███   ███ ███    ███ \n"
                 + "████████▀   ▀██████▀   ▀█   █▀   ▄████████▀   ▀██████▀  █████▄▄██   ██████████      ████████▀   ▀█   █▀   ▀██████▀  \n"
                 + "                                                        ▀                                                           ");
-        System.out.println("\nConsole UNO, created by Tim Barber for CST-105\nUpdated Dec 13, 2020\nThis line left intentionally blank. (except for this (and that))\n"); //Header
+        String updateDate = "Dec 14, 2020";
+        String command = "curl -i -u tfbninja:c61ec052640e6cceff9ef914f64217f0373da79f https://api.github.com/repos/tfbninja/CST105/contents/UNO";
+        String returned = "";
+        ProcessBuilder processBuilder = new ProcessBuilder(command.split(" ")); // these next few beautiful lines of code brought to you in part by https://www.baeldung.com/java-curl
+        //processBuilder.directory(new File("/home/"));
+        try {
+            Process process = processBuilder.start();
+            InputStream inputStream = process.getInputStream();
+            Reader inputStreamReader = new InputStreamReader(inputStream);
+            int data = 0;
+            while (data != -1) {
+                data = inputStreamReader.read();
+                returned += (char) data;
+            }
+            //System.out.println(returned);
+            int exitCode = process.exitValue();
+            process.destroy();
+        } catch (IOException ex) {
+            java.util.logging.Logger.getLogger(UNOConsoleDriver.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        if (!returned.isEmpty()) {
+            int lastModifiedLineIndex = returned.indexOf("Last-Modified:") + 15;
+            int endIndex = returned.indexOf("X-OAuth-Scopes:");
+            String lastModified = returned.substring(lastModifiedLineIndex, endIndex);
+            updateDate = lastModified;
+        }
+        System.out.println("\nConsole UNO, created by Tim Barber for CST-105\nUpdated " + updateDate + "\nThis line left intentionally blank. (except for this (and that))\n"); //Header
     }
 
 }
