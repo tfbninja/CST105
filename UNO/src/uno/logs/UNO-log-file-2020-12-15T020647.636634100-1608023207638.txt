@@ -1,0 +1,9 @@
+2020-12-15T02:06:47.642637600 (priority normal) -> ---BEGIN LOG---
+2020-12-15T02:07:07.356713400 (priority normal) -> Shuffling deck.
+2020-12-15T02:07:07.360714500 (priority  debug) -> Current player 0 indexed is 0
+2020-12-15T02:07:07.361718200 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-15T02:07:07.363714800 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-15T02:07:07.364715200 (cc of screen   ) -> Would you like to host or join? First card is a skip, skipping P1. // 
+2020-12-15T02:07:07.367713100 (priority  debug) -> Options for P1 are "green 1 green 6 ".
+2020-12-15T02:07:07.369714600 (cc of screen   ) -> Card to play on: green skip // Player 1 Contents of hand: blue 1, green 1, green 6, red 6, red 9, yellow 5, yellow 6 // P1: The cards you can play are: green 1 and green 6. // 
+2020-12-15T02:07:07.370734900 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([16]){1})))\b)"

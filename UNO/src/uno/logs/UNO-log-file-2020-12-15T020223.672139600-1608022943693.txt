@@ -1,0 +1,6 @@
+2020-12-15T02:02:23.719140200 (priority normal) -> ---BEGIN LOG---
+2020-12-15T02:02:52.797788300 (priority normal) -> Shuffling deck.
+2020-12-15T02:02:52.800791200 (cc of screen   ) -> Would you like to host or join? 
+2020-12-15T02:02:52.806791200 (priority  debug) -> Options for P1 are "+4 ".
+2020-12-15T02:02:52.808788900 (cc of screen   ) -> Card to play on: green 8 // Player 1 Contents of hand: blue 1, blue +2, red 3, yellow 6, yellow 7, yellow skip, +4 // P1: The only card you can play is: +4. // 
+2020-12-15T02:02:52.810787 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*((((w|wild(\+4|[+4]))|(\+4)))))\b)"

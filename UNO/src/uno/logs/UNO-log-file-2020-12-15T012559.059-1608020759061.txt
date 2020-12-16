@@ -1,0 +1,6 @@
+2020-12-15T01:25:59.065 (priority normal) -> ---BEGIN LOG---
+2020-12-15T01:26:17.718 (priority normal) -> Shuffling deck.
+2020-12-15T01:26:17.723 (cc of screen   ) -> Would you like to host or join? 
+2020-12-15T01:26:17.725 (priority  debug) -> Options for P1 are "blue 3 wild wild ".
+2020-12-15T01:26:17.727 (cc of screen   ) -> Card to play on: blue 9 // Player 1 Contents of hand: blue 3, red 0, red 5, yellow 1, yellow skip, wild, wild // P1: The cards you can play are: blue 3, wild, and wild. // 
+2020-12-15T01:26:17.728 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([3]){1})|((w|wild)|(w|wild))))\b)"

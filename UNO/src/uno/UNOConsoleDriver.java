@@ -1,9 +1,16 @@
 package uno;
 
+import TCP.UNOServerThread;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.io.Reader;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.UnknownHostException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -20,9 +27,9 @@ import java.util.regex.Pattern;
 public class UNOConsoleDriver {
 
     private static final boolean DEBUGMODE = false;
-    public static Logger log = new Logger("logs/");
+    public static Logger log = new Logger("uno/logs/");
     private static ArrayList<Boolean> isAI = new ArrayList<>();
-    private static int numPlayers;
+    private static int numPlayers = 0;
     private static boolean ruleStackingSame = true;
     private static boolean ruleStackingAll = ruleStackingSame && true;
     private static boolean ruleDrawTillPlayable = true;
@@ -30,6 +37,8 @@ public class UNOConsoleDriver {
     private static int handSize = 7;
     private static UNODeck deck;
     private static UNOEngine engine;
+    private static final int PORT = 42069;
+    private static String hostname = "localhost";
 
     public static void main(String[] args) {
 
@@ -39,22 +48,122 @@ public class UNOConsoleDriver {
         printHeader();
 
         Scanner stdin = new Scanner(System.in);
-
-        numPlayers = 0;
-        while (numPlayers < 2 || numPlayers > 10) { // response must be between 2 & 10 inclusive
-            print("How many players? (2 - 10): ");
-            String response = stdin.nextLine().trim();
-            if (response.matches("^(\\d)+$")) { // response must be comprised solely of digits
-                numPlayers = Integer.valueOf(response);
-            }
-            if (response.equals("exit")) {
-                forceEndGame("User typed \"exit\".");
+        String joinOrHost = "";
+        while (!joinOrHost.equals("client") && !joinOrHost.equals("server") && !joinOrHost.equals("c") && !joinOrHost.equals("s") && !joinOrHost.equals("host") && !joinOrHost.equals("h") && !joinOrHost.equals("join") && !joinOrHost.equals("j")) {
+            print("Would you like to host or join? ");
+            joinOrHost = stdin.nextLine().trim().toLowerCase();
+            if (joinOrHost.equals("exit")) {
+                forceEndGame("User typed \"exit\"");
             }
         }
+        if (joinOrHost.contains("c") || joinOrHost.contains("j")) {
 
-        engine = new UNOEngine(numPlayers, ruleStackingSame, ruleStackingAll, ruleDrawTillPlayable, ruleSkipAfterDraw, handSize, deck);
-        isAI.add(false);
-        isAI.add(true);
+            try (Socket socket = new Socket(hostname, PORT)) {
+
+                OutputStream output = socket.getOutputStream();
+                PrintWriter writer = new PrintWriter(output, true);
+
+                Scanner s = new Scanner(System.in);
+                String command = "";
+
+                do {
+                    InputStream input = socket.getInputStream();
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+                    while (reader.ready()) {
+                        String line = reader.readLine();
+                        System.out.println(line);
+                    }
+
+                    System.out.print("Enter command: ");
+                    command = s.nextLine();
+                    writer.println(command);
+
+                } while (!command.equals("exit"));
+
+                socket.close();
+
+            } catch (UnknownHostException ex) {
+
+                System.out.println("Server not found: " + ex.getMessage());
+
+            } catch (IOException ex) {
+
+                System.out.println("I/O error: " + ex.getMessage());
+            }
+        } else if (joinOrHost.contains("s") || joinOrHost.contains("h")) {
+
+            engine = new UNOEngine(ruleStackingSame, ruleStackingAll, ruleDrawTillPlayable, ruleSkipAfterDraw, handSize, deck);
+            try (ServerSocket serverSocket = new ServerSocket(PORT)) {
+
+                System.out.println("Server is listening on port " + PORT);
+                boolean acceptingNewPlayers = true;
+                while (acceptingNewPlayers) {
+                    Socket socket = serverSocket.accept();
+                    System.out.println("New client connected");
+                    System.out.println("Type start to begin the game. ");
+                    Scanner s = new Scanner(System.in);
+                    while (s.hasNextLine()) {
+                        String cmd = s.nextLine().trim().toLowerCase();
+                        if (cmd.equals("start")) {
+                            acceptingNewPlayers = false;
+                        }
+                    }
+                    new UNOServerThread(socket, engine, engine.addPlayer()).start();
+                }
+                try {
+                    System.out.println("Preparing game");
+                    engine.prepareGame();
+                    for (int i = 0; i < engine.getNumPlayers(); i++) {
+                        isAI.add(false); // FIXME, should add AI
+                    }
+                    System.out.println("Beginning game");
+                    engine.beginGame();
+
+                    while (!engine.hasAPlayerEmptiedHand()) {
+                        displayTopCard(engine);
+                        displayHand(engine);
+                        displayAndReceiveChoices(engine);
+                        if (engine.hasCurrentPlayerDrawnOrPlayed()) {
+                            log.log("Assigning next player");
+                            engine.assignNextPlayer();
+                        } else {
+                            log.log("Next player has already been assigned, skipping additional assignment.");
+                        }
+                        engine.assessPileSizes();
+                    }
+                    print("Player " + engine.getWinner() + " has won!");
+
+                    log.closeLog();
+
+                } catch (Exception ex) {
+                    System.out.println("EXCEPTION OCCURRED");
+                    exceptionOccurredLog(engine, ex);
+                    throw ex;
+                }
+
+            } catch (IOException ex) {
+                System.out.println("Server exception: " + ex.getMessage());
+                ex.printStackTrace();
+            }
+        }
+        /*
+         * while (numPlayers < 2 || numPlayers > 10) { // response must be
+         * between 2 & 10 inclusive
+         * print("How many players? (2 - 10): ");
+         * String response = stdin.nextLine().trim();
+         * if (response.matches("^(\\d)+$")) { // response must be comprised
+         * solely of digits
+         * numPlayers = Integer.valueOf(response);
+         * }
+         * if (response.equals("exit")) {
+         * forceEndGame("User typed \"exit\".");
+         * }
+         * }
+         */
+
+        //engine = new UNOEngine(numPlayers, ruleStackingSame, ruleStackingAll, ruleDrawTillPlayable, ruleSkipAfterDraw, handSize, deck);
+        //isAI.add(false);
+        //isAI.add(false);
         try {
             engine.prepareGame();
             engine.beginGame();
@@ -415,14 +524,14 @@ public class UNOConsoleDriver {
         return getAIResponse(false, false, true, e.getCurrentHand(), e.getTopCard(), e.getCurrentPlayerMatches());
     }
 
-    private static String getNewColor(UNOEngine e) {
+    public static String getNewColor(UNOEngine e) {
         if (isAI.get(e.getCurrentPlayer())) {
             return getNewColorFromAI(e);
         }
         return getNewColorFromHuman();
     }
 
-    private static UNOCard parseCompactPlayCommand(String cmd) {
+    public static UNOCard parseCompactPlayCommand(String cmd) {
         switch (cmd) {
             case "pb0": // Thank you again, Dennis: https://bit.ly/2JOoayC
                 return UNOCard.BLUE0;
@@ -536,7 +645,7 @@ public class UNOConsoleDriver {
         return null;
     }
 
-    private static ArrayList<UNOCard> doPendingDraw(UNOEngine e) {
+    public static ArrayList<UNOCard> doPendingDraw(UNOEngine e) {
         ArrayList<UNOCard> out = e.receivePendingCards();
         for (UNOCard c : out) {
             println("P" + (e.getCurrentPlayer() + 1) + " drew a " + c.toString() + ".");
@@ -544,7 +653,7 @@ public class UNOConsoleDriver {
         return out;
     }
 
-    private static UNOCard doDrawCard(UNOEngine e) {
+    public static UNOCard doDrawCard(UNOEngine e) {
         UNOCard out = e.drawCurrentPlayerCards(1).get(0);
         if (!isAI(e)) {
             println("P" + (e.getCurrentPlayer() + 1) + " drew a " + out.toString() + ".");
@@ -580,7 +689,7 @@ public class UNOConsoleDriver {
         println(options.get(options.size() - 1) + ".");
     }
 
-    private static String simplifyUserResponse(String userResponse) {
+    public static String simplifyUserResponse(String userResponse) {
         String compactUserResponse = userResponse;
         log.debug("simplifyUserResponse() received \"" + userResponse + "\" as the only argument, proceeding with abbreviations and removing whitespace.");
         compactUserResponse = compactUserResponse.replaceFirst("(play)", "p");
@@ -607,7 +716,7 @@ public class UNOConsoleDriver {
         }
     }
 
-    private static String generateRegexForHand(ArrayList<UNOCard> cards) {
+    public static String generateRegexForHand(ArrayList<UNOCard> cards) {
         String regex = "";
 
         String drawPartition = "\\b(d|draw)\\b|";

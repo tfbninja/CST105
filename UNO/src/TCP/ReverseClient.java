@@ -13,14 +13,6 @@ import java.util.Scanner;
 public class ReverseClient {
 
     public static void main(String[] args) {
-        /*
-         * if (args.length < 2) {
-         * return;
-         * }
-         *
-         * String hostname = args[0];
-         * int port = Integer.parseInt(args[1]);
-         */
         String hostname = "localhost";
         int port = 42069;
 
@@ -45,7 +37,7 @@ public class ReverseClient {
 
                 System.out.println(time);
 
-            } while (!text.equals("bye"));
+            } while (!text.equals("exit"));
 
             socket.close();
 

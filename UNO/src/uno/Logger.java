@@ -39,7 +39,7 @@ public class Logger {
             }
         }
         log("---BEGIN LOG---");
-        removeFilesOlderThanDays(1); // That's right, I delete old log files in the logging constructor. deal with it.
+        removeFilesOlderThanDays(1); // That's right, I delete old log files in the logging constructor. deal with it. // FIXME should probably change to 7 when done
 
     }
 

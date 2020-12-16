@@ -8,13 +8,14 @@ import java.util.ArrayList;
  */
 public class UNOEngine {
 
-    private final boolean RULE_STACKING_SAME;
-    private final boolean RULE_STACKING_ALL;
-    private final boolean RULE_SKIP_AFTER_DRAW;
-    private final boolean RULE_DRAW_TILL_PLAYABLE;
-    private final int HAND_SIZE;
+    private boolean RULE_STACKING_SAME;
+    private boolean RULE_STACKING_ALL;
+    private boolean RULE_SKIP_AFTER_DRAW;
+    private boolean RULE_DRAW_TILL_PLAYABLE;
+    private int HAND_SIZE;
 
-    private final int NUM_PLAYERS;
+    private ArrayList<UNOPlayer> players;
+    private ArrayList<String> pendingMessages;
 
     private UNODeck deck;
     private int currentPlayer = 0; // current Player is from 0 - (number of players - 1)
@@ -25,24 +26,123 @@ public class UNOEngine {
     private boolean drewCards = false;
     private boolean playedCard = false;
 
-    public UNOEngine(int players) {
-        NUM_PLAYERS = players;
+    private final UNODeck ORIGINAL_DECK;
+
+    public UNOEngine(int numPlayers) {
+        setNumPlayers(numPlayers);
         RULE_STACKING_SAME = true;
         RULE_STACKING_ALL = RULE_STACKING_SAME && true;
         RULE_DRAW_TILL_PLAYABLE = true;
         RULE_SKIP_AFTER_DRAW = true;
         HAND_SIZE = 7;
         deck = new UNODefaultDeck();
+        ORIGINAL_DECK = new UNODefaultDeck();
+        pendingMessages = new ArrayList<>();
     }
 
-    public UNOEngine(int players, boolean ruleStackingSame, boolean ruleStackingAll, boolean ruleDrawTillPlayable, boolean ruleSkipAfterDraw, int handSize, UNODeck deck) {
-        NUM_PLAYERS = players;
+    public UNOEngine(int numPlayers, boolean ruleStackingSame, boolean ruleStackingAll, boolean ruleDrawTillPlayable, boolean ruleSkipAfterDraw, int handSize, UNODeck deck) {
+        setNumPlayers(numPlayers);
         RULE_STACKING_SAME = ruleStackingSame;
         RULE_STACKING_ALL = ruleStackingSame && ruleStackingAll;
         RULE_DRAW_TILL_PLAYABLE = ruleDrawTillPlayable;
         RULE_SKIP_AFTER_DRAW = ruleSkipAfterDraw;
         HAND_SIZE = handSize;
         this.deck = deck;
+        ORIGINAL_DECK = new UNODeck(deck);
+        pendingMessages = new ArrayList<>();
+    }
+
+    public UNOEngine(boolean ruleStackingSame, boolean ruleStackingAll, boolean ruleDrawTillPlayable, boolean ruleSkipAfterDraw, int handSize, UNODeck deck) {
+        setNumPlayers(0);
+        RULE_STACKING_SAME = ruleStackingSame;
+        RULE_STACKING_ALL = ruleStackingSame && ruleStackingAll;
+        RULE_DRAW_TILL_PLAYABLE = ruleDrawTillPlayable;
+        RULE_SKIP_AFTER_DRAW = ruleSkipAfterDraw;
+        HAND_SIZE = handSize;
+        this.deck = deck;
+        ORIGINAL_DECK = new UNODeck(deck);
+        pendingMessages = new ArrayList<>();
+    }
+
+    public void reset() {
+        deck = new UNODeck(ORIGINAL_DECK);
+        drewCards = false;
+        playedCard = false;
+        num2CardsToDraw = 0;
+        num4CardsToDraw = 0;
+        direction = 1;
+        currentPlayer = 0;
+    }
+
+    public void addPendingMessage(String message) {
+        for (int i = 0; i < pendingMessages.size(); i++) {
+            pendingMessages.set(i, pendingMessages.get(i) + message);
+        }
+    }
+
+    public String getPendingMessage(String playerID) { // for servers to send to their clients
+        for (int i = 0; i < players.size(); i++) {
+            if (players.get(i).getID().equals(playerID)) {
+                String message = pendingMessages.get(i);
+                pendingMessages.set(i, "");
+                return message;
+            }
+        }
+        return "Player ID " + playerID + " not found";
+    }
+
+    public UNOPlayer getNextPlayer() {
+        int pretendCurrentPlayer = currentPlayer;
+        pretendCurrentPlayer += direction;
+        while (pretendCurrentPlayer < 0) {
+            pretendCurrentPlayer += players.size();
+        }
+        while (pretendCurrentPlayer > players.size() - 1) {
+            pretendCurrentPlayer -= players.size();
+        }
+        return players.get(pretendCurrentPlayer);
+    }
+
+    public void setNumPlayers(int numPlayers) {
+        players = new ArrayList<>();
+        for (int i = 0; i < numPlayers; i++) {
+            players.add(new UNOPlayer());
+        }
+    }
+
+    public void addPlayer(UNOPlayer p) {
+        players.add(p);
+    }
+
+    public UNOPlayer addPlayer() {
+        UNOPlayer temp = new UNOPlayer();
+        players.add(temp);
+        return temp;
+    }
+
+    public boolean removePlayer(String ID) {
+        for (UNOPlayer p : players) {
+            if (p.getID().equals(ID)) {
+                return players.remove(p);
+            }
+        }
+        return false;
+    }
+
+    public String getCurrentPlayerID() {
+        return players.get(currentPlayer).getID();
+    }
+
+    public int getHAND_SIZE() {
+        return HAND_SIZE;
+    }
+
+    public void setHAND_SIZE(int HAND_SIZE) {
+        this.HAND_SIZE = HAND_SIZE;
+    }
+
+    public int getNumPlayers() {
+        return players.size();
     }
 
     public boolean isRULE_DRAW_TILL_PLAYABLE() {
@@ -63,7 +163,7 @@ public class UNOEngine {
 
     public void prepareGame() {
         deck.shuffleDrawPile();
-        deck.setNumPlayers(NUM_PLAYERS);
+        deck.setNumPlayers(players.size());
         deck.dealCards(HAND_SIZE);
     }
 
@@ -107,8 +207,8 @@ public class UNOEngine {
     }
 
     public int[] getPlayersBySmallestHand() { // FIXME not done
-        int[] out = new int[NUM_PLAYERS];
-        for (int i = 0; i < NUM_PLAYERS; i++) {
+        int[] out = new int[players.size()];
+        for (int i = 0; i < players.size(); i++) {
             out[i] = deck.getHandSizes()[i];
         }
         return out;
@@ -118,13 +218,13 @@ public class UNOEngine {
         debug("Current player 0 indexed is " + currentPlayer);
         currentPlayer += direction;
         debug("Current player 0 indexed is now " + currentPlayer);
-        //currentPlayer = currentPlayer % NUM_PLAYERS;
+        //currentPlayer = currentPlayer % numPlayers;
         // { <- encompassed in these brackets is the replacement for the commented out line above
         while (currentPlayer < 0) {
-            currentPlayer += NUM_PLAYERS;
+            currentPlayer += players.size();
         }
-        while (currentPlayer > NUM_PLAYERS - 1) {
-            currentPlayer -= NUM_PLAYERS;
+        while (currentPlayer > players.size() - 1) {
+            currentPlayer -= players.size();
         }
         // }
         debug("Current player 0 indexed is now " + currentPlayer);
@@ -227,7 +327,7 @@ public class UNOEngine {
     }
 
     public boolean hasAPlayerEmptiedHand() {
-        for (int i = 0; i < NUM_PLAYERS; i++) {
+        for (int i = 0; i < players.size(); i++) {
             if (deck.getCurrentHand(i).getSize() == 0) {
                 return true;
             }
@@ -261,11 +361,11 @@ public class UNOEngine {
                 playedCard = true;
                 println("P" + (getCurrentPlayer() + 1) + " played " + card.toString());
                 if (card.isSkip()) {
-                    println("Player " + ((getCurrentPlayer() + direction) % NUM_PLAYERS + 1) + " has been skipped.");
+                    println("Player " + ((getCurrentPlayer() + direction) % players.size() + 1) + " has been skipped.");
                     currentPlayer++;
                 } else if (card.isReverse()) {
                     println("Order of play has been reversed.");
-                    if (NUM_PLAYERS > 2) {
+                    if (players.size() > 2) {
                         direction = -direction;
                     } else {
                         currentPlayer++;
@@ -325,7 +425,12 @@ public class UNOEngine {
         out += "\tIs player's turn revoked after being forced to draw via a +2 or +4 card: " + RULE_SKIP_AFTER_DRAW + "\n";
         out += "\tWhen a player has no playable cards, are they forced to draw until they do? If not they only draw one card: " + RULE_DRAW_TILL_PLAYABLE + "\n";
         out += "\tInitial hand size: " + HAND_SIZE + "\n";
-        out += "Number of players: " + NUM_PLAYERS + "\n";
+        out += "Number of players: " + players.size() + "\n";
+        out += "Player list: ";
+        for (UNOPlayer p : players) {
+            out += p.getID() + " ";
+        }
+        out += "\n";
         out += "Current player, 0-indexed: " + currentPlayer + "\n";
         out += "Direction of play, should either be 1 or -1: " + direction + "\n";
         out += "Number of +2 cards pending a draw by the next player: " + num2CardsToDraw + "\n";

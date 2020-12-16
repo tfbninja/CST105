@@ -30,7 +30,7 @@ public class ReverseServer {
                 Socket socket = serverSocket.accept();
                 System.out.println("New client connected");
 
-                new ServerThread(socket).start();
+                //new UNOServerThread(socket, new UNOEngine(0)).start();
             }
 
         } catch (IOException ex) {

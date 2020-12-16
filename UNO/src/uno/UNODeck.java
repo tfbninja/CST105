@@ -7,7 +7,7 @@ import java.util.Collections;
  *
  * @author Tim Barber
  */
-public class UNODeck {
+public class UNODeck extends Object {
 
     private ArrayList<UNOCard> drawPile;
     private ArrayList<UNOCard> discardPile;
@@ -19,6 +19,13 @@ public class UNODeck {
         drawPile = new ArrayList<>();
         discardPile = new ArrayList<>();
         hands = new ArrayList<>();
+    }
+
+    public UNODeck(UNODeck deck) {
+        drawPile = deck.drawPile;
+        discardPile = deck.discardPile;
+        hands = deck.hands;
+        currentColor = deck.currentColor;
     }
 
     public void addCardsToDrawPile(ArrayList<UNOCard> cards) {
