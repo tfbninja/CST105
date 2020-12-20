@@ -4,6 +4,7 @@ import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.logging.Level;
 import java.util.regex.Pattern;
 import uno.*;
 import static uno.UNOConsoleDriver.*;
@@ -29,33 +30,43 @@ public class UNOServerThread extends Thread {
         pendingCommands = new ArrayList<String>();
     }
 
+    @Override
     public void run() {
         try {
-            InputStream input = socket.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+            try {
+                InputStream input = socket.getInputStream();
+                BufferedReader reader = new BufferedReader(new InputStreamReader(input));
 
-            OutputStream output = socket.getOutputStream();
-            writer = new PrintWriter(output, true);
+                OutputStream output = socket.getOutputStream();
+                writer = new PrintWriter(output, true);
 
-            String text;
+                String text;
 
-            do {
-                text = reader.readLine();
-                pendingCommands.add(text);
-                if (engine.getCurrentPlayerID().equals(player.getID())) {
-                    displayTopCard();
-                    displayHand();
-                    displayAndReceiveChoices();
-                }
+                do {
+                    text = reader.readLine();
+                    pendingCommands.add(text);
+                    if (engine.getCurrentPlayerID().equals(player.getID())) {
+                        displayTopCard();
+                        displayHand();
+                        displayAndReceiveChoices();
+                    }
 
-            } while (!text.equals("exit"));
+                } while (!text.equals("exit"));
+                engine.removePlayer(player.getID());
+                socket.close();
+            } catch (IOException ex) {
+                System.out.println("Server exception: " + ex.getMessage());
+                ex.printStackTrace();
+            }
             engine.removePlayer(player.getID());
             socket.close();
         } catch (IOException ex) {
-            System.out.println("Server exception: " + ex.getMessage());
-            ex.printStackTrace();
+            java.util.logging.Logger.getLogger(UNOServerThread.class.getName()).log(Level.SEVERE, null, ex);
         }
-        engine.removePlayer(player.getID());
+    }
+
+    public void displayMessage(String ip, String message) {
+        write(ip + " :: " + message);
     }
 
     private void displayHand() {

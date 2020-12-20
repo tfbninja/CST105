@@ -1,8 +1,0 @@
-2020-12-13T19:39:27.846 (priority normal) -> ---BEGIN LOG---
-2020-12-13T19:39:27.906 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 1, blue 4, blue +2, green 7, yellow 1, yellow 6, wild//
-2020-12-13T19:39:27.908 (priority  debug) -> Options for P1 are "blue 1 blue 4 blue +2 wild ".
-2020-12-13T19:39:27.909 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 1, blue 4, blue +2, green 7, yellow 1, yellow 6, wild//Card to play on: blue 2//Player 1 Contents of hand: blue 1, blue 4, blue +2, green 7, yellow 1, yellow 6, wild//P1: The cards you can play are: blue 1, blue 4, blue +2, and wild.//
-2020-12-13T19:39:27.911 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([14]|(\+2|\+)){1})|((w|wild))))\b)"
-2020-12-13T19:44:06.980 (priority  debug) -> rawish response is "exit"
-2020-12-13T19:44:06.982 (priority   HIGH) -> Ending game, reason: User typed "exit".
-2020-12-13T19:44:06.984 (priority normal) -> ---END LOG---

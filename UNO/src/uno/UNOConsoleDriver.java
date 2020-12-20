@@ -2,6 +2,9 @@ package uno;
 
 import TCP.UNOServerThread;
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -14,11 +17,13 @@ import java.net.UnknownHostException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.regex.Pattern;
+import org.json.*;
 
 /**
  *
@@ -26,7 +31,6 @@ import java.util.regex.Pattern;
  */
 public class UNOConsoleDriver {
 
-    private static final boolean DEBUGMODE = false;
     public static Logger log = new Logger("uno/logs/");
     private static ArrayList<Boolean> isAI = new ArrayList<>();
     private static int numPlayers = 0;
@@ -39,13 +43,18 @@ public class UNOConsoleDriver {
     private static UNOEngine engine;
     private static final int PORT = 42069;
     private static String hostname = "localhost";
+    private static ArrayList<UNOServerThread> connections;
+    private static String[] allowedUsernameCharacters = {"_", "!", "-", ".", "~"};
+    private static String username = "";
 
     public static void main(String[] args) {
 
         handSize = 7;
         deck = new UNODefaultDeck();
-
         printHeader();
+        importSettings();
+
+        connections = new ArrayList<>();
 
         Scanner stdin = new Scanner(System.in);
         String joinOrHost = "";
@@ -65,6 +74,7 @@ public class UNOConsoleDriver {
 
                 Scanner s = new Scanner(System.in);
                 String command = "";
+                System.out.print(username + ": ");
 
                 do {
                     InputStream input = socket.getInputStream();
@@ -74,9 +84,11 @@ public class UNOConsoleDriver {
                         System.out.println(line);
                     }
 
-                    System.out.print("Enter command: ");
-                    command = s.nextLine();
-                    writer.println(command);
+                    if (s.hasNextLine()) {
+                        command = s.nextLine();
+                        writer.println("chat:" + command);
+                        System.out.print(username + ": ");
+                    }
 
                 } while (!command.equals("exit"));
 
@@ -99,19 +111,23 @@ public class UNOConsoleDriver {
                 boolean acceptingNewPlayers = true;
                 while (acceptingNewPlayers) {
                     Socket socket = serverSocket.accept();
+                    connections.add(new UNOServerThread(socket, engine, engine.addPlayer()));
+                    connections.get(connections.size() - 1).start();
                     System.out.println("New client connected");
                     System.out.println("Type start to begin the game. ");
                     Scanner s = new Scanner(System.in);
                     while (s.hasNextLine()) {
                         String cmd = s.nextLine().trim().toLowerCase();
-                        if (cmd.equals("start")) {
+                        if (cmd.equals("start") || cmd.equals("s")) {
                             acceptingNewPlayers = false;
+                            System.out.println("Server no longer listening for new connections.");
+                            break;
                         }
                     }
-                    new UNOServerThread(socket, engine, engine.addPlayer()).start();
                 }
                 try {
                     System.out.println("Preparing game");
+                    sendMessage(serverSocket.getLocalSocketAddress().toString(), "Preparing game");
                     engine.prepareGame();
                     for (int i = 0; i < engine.getNumPlayers(); i++) {
                         isAI.add(false); // FIXME, should add AI
@@ -186,6 +202,68 @@ public class UNOConsoleDriver {
             System.out.println("EXCEPTION OCCURRED");
             exceptionOccurredLog(engine, e);
             throw e;
+        }
+    }
+
+    private static void importSettings() {
+        File settings = new File("rsrc/settings.json"); // grabbed from https://www.w3schools.com/java/java_files_read.asp
+        if (settings.exists()) {
+            String data = "";
+            try {
+                Scanner myReader = new Scanner(settings);
+                while (myReader.hasNextLine()) {
+                    data += myReader.nextLine();
+                }
+                myReader.close();
+                try {
+                    JSONObject obj = new JSONObject(data); // ty to https://stackoverflow.com/a/18998203
+                    username = obj.getString("username");
+                    return;
+                } catch (org.json.JSONException ex) {
+                    log.log("settings.json file unreadeable as JSON, raw data: \"" + data + "\"");
+                }
+            } catch (FileNotFoundException e) {
+                log.log("Could not read from settings.json: " + e.getMessage());
+            }
+        }
+        try {
+            settings.createNewFile();
+        } catch (IOException ex) {
+            java.util.logging.Logger.getLogger(UNOConsoleDriver.class.getName()).log(Level.SEVERE, null, ex);
+            log.log("Could not create settings.json file: " + ex.getMessage(), 1);
+        }
+        Scanner s = new Scanner(System.in);
+        boolean isAllowed = false;
+        String username = "";
+        while (!isAllowed) {
+            System.out.print("What username would you like to appear as? :: ");
+            username = s.nextLine().trim();
+            for (char c : username.toCharArray()) {
+                if (!Arrays.asList(allowedUsernameCharacters).contains(Character.toString(c)) || Character.isLetterOrDigit(c)) {
+                    continue;
+                }
+            }
+            isAllowed = true;
+        }
+        String jsonString = new JSONObject() // ty to https://stackoverflow.com/a/8876284
+                .put("username", username)
+                .toString();
+        log.log("Created json String: " + jsonString);
+        try {
+            FileWriter writer = new FileWriter(settings);
+            writer.write(jsonString);
+            writer.close();
+        } catch (IOException ex) {
+            java.util.logging.Logger.getLogger(UNOConsoleDriver.class.getName()).log(Level.SEVERE, null, ex);
+            log.log("Could not write to settings.json file: " + ex.getMessage(), 1);
+        }
+        log.log("Wrote to settings.json successfully.");
+    }
+
+    private static void sendMessage(String ip, String message) {
+        for (UNOServerThread c : connections) {
+            c.displayMessage(ip, message);
+            System.out.println("sending message to client");
         }
     }
 

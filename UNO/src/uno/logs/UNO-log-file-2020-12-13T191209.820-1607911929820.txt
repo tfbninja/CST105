@@ -1,5 +1,0 @@
-2020-12-13T19:12:09.822 (priority normal) -> ---BEGIN LOG---
-2020-12-13T19:12:09.870 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 4, blue 5, yellow 0, yellow 9, yellow 9, yellow skip, yellow reverse//
-2020-12-13T19:12:09.872 (priority  debug) -> Options for P1 are "blue 4 blue 5 yellow 0 ".
-2020-12-13T19:12:09.873 (cc of screen   ) -> nullPlayer 1 Contents of hand: blue 4, blue 5, yellow 0, yellow 9, yellow 9, yellow skip, yellow reverse//Card to play on: blue 0//Player 1 Contents of hand: blue 4, blue 5, yellow 0, yellow 9, yellow 9, yellow skip, yellow reverse//P1: The cards you can play are: blue 4, blue 5, and yellow 0.//
-2020-12-13T19:12:09.875 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([45]){1})|((y|yellow)\s*([0]){1})))\b)"

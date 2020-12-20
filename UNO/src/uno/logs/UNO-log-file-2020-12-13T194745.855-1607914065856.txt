@@ -1,5 +1,0 @@
-2020-12-13T19:47:45.858 (priority normal) -> ---BEGIN LOG---
-2020-12-13T19:47:45.927 (priority normal) -> Shuffling deck.
-2020-12-13T19:47:45.937 (priority  debug) -> Options for P1 are "green 4 green skip green +2 ".
-2020-12-13T19:47:45.940 (cc of screen   ) -> nullCard to play on: green 2//Player 1 Contents of hand: blue 6, blue reverse, blue +2, green 4, green skip, green +2, red 6//P1: The cards you can play are: green 4, green skip, and green +2.//
-2020-12-13T19:47:45.942 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([4s]|skip|(\+2|\+)){1})))\b)"
