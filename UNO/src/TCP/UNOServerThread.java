@@ -43,25 +43,29 @@ public class UNOServerThread extends Thread {
 
                 String text;
 
-                do {
-                    text = reader.readLine();
-                    log.debug("Received instruction from client " + socket.getRemoteSocketAddress().toString() + ", \"" + text + "\"");
+                try {
+                    do {
+                        text = reader.readLine();
+                        log.debug("Received instruction from client " + socket.getRemoteSocketAddress().toString() + ", \"" + text + "\"");
 
-                    if (text.startsWith("chat:")) {
-                        pendingChats.add(player.getUsername() + ": " + text.substring(5));
-                        System.out.println(pendingChats.get(pendingChats.size() - 1));
-                    } else if (text.startsWith("username:")) {
-                        log.log("Server thread has received username, " + player.getUsername() + " changed to \"" + text.substring(9) + "\"");
-                        player.setUsername(text.substring(9));
-                        hasOverriddenUsername = true;
-                    }
-                    if (engine.hasStarted() && engine.getCurrentPlayerID().equals(player.getID())) {
-                        displayTopCard();
-                        displayHand();
-                        displayAndReceiveChoices();
-                    }
+                        if (text.startsWith("chat:")) {
+                            pendingChats.add(player.getUsername() + ": " + text.substring(5));
+                            System.out.println(pendingChats.get(pendingChats.size() - 1));
+                        } else if (text.startsWith("username:")) {
+                            log.log("Server thread has received username, " + player.getUsername() + " changed to \"" + text.substring(9) + "\"");
+                            player.setUsername(text.substring(9));
+                            hasOverriddenUsername = true;
+                        }
+                        if (engine.hasStarted() && engine.getCurrentPlayerID().equals(player.getID())) {
+                            displayTopCard();
+                            displayHand();
+                            displayAndReceiveChoices();
+                        }
 
-                } while (!text.equals("exit"));
+                    } while (!text.equals("exit"));
+                } catch (java.net.SocketException ex) {
+                    System.out.println(player.getUsername() + " has lost connection or been kicked.");
+                }
                 engine.removePlayer(player.getID());
                 socket.close();
             } catch (IOException ex) {
@@ -73,6 +77,28 @@ public class UNOServerThread extends Thread {
         } catch (IOException ex) {
             java.util.logging.Logger.getLogger(UNOServerThread.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    public void kick() {
+        writer.println("You have been kicked.");
+        engine.removePlayer(player.getID());
+        log.log("Server thread is kicking player " + player.getUsername() + " with ID " + player.getID() + ".");
+        try {
+            socket.shutdownInput();
+            socket.shutdownOutput();
+            socket.close();
+            log.log("Server thread has finished kicking player " + player.getUsername() + " with ID " + player.getID() + ".");
+        } catch (IOException ex) {
+
+        }
+    }
+
+    public String getPlayerID() {
+        return player.getID();
+    }
+
+    public SocketAddress getRemoteSocketAddress() {
+        return socket.getRemoteSocketAddress();
     }
 
     public boolean hasOverriddenUsername() {

@@ -68,6 +68,7 @@ public class UNOConsoleDriver {
         if (joinOrHost.contains("c") || joinOrHost.contains("j")) {
             while (true) {
                 try (Socket socket = new Socket(hostname, PORT)) {
+                    long lastChatMillis = 0;
                     System.out.println("Connected to " + socket.getRemoteSocketAddress().toString());
 
                     OutputStream output = socket.getOutputStream();
@@ -87,8 +88,13 @@ public class UNOConsoleDriver {
                         }
 
                         if (s.hasNextLine()) {
-                            command = s.nextLine();
-                            writer.println("chat:" + command);
+                            command = s.nextLine().trim();
+                            if (!command.isBlank() && System.currentTimeMillis() - lastChatMillis > 1000) {
+                                writer.println("chat:" + command);
+                                lastChatMillis = System.currentTimeMillis();
+                            } else if (System.currentTimeMillis() - lastChatMillis < 1000) {
+                                System.out.println("You are doing that too fast. Try again later.");
+                            }
                         }
 
                     } while (!command.equals("exit"));
@@ -122,7 +128,7 @@ public class UNOConsoleDriver {
                         iter--;
                     }
                     System.out.println(connections.get(connections.size() - 1).getUsername() + " connected");
-                    System.out.println("Type start to begin the game.");
+                    System.out.println("Type start to begin the game, or kick to choose a player to kick.");
                     Scanner s = new Scanner(System.in);
                     while (s.hasNextLine()) {
                         String cmd = s.nextLine().trim().toLowerCase();
@@ -130,6 +136,52 @@ public class UNOConsoleDriver {
                             acceptingNewPlayers = false;
                             System.out.println("Server no longer listening for new connections.");
                             break;
+                        } else if (cmd.equals("kick") || cmd.equals("k")) {
+                            System.out.println("Server has paused listening for new players.");
+                            System.out.println("# \tusername \taddress \t\tID");
+                            int index = 1;
+                            for (UNOServerThread server : connections) {
+                                System.out.println(index + " \t" + server.getUsername() + " \t" + server.getRemoteSocketAddress().toString() + " \t" + server.getPlayerID());
+                            }
+                            System.out.println("Type the number of the player you would like kicked. You can also specify a range of players to kick with dash: \"3-7\" will kick players 3 through 7, inclusive.");
+                            String response = s.nextLine().trim().toLowerCase();
+                            if (response.contains("-")) {
+                                String[] toKick = response.split("-");
+                                try {
+                                    for (int i = Integer.valueOf(toKick[1]) - 1; i > Integer.valueOf(toKick[0]) - 1; i--) {
+                                        if (i < connections.size() && i >= 0) {
+                                            String tempUsername = connections.get(i).getUsername();
+                                            String tempID = connections.get(i).getPlayerID();
+                                            String tempAddress = connections.get(i).getRemoteSocketAddress().toString();
+                                            log.log("Initiating kick of player " + tempUsername + ".");
+                                            connections.get(i).kick();
+                                            connections.remove(i);
+                                            System.out.println("Kicked player " + i + " with username " + tempUsername + ", ID " + tempID + ", and address " + tempAddress + ".");
+                                        } else {
+                                            System.out.println((i + 1) + " is an invalid player number.");
+                                        }
+                                    }
+                                } catch (NumberFormatException ex) {
+                                    System.out.println("Unable to kick players numbered \"" + toKick[0] + "\" through \"" + toKick[1] + "\". Only numbers and dashes are valid characters.");
+                                }
+                            } else {
+                                try {
+                                    int playerNum = Integer.valueOf(response) - 1;
+                                    if (playerNum < connections.size() && playerNum >= 0) {
+                                        String tempUsername = connections.get(playerNum).getUsername();
+                                        String tempID = connections.get(playerNum).getPlayerID();
+                                        String tempAddress = connections.get(playerNum).getRemoteSocketAddress().toString();
+                                        log.log("Initiating kick of player " + tempUsername + ".");
+                                        connections.get(playerNum).kick();
+                                        connections.remove(playerNum);
+                                        System.out.println("Kicked player " + (playerNum + 1) + " with username " + tempUsername + ", ID " + tempID + ", and address " + tempAddress + ".");
+                                    } else {
+                                        System.out.println((playerNum + 1) + " is an invalid player number.");
+                                    }
+                                } catch (NumberFormatException ex) {
+                                    System.out.println("Unable to kick player number \"" + response + "\". Only numbers and dashes are valid characters.");
+                                }
+                            }
                         }
                     }
                 }
