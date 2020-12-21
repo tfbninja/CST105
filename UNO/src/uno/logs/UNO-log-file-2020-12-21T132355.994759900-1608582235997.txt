@@ -1,0 +1,9 @@
+2020-12-21T13:23:55.999765600 (priority normal) -> ---BEGIN LOG---
+2020-12-21T13:24:16.148197400 (priority normal) -> Shuffling deck.
+2020-12-21T13:24:16.153199200 (cc of screen   ) -> Would you like to host or join? 
+2020-12-21T13:24:16.156195100 (priority  debug) -> Options for P1 are "red +2 wild wild wild ".
+2020-12-21T13:24:16.158196800 (cc of screen   ) -> Card to play on: red 9 // Player 1 Contents of hand: green 5, red +2, yellow 0, yellow reverse, wild, wild, wild // P1: The cards you can play are: red +2, wild, wild, and wild. // 
+2020-12-21T13:24:16.159196800 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*(|(\+2|\+)){1})|((w|wild)|(w|wild)|(w|wild))))\b)"
+2020-12-21T13:24:19.764246700 (priority  debug) -> rawish response is "exit"
+2020-12-21T13:24:19.768248300 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-21T13:24:19.769264300 (priority normal) -> ---END LOG---

@@ -1,0 +1,6 @@
+2020-12-20T15:37:11.385783300 (priority normal) -> ---BEGIN LOG---
+2020-12-20T15:37:47.148085600 (priority normal) -> Shuffling deck.
+2020-12-20T15:37:47.152085500 (cc of screen   ) -> Would you like to host or join? 
+2020-12-20T15:37:47.154084300 (priority  debug) -> Options for P1 are "yellow 1 yellow 5 ".
+2020-12-20T15:37:47.156084600 (cc of screen   ) -> Card to play on: yellow 7 // Player 1 Contents of hand: blue 0, blue 8, green 1, green 4, red +2, yellow 1, yellow 5 // P1: The cards you can play are: yellow 1 and yellow 5. // 
+2020-12-20T15:37:47.159087100 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([15]){1})))\b)"

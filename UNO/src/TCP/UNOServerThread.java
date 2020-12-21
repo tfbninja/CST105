@@ -21,13 +21,14 @@ public class UNOServerThread extends Thread {
     private UNOEngine engine;
     private UNOPlayer player;
     private PrintWriter writer;
-    private ArrayList<String> pendingCommands;
+    private ArrayList<String> pendingChats;
+    private boolean hasOverriddenUsername = false;
 
     public UNOServerThread(Socket socket, UNOEngine engine, UNOPlayer selfPlayer) {
         this.socket = socket;
         this.engine = engine;
         this.player = selfPlayer;
-        pendingCommands = new ArrayList<String>();
+        pendingChats = new ArrayList<String>();
     }
 
     @Override
@@ -44,8 +45,17 @@ public class UNOServerThread extends Thread {
 
                 do {
                     text = reader.readLine();
-                    pendingCommands.add(text);
-                    if (engine.getCurrentPlayerID().equals(player.getID())) {
+                    log.debug("Received instruction from client " + socket.getRemoteSocketAddress().toString() + ", \"" + text + "\"");
+
+                    if (text.startsWith("chat:")) {
+                        pendingChats.add(player.getUsername() + ": " + text.substring(5));
+                        System.out.println(pendingChats.get(pendingChats.size() - 1));
+                    } else if (text.startsWith("username:")) {
+                        log.log("Server thread has received username, " + player.getUsername() + " changed to \"" + text.substring(9) + "\"");
+                        player.setUsername(text.substring(9));
+                        hasOverriddenUsername = true;
+                    }
+                    if (engine.hasStarted() && engine.getCurrentPlayerID().equals(player.getID())) {
                         displayTopCard();
                         displayHand();
                         displayAndReceiveChoices();
@@ -63,6 +73,14 @@ public class UNOServerThread extends Thread {
         } catch (IOException ex) {
             java.util.logging.Logger.getLogger(UNOServerThread.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    public boolean hasOverriddenUsername() {
+        return hasOverriddenUsername;
+    }
+
+    public String getUsername() {
+        return player.getUsername();
     }
 
     public void displayMessage(String ip, String message) {
@@ -190,8 +208,8 @@ public class UNOServerThread extends Thread {
 
         write(prompt);
         do {
-            if (pendingCommands.size() > 0) {
-                String cmd = pendingCommands.get(0);
+            if (pendingChats.size() > 0) {
+                String cmd = pendingChats.get(0);
                 formatted = cmd.trim().toLowerCase();
                 log.debug("rawish response is \"" + formatted + "\"");
                 if (!Pattern.matches(regex, formatted)) {
@@ -223,6 +241,10 @@ public class UNOServerThread extends Thread {
         }
         out += options.get(options.size() - 1) + ".";
         return out;
+    }
+
+    public ArrayList<String> getPendingChats() {
+        return pendingChats;
     }
 
     private void write(String message) {

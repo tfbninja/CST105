@@ -1,0 +1,12 @@
+2020-12-21T13:31:58.894147900 (priority normal) -> ---BEGIN LOG---
+2020-12-21T13:32:14.028145900 (priority normal) -> Shuffling deck.
+2020-12-21T13:32:14.033166 (priority  debug) -> Current player 0 indexed is 0
+2020-12-21T13:32:14.034164700 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-21T13:32:14.034164700 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-21T13:32:14.035164400 (cc of screen   ) -> Would you like to host or join? First card is a skip, skipping P1. // 
+2020-12-21T13:32:14.038144900 (priority  debug) -> Options for P1 are "blue 8 wild wild ".
+2020-12-21T13:32:14.040144400 (cc of screen   ) -> Card to play on: blue skip // Player 1 Contents of hand: blue 8, green 5, red 3, yellow 5, yellow reverse, wild, wild // P1: The cards you can play are: blue 8, wild, and wild. // 
+2020-12-21T13:32:14.041146900 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([8]){1})|((w|wild)|(w|wild))))\b)"
+2020-12-21T13:32:15.843140300 (priority  debug) -> rawish response is "exit"
+2020-12-21T13:32:15.846150200 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-21T13:32:15.847150 (priority normal) -> ---END LOG---

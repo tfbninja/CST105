@@ -66,41 +66,45 @@ public class UNOConsoleDriver {
             }
         }
         if (joinOrHost.contains("c") || joinOrHost.contains("j")) {
+            while (true) {
+                try (Socket socket = new Socket(hostname, PORT)) {
+                    System.out.println("Connected to " + socket.getRemoteSocketAddress().toString());
 
-            try (Socket socket = new Socket(hostname, PORT)) {
+                    OutputStream output = socket.getOutputStream();
+                    PrintWriter writer = new PrintWriter(output, true);
 
-                OutputStream output = socket.getOutputStream();
-                PrintWriter writer = new PrintWriter(output, true);
+                    sendUsername(writer);
 
-                Scanner s = new Scanner(System.in);
-                String command = "";
-                System.out.print(username + ": ");
+                    Scanner s = new Scanner(System.in);
+                    String command = "";
 
-                do {
-                    InputStream input = socket.getInputStream();
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(input));
-                    while (reader.ready()) {
-                        String line = reader.readLine();
-                        System.out.println(line);
-                    }
+                    do {
+                        InputStream input = socket.getInputStream();
+                        BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+                        while (reader.ready()) {
+                            String line = reader.readLine();
+                            System.out.println(line);
+                        }
 
-                    if (s.hasNextLine()) {
-                        command = s.nextLine();
-                        writer.println("chat:" + command);
-                        System.out.print(username + ": ");
-                    }
+                        if (s.hasNextLine()) {
+                            command = s.nextLine();
+                            writer.println("chat:" + command);
+                        }
 
-                } while (!command.equals("exit"));
+                    } while (!command.equals("exit"));
 
-                socket.close();
-
-            } catch (UnknownHostException ex) {
-
-                System.out.println("Server not found: " + ex.getMessage());
-
-            } catch (IOException ex) {
-
-                System.out.println("I/O error: " + ex.getMessage());
+                    socket.close();
+                    log.closeLog();
+                } catch (UnknownHostException ex) {
+                    //System.out.println("Server not found: " + ex.getMessage());
+                } catch (IOException ex) {
+                    //System.out.println("I/O error: " + ex.getMessage());
+                }
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException ex) {
+                    java.util.logging.Logger.getLogger(UNOConsoleDriver.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         } else if (joinOrHost.contains("s") || joinOrHost.contains("h")) {
 
@@ -113,8 +117,12 @@ public class UNOConsoleDriver {
                     Socket socket = serverSocket.accept();
                     connections.add(new UNOServerThread(socket, engine, engine.addPlayer()));
                     connections.get(connections.size() - 1).start();
-                    System.out.println("New client connected");
-                    System.out.println("Type start to begin the game. ");
+                    int iter = 100000; // this is just to be able to say the right username has connected, instead of the default name
+                    while (iter > 0 && !connections.get(connections.size() - 1).hasOverriddenUsername()) {
+                        iter--;
+                    }
+                    System.out.println(connections.get(connections.size() - 1).getUsername() + " connected");
+                    System.out.println("Type start to begin the game.");
                     Scanner s = new Scanner(System.in);
                     while (s.hasNextLine()) {
                         String cmd = s.nextLine().trim().toLowerCase();
@@ -202,6 +210,14 @@ public class UNOConsoleDriver {
             System.out.println("EXCEPTION OCCURRED");
             exceptionOccurredLog(engine, e);
             throw e;
+        }
+    }
+
+    private static void printChats() {
+        for (UNOServerThread s : connections) {
+            for (String chat : s.getPendingChats()) {
+                System.out.println(chat);
+            }
         }
     }
 
@@ -381,6 +397,11 @@ public class UNOConsoleDriver {
 
     private static void println(String message) {
         print(message + "\n");
+    }
+
+    private static void sendUsername(PrintWriter writer) {
+        log.log("Sending username to host \"" + username + "\"");
+        writer.println("username:" + username);
     }
 
     private static void silentPrint(String message) {

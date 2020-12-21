@@ -1,0 +1,11 @@
+2020-12-21T13:39:57.670177200 (priority normal) -> ---BEGIN LOG---
+2020-12-21T13:40:08.211329500 (priority  debug) -> Received instruction from client /127.0.0.1:56195, "username:tfbninja"
+2020-12-21T13:40:08.213331 (priority normal) -> Server thread has received username, changed to "tfbninja"
+2020-12-21T13:40:46.724400700 (priority normal) -> Shuffling deck.
+2020-12-21T13:40:46.731399100 (cc of screen   ) -> Would you like to host or join? 
+2020-12-21T13:40:46.733397800 (priority  debug) -> Options for P1 are "green 0 green 1 green 3 green 4 green 6 yellow 4 ".
+2020-12-21T13:40:46.735399900 (cc of screen   ) -> Card to play on: green 4 // Player 1 Contents of hand: blue 3, green 0, green 1, green 3, green 4, green 6, yellow 4 // P1: The cards you can play are: green 0, green 1, green 3, green 4, green 6, and yellow 4. // 
+2020-12-21T13:40:46.737397400 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([01346]){1})|((y|yellow)\s*([4]){1})))\b)"
+2020-12-21T13:40:47.963241100 (priority  debug) -> rawish response is "exit"
+2020-12-21T13:40:47.966247 (priority   HIGH) -> Ending game, reason: User typed "exit".
+2020-12-21T13:40:47.967248700 (priority normal) -> ---END LOG---

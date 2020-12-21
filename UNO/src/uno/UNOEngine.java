@@ -25,6 +25,7 @@ public class UNOEngine {
     private int num4CardsToDraw = 0; // counts how many +4's are played in a row
     private boolean drewCards = false;
     private boolean playedCard = false;
+    private boolean started = false;
 
     private final UNODeck ORIGINAL_DECK;
 
@@ -72,6 +73,7 @@ public class UNOEngine {
         num4CardsToDraw = 0;
         direction = 1;
         currentPlayer = 0;
+        started = false;
     }
 
     public void addPendingMessage(String message) {
@@ -181,7 +183,12 @@ public class UNOEngine {
             println("First card is a skip, skipping P1.");
             assignNextPlayer();
         }
+        started = true;
         flush();
+    }
+
+    public boolean hasStarted() {
+        return started;
     }
 
     private void flush() {
