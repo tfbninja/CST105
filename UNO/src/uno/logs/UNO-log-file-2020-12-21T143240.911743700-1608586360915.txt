@@ -1,7 +1,0 @@
-2020-12-21T14:32:40.917742700 (priority normal) -> ---BEGIN LOG---
-2020-12-21T14:32:52.129068 (priority  debug) -> Received instruction from client /127.0.0.1:56948, "username:tfbninja"
-2020-12-21T14:32:52.130067800 (priority normal) -> Server thread has received username, Player 046537 changed to "tfbninja"
-2020-12-21T14:33:02.266298700 (priority  debug) -> Received instruction from client /127.0.0.1:56948, "chat:Hello"
-2020-12-21T14:35:55.098265100 (priority normal) -> Initiating kick of player tfbninja.
-2020-12-21T14:35:55.101266400 (priority normal) -> Server thread is kicking player tfbninja with ID b55a7918ad29d71ebe807444f5be5905fc5c914e1f90edfbcdd3560740226beb.
-2020-12-21T14:35:55.104264300 (priority normal) -> Server thread has finished kicking player tfbninja with ID b55a7918ad29d71ebe807444f5be5905fc5c914e1f90edfbcdd3560740226beb.

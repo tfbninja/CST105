@@ -1,0 +1,3 @@
+2020-12-23T16:50:24.507396700 (priority normal) -> ---BEGIN LOG---
+2020-12-23T16:50:30.098382100 (priority   HIGH) -> Ending game, reason: User typed "exit"
+2020-12-23T16:50:30.099378300 (priority normal) -> ---END LOG---

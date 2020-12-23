@@ -23,6 +23,7 @@ public class UNOServerThread extends Thread {
     private PrintWriter writer;
     private ArrayList<String> pendingChats;
     private boolean hasOverriddenUsername = false;
+    private boolean hasOverriddenID = false;
 
     public UNOServerThread(Socket socket, UNOEngine engine, UNOPlayer selfPlayer) {
         this.socket = socket;
@@ -55,6 +56,10 @@ public class UNOServerThread extends Thread {
                             log.log("Server thread has received username, " + player.getUsername() + " changed to \"" + text.substring(9) + "\"");
                             player.setUsername(text.substring(9));
                             hasOverriddenUsername = true;
+                        } else if (text.startsWith("ID:")) {
+                            log.log("Server thread has received username, " + player.getUsername() + " changed to \"" + text.substring(9) + "\"");
+                            player.setID(text.substring(9));
+                            hasOverriddenID = true;
                         }
                         if (engine.hasStarted() && engine.getCurrentPlayerID().equals(player.getID())) {
                             displayTopCard();
@@ -101,8 +106,8 @@ public class UNOServerThread extends Thread {
         return socket.getRemoteSocketAddress();
     }
 
-    public boolean hasOverriddenUsername() {
-        return hasOverriddenUsername;
+    public boolean hasOverriddenCredentials() {
+        return hasOverriddenUsername && hasOverriddenID;
     }
 
     public String getUsername() {

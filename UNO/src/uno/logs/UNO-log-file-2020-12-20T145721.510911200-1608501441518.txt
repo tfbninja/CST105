@@ -1,4 +1,0 @@
-2020-12-20T14:57:21.520910300 (priority normal) -> ---BEGIN LOG---
-2020-12-20T14:57:22.298912100 (priority normal) -> settings.json file unreadeable as JSON, raw data: ""
-2020-12-20T14:57:27.886259100 (priority normal) -> Created json String: {"username":"tfbninja"}
-2020-12-20T14:57:27.888258300 (priority normal) -> Wrote to settings.json successfully.

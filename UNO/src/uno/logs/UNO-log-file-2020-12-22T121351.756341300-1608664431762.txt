@@ -1,0 +1,8 @@
+2020-12-22T12:13:51.764343900 (priority normal) -> ---BEGIN LOG---
+2020-12-22T12:14:09.262193400 (priority  debug) -> Received instruction from client /127.0.0.1:58629, "username:joeMama"
+2020-12-22T12:14:09.263196600 (priority normal) -> Server thread has received username, Player 550736 changed to "joeMama"
+2020-12-22T12:14:09.264193500 (priority  debug) -> Received instruction from client /127.0.0.1:58629, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-22T12:14:09.265194800 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-22T12:14:13.578143900 (priority normal) -> Initiating kick of player joeMama.
+2020-12-22T12:14:13.579149300 (priority normal) -> Server thread is kicking player joeMama with ID 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def.
+2020-12-22T12:14:13.582144300 (priority normal) -> Server thread has finished kicking player joeMama with ID 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def.

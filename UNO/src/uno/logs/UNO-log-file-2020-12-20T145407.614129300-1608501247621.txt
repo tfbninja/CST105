@@ -1,6 +1,0 @@
-2020-12-20T14:54:07.624128700 (priority normal) -> ---BEGIN LOG---
-2020-12-20T14:54:08.422126 (priority normal) -> Could not read from settings.json: settings.json (The system cannot find the file specified)
-2020-12-20T14:54:13.192251100 (priority normal) -> Created json String: {"username":"tfbninja"}
-2020-12-20T14:54:13.193245600 (priority normal) -> Wrote to settings.json successfully.
-2020-12-20T14:54:16.181224700 (priority   HIGH) -> Ending game, reason: User typed "exit"
-2020-12-20T14:54:16.182220800 (priority normal) -> ---END LOG---

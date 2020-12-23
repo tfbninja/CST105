@@ -1,9 +1,0 @@
-2020-12-21T13:27:53.448294700 (priority normal) -> ---BEGIN LOG---
-2020-12-21T13:28:07.676081100 (priority normal) -> Shuffling deck.
-2020-12-21T13:28:07.680084500 (cc of screen   ) -> Would you like to host or join? 
-2020-12-21T13:28:07.683084100 (priority  debug) -> Options for P1 are "green 3 ".
-2020-12-21T13:28:07.684080 (cc of screen   ) -> Card to play on: blue 3 // Player 1 Contents of hand: green 3, green 9, red 0, red 2, red 7, red 8, red 9 // P1: The only card you can play is: green 3. // 
-2020-12-21T13:28:07.685078300 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([3]){1})))\b)"
-2020-12-21T13:28:10.019921100 (priority  debug) -> rawish response is "exit"
-2020-12-21T13:28:10.023919600 (priority   HIGH) -> Ending game, reason: User typed "exit".
-2020-12-21T13:28:10.024921900 (priority normal) -> ---END LOG---

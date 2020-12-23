@@ -1,2 +1,0 @@
-2020-12-21T14:26:21.880691600 (priority normal) -> ---BEGIN LOG---
-2020-12-21T14:26:24.563354700 (priority normal) -> Sending username to host "tfbninja"

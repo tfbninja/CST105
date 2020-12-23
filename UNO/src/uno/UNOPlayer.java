@@ -13,12 +13,17 @@ import java.util.logging.Logger;
  */
 public class UNOPlayer {
 
-    private final String ID;
+    private String ID;
     private String username;
 
     public UNOPlayer() {
         Random rand = new Random(System.currentTimeMillis() + 1);
         username = "Player " + rand.nextInt(9) + rand.nextInt(9) + rand.nextInt(9) + rand.nextInt(9) + rand.nextInt(9) + rand.nextInt(9);
+        ID = generateID();
+    }
+
+    public static String generateID() {
+        Random rand = new Random(System.currentTimeMillis() + 1);
         String temp = "";
         try { // most of this is from https://www.baeldung.com/sha-256-hashing-java
             final MessageDigest digest = MessageDigest.getInstance("SHA3-256");
@@ -33,7 +38,11 @@ public class UNOPlayer {
                 temp += chars[rand.nextInt(chars.length - 1)];
             }
         }
-        ID = temp;
+        return temp;
+    }
+
+    public void setID(String newID) {
+        ID = newID;
     }
 
     public String getID() {

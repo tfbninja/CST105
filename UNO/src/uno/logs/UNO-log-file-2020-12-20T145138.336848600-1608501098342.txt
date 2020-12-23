@@ -1,4 +1,0 @@
-2020-12-20T14:51:38.344852100 (priority normal) -> ---BEGIN LOG---
-2020-12-20T14:51:39.065221500 (priority normal) -> Could not read from settings.json: settings.json (The system cannot find the file specified)
-2020-12-20T14:51:46.260147900 (priority   HIGH) -> Ending game, reason: User typed "exit"
-2020-12-20T14:51:46.261153500 (priority normal) -> ---END LOG---

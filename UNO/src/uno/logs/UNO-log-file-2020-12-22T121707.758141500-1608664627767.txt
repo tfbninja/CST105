@@ -1,0 +1,10 @@
+2020-12-22T12:17:07.769143700 (priority normal) -> ---BEGIN LOG---
+2020-12-22T12:17:22.946131600 (priority  debug) -> Received instruction from client /127.0.0.1:58666, "username:joeMama"
+2020-12-22T12:17:22.947133300 (priority normal) -> Server thread has received username, Player 535160 changed to "joeMama"
+2020-12-22T12:17:22.949136300 (priority  debug) -> Received instruction from client /127.0.0.1:58666, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-22T12:17:22.950137400 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-22T12:17:28.514650400 (priority normal) -> Initiating kick of player joeMama.
+2020-12-22T12:17:28.515650 (priority normal) -> Server thread is kicking player joeMama with ID 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def.
+2020-12-22T12:17:28.517652600 (priority normal) -> Server thread has finished kicking player joeMama with ID 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def.
+2020-12-22T12:17:28.521655400 (priority normal) -> Created json String: {"ID":"2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def","BANNED_IDS":["018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"],"username":"joeMama"}
+2020-12-22T12:17:28.523647300 (priority normal) -> Wrote to settings.json successfully.

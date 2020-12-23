@@ -1,3 +1,0 @@
-2020-12-21T14:39:31.395754200 (priority normal) -> ---BEGIN LOG---
-2020-12-21T14:39:52.180963100 (priority  debug) -> Received instruction from client /127.0.0.1:57004, "username:tfbninja"
-2020-12-21T14:39:52.181956400 (priority normal) -> Server thread has received username, Player 278441 changed to "tfbninja"

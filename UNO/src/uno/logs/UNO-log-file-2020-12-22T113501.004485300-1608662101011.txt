@@ -1,0 +1,6 @@
+2020-12-22T11:35:01.013486700 (priority normal) -> ---BEGIN LOG---
+2020-12-22T11:35:02.264485200 (priority normal) -> settings.json file unreadeable as JSON, raw data: "{"username":"tfbninja"}"
+2020-12-22T11:35:09.973224500 (priority normal) -> Created json String: {"ID":"90dc85c58b020ba530e9bbaab8c64b7c58e053a54b656ba84d1be667bd5fd76d","username":"joeMama"}
+2020-12-22T11:35:09.975224800 (priority normal) -> Wrote to settings.json successfully.
+2020-12-22T11:35:22.987133600 (priority   HIGH) -> Ending game, reason: User typed "exit"
+2020-12-22T11:35:22.989133400 (priority normal) -> ---END LOG---

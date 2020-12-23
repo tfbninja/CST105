@@ -19,6 +19,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -46,6 +47,8 @@ public class UNOConsoleDriver {
     private static ArrayList<UNOServerThread> connections;
     private static String[] allowedUsernameCharacters = {"_", "!", "-", ".", "~"};
     private static String username = "";
+    private static String ID = "";
+    private static ArrayList<String> bannedIDList = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -74,7 +77,7 @@ public class UNOConsoleDriver {
                     OutputStream output = socket.getOutputStream();
                     PrintWriter writer = new PrintWriter(output, true);
 
-                    sendUsername(writer);
+                    sendCredentials(writer);
 
                     Scanner s = new Scanner(System.in);
                     String command = "";
@@ -124,8 +127,13 @@ public class UNOConsoleDriver {
                     connections.add(new UNOServerThread(socket, engine, engine.addPlayer()));
                     connections.get(connections.size() - 1).start();
                     int iter = 100000; // this is just to be able to say the right username has connected, instead of the default name
-                    while (iter > 0 && !connections.get(connections.size() - 1).hasOverriddenUsername()) {
+                    while (iter > 0 && !connections.get(connections.size() - 1).hasOverriddenCredentials()) {
                         iter--;
+                    }
+                    if (isBanned(connections.get(connections.size() - 1).getPlayerID())) {
+                        connections.get(connections.size() - 1).displayMessage("host", "You have been banned and cannot join.");
+                        socket.close();
+                        continue;
                     }
                     System.out.println(connections.get(connections.size() - 1).getUsername() + " connected");
                     System.out.println("Type start to begin the game, or kick to choose a player to kick.");
@@ -155,6 +163,7 @@ public class UNOConsoleDriver {
                                             String tempAddress = connections.get(i).getRemoteSocketAddress().toString();
                                             log.log("Initiating kick of player " + tempUsername + ".");
                                             connections.get(i).kick();
+                                            banPlayer(connections.get(i).getPlayerID());
                                             connections.remove(i);
                                             System.out.println("Kicked player " + i + " with username " + tempUsername + ", ID " + tempID + ", and address " + tempAddress + ".");
                                         } else {
@@ -173,6 +182,7 @@ public class UNOConsoleDriver {
                                         String tempAddress = connections.get(playerNum).getRemoteSocketAddress().toString();
                                         log.log("Initiating kick of player " + tempUsername + ".");
                                         connections.get(playerNum).kick();
+                                        banPlayer(connections.get(playerNum).getPlayerID());
                                         connections.remove(playerNum);
                                         System.out.println("Kicked player " + (playerNum + 1) + " with username " + tempUsername + ", ID " + tempID + ", and address " + tempAddress + ".");
                                     } else {
@@ -265,6 +275,84 @@ public class UNOConsoleDriver {
         }
     }
 
+    private static boolean isBanned(String tempID) {
+        for (String s : bannedIDList) {
+            if (s.equals(tempID)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static void banPlayer(String banID) {
+        File settings = new File("rsrc/settings.json"); // grabbed from https://www.w3schools.com/java/java_files_read.asp
+        if (settings.exists()) {
+            String data = "";
+            try {
+                Scanner myReader = new Scanner(settings);
+                while (myReader.hasNextLine()) {
+                    data += myReader.nextLine();
+                }
+                myReader.close();
+                try {
+                    JSONObject obj = new JSONObject(data); // ty to https://stackoverflow.com/a/18998203
+                    List<Object> bannedIDsRaw = obj.getJSONArray("BANNED_IDS").toList();
+                    ArrayList<String> bannedIDs = new ArrayList<>();
+                    for (Object o : bannedIDsRaw) {
+                        String temp = (String) o;
+                        bannedIDs.add(temp);
+                    }
+                    bannedIDs.add(banID);
+                    JSONArray jsonBan = new JSONArray();
+                    for (String s : bannedIDs) {
+                        jsonBan.put(s);
+                    }
+                    String jsonString = new JSONObject() // ty to https://stackoverflow.com/a/8876284
+                            .put("username", username)
+                            .put("ID", ID)
+                            .put("BANNED_IDS", jsonBan)
+                            .toString();
+                    log.log("Created json String: " + jsonString);
+                    try {
+                        FileWriter writer = new FileWriter(settings);
+                        writer.write(jsonString);
+                        writer.close();
+                    } catch (IOException ex) {
+                        java.util.logging.Logger.getLogger(UNOConsoleDriver.class.getName()).log(Level.SEVERE, null, ex);
+                        log.log("Could not write to settings.json file: " + ex.getMessage(), 1);
+                    }
+                    log.log("Wrote to settings.json successfully.");
+                    return;
+                } catch (org.json.JSONException ex) {
+                    log.log("settings.json file unreadeable as JSON, raw data: \"" + data + "\"");
+                }
+            } catch (FileNotFoundException e) {
+                log.log("Could not read from settings.json: " + e.getMessage());
+            }
+        }
+        try {
+            settings.createNewFile();
+        } catch (IOException ex) {
+            java.util.logging.Logger.getLogger(UNOConsoleDriver.class.getName()).log(Level.SEVERE, null, ex);
+            log.log("Could not create settings.json file: " + ex.getMessage(), 1);
+        }
+        String jsonString = new JSONObject() // ty to https://stackoverflow.com/a/8876284
+                .put("username", username)
+                .put("ID", UNOPlayer.generateID())
+                .put("BANNED_IDS", "[" + banID + "]")
+                .toString();
+        log.log("Created json String: " + jsonString);
+        try {
+            FileWriter writer = new FileWriter(settings);
+            writer.write(jsonString);
+            writer.close();
+        } catch (IOException ex) {
+            java.util.logging.Logger.getLogger(UNOConsoleDriver.class.getName()).log(Level.SEVERE, null, ex);
+            log.log("Could not write to settings.json file: " + ex.getMessage(), 1);
+        }
+        log.log("Wrote to settings.json successfully.");
+    }
+
     private static void printChats() {
         for (UNOServerThread s : connections) {
             for (String chat : s.getPendingChats()) {
@@ -286,6 +374,13 @@ public class UNOConsoleDriver {
                 try {
                     JSONObject obj = new JSONObject(data); // ty to https://stackoverflow.com/a/18998203
                     username = obj.getString("username");
+                    ID = obj.getString("ID");
+
+                    List<Object> bannedIDsRaw = obj.getJSONArray("BANNED_IDS").toList();
+                    for (Object o : bannedIDsRaw) {
+                        String temp = (String) o;
+                        bannedIDList.add(temp);
+                    }
                     return;
                 } catch (org.json.JSONException ex) {
                     log.log("settings.json file unreadeable as JSON, raw data: \"" + data + "\"");
@@ -315,6 +410,8 @@ public class UNOConsoleDriver {
         }
         String jsonString = new JSONObject() // ty to https://stackoverflow.com/a/8876284
                 .put("username", username)
+                .put("ID", UNOPlayer.generateID())
+                .put("BANNED_IDS", new JSONArray())
                 .toString();
         log.log("Created json String: " + jsonString);
         try {
@@ -451,9 +548,11 @@ public class UNOConsoleDriver {
         print(message + "\n");
     }
 
-    private static void sendUsername(PrintWriter writer) {
+    private static void sendCredentials(PrintWriter writer) {
         log.log("Sending username to host \"" + username + "\"");
         writer.println("username:" + username);
+        log.log("Sending ID to host \"" + ID + "\"");
+        writer.println("ID:" + ID);
     }
 
     private static void silentPrint(String message) {
