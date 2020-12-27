@@ -1,5 +1,0 @@
-2020-12-22T12:02:06.456142200 (priority normal) -> ---BEGIN LOG---
-2020-12-22T12:02:19.515853500 (priority  debug) -> Received instruction from client /127.0.0.1:58524, "username:joeMama"
-2020-12-22T12:02:19.516857900 (priority normal) -> Server thread has received username, Player 756285 changed to "joeMama"
-2020-12-22T12:02:19.518856300 (priority  debug) -> Received instruction from client /127.0.0.1:58524, "ID:90dc85c58b020ba530e9bbaab8c64b7c58e053a54b656ba84d1be667bd5fd76d"
-2020-12-22T12:02:19.519856400 (priority normal) -> Server thread has received username, joeMama changed to "c58b020ba530e9bbaab8c64b7c58e053a54b656ba84d1be667bd5fd76d"

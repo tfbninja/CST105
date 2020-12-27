@@ -104,7 +104,7 @@ public class Logger {
         // The following code is a minimally modified excerpt from https://www.w3schools.com/java/java_files_create.asp
         if (messageThatWasPrintedToScreen != null) {
             try {
-                try (FileWriter myWriter = new FileWriter(filename, true)) {
+                try ( FileWriter myWriter = new FileWriter(filename, true)) {
                     for (String line : messageThatWasPrintedToScreen.split("\n")) {
                         if (!line.isEmpty()) {
                             myWriter.write(LocalDateTime.now().toString() + " (cc of screen   ) -> " + line + System.lineSeparator());
@@ -124,7 +124,7 @@ public class Logger {
     public void log(String message, int priority) {
         // The following code is a minimally modified excerpt from https://www.w3schools.com/java/java_files_create.asp
         try {
-            try (FileWriter myWriter = new FileWriter(filename, true)) {
+            try ( FileWriter myWriter = new FileWriter(filename, true)) {
                 for (String line : message.split("\n")) {
                     if (!line.isEmpty()) {
                         myWriter.write(LocalDateTime.now().toString() + " (priority " + priorityToString(priority) + ") -> " + line + System.lineSeparator());

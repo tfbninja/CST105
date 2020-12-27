@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -32,7 +33,7 @@ import org.json.*;
  */
 public class UNOConsoleDriver {
 
-    public static Logger log = new Logger("uno/logs/");
+    public static Logger log = new Logger("rsrc/logs/");
     private static ArrayList<Boolean> isAI = new ArrayList<>();
     private static int numPlayers = 0;
     private static boolean ruleStackingSame = true;
@@ -49,6 +50,7 @@ public class UNOConsoleDriver {
     private static String username = "";
     private static String ID = "";
     private static ArrayList<String> bannedIDList = new ArrayList<>();
+    private static int chatDelayMillis = 500;
 
     public static void main(String[] args) {
 
@@ -65,45 +67,73 @@ public class UNOConsoleDriver {
             print("Would you like to host or join? ");
             joinOrHost = stdin.nextLine().trim().toLowerCase();
             if (joinOrHost.equals("exit")) {
-                forceEndGame("User typed \"exit\"");
+                forceExitGame("User typed \"exit\"");
             }
         }
         if (joinOrHost.contains("c") || joinOrHost.contains("j")) {
+            stdin = new Scanner(System.in);
             while (true) {
-                try (Socket socket = new Socket(hostname, PORT)) {
-                    long lastChatMillis = 0;
-                    System.out.println("Connected to " + socket.getRemoteSocketAddress().toString());
+                try ( Socket socket = new Socket(hostname, PORT)) {
+                    while (socket.isConnected()) {
+                        boolean selfTurn = false;
+                        long lastChatMillis = 0;
+                        System.out.println("Connected to " + socket.getRemoteSocketAddress().toString());
 
-                    OutputStream output = socket.getOutputStream();
-                    PrintWriter writer = new PrintWriter(output, true);
+                        OutputStream output = socket.getOutputStream();
+                        PrintWriter writer = new PrintWriter(output, true);
 
-                    sendCredentials(writer);
+                        sendCredentials(writer);
 
-                    Scanner s = new Scanner(System.in);
-                    String command = "";
+                        String command = "";
 
-                    do {
                         InputStream input = socket.getInputStream();
                         BufferedReader reader = new BufferedReader(new InputStreamReader(input));
-                        while (reader.ready()) {
-                            String line = reader.readLine();
-                            System.out.println(line);
-                        }
 
-                        if (s.hasNextLine()) {
-                            command = s.nextLine().trim();
-                            if (!command.isBlank() && System.currentTimeMillis() - lastChatMillis > 1000) {
-                                writer.println("chat:" + command);
-                                lastChatMillis = System.currentTimeMillis();
-                            } else if (System.currentTimeMillis() - lastChatMillis < 1000) {
-                                System.out.println("You are doing that too fast. Try again later.");
+                        do {
+                            while (reader.ready()) {
+                                String line = reader.readLine();
+                                if (line.equals("urturn")) {
+                                    selfTurn = true;
+                                    log.log("turn");
+                                } else if (line.equals("noturturn")) {
+                                    selfTurn = false;
+                                    log.log("Not turn");
+                                } else {
+                                    System.out.println(line);
+                                }
                             }
-                        }
 
-                    } while (!command.equals("exit"));
+                            if (stdin.hasNextLine()) {
+                                command = stdin.nextLine().trim();
+                                if (System.currentTimeMillis() - lastChatMillis < chatDelayMillis) {
+                                    System.out.println("You are doing that too fast. Try again later.");
+                                } else if (!command.isBlank()) {
+                                    if (command.equals("exit")) {
+                                        writer.println("exit");
+                                        forceExitGame("User typed \"exit\".");
+                                    } else if (!selfTurn) {
+                                        writer.println("chat:" + command);
+                                    } else {
+                                        writer.println(command);
+                                        writer.println();
+                                    }
+                                    lastChatMillis = System.currentTimeMillis();
+                                }
+                            } else {
+                                try {
+                                    stdin.nextLine();
+                                } catch (NoSuchElementException ex) {
+                                    System.out.println(ex.getMessage());
+                                }
+                            }
+                        } while (!command.equals("exit"));
 
-                    socket.close();
-                    log.closeLog();
+                        socket.close();
+                        log.closeLog();
+                    }
+                    if (socket.isClosed()) {
+                        System.out.println("Disconnected.");
+                    }
                 } catch (UnknownHostException ex) {
                     //System.out.println("Server not found: " + ex.getMessage());
                 } catch (IOException ex) {
@@ -118,7 +148,8 @@ public class UNOConsoleDriver {
         } else if (joinOrHost.contains("s") || joinOrHost.contains("h")) {
 
             engine = new UNOEngine(ruleStackingSame, ruleStackingAll, ruleDrawTillPlayable, ruleSkipAfterDraw, handSize, deck);
-            try (ServerSocket serverSocket = new ServerSocket(PORT)) {
+            engine.addPlayer(new UNOPlayer().setID(ID).setUsername(username));
+            try ( ServerSocket serverSocket = new ServerSocket(PORT)) {
 
                 System.out.println("Server is listening on port " + PORT);
                 boolean acceptingNewPlayers = true;
@@ -197,24 +228,28 @@ public class UNOConsoleDriver {
                 }
                 try {
                     System.out.println("Preparing game");
-                    sendMessage(serverSocket.getLocalSocketAddress().toString(), "Preparing game");
+                    sendMessage("Game", "Preparing game");
                     engine.prepareGame();
                     for (int i = 0; i < engine.getNumPlayers(); i++) {
                         isAI.add(false); // FIXME, should add AI
                     }
                     System.out.println("Beginning game");
+                    sendMessage("Game", "Beginning game");
                     engine.beginGame();
+                    displayTopCard(engine);
 
                     while (!engine.hasAPlayerEmptiedHand()) {
-                        displayTopCard(engine);
                         displayHand(engine);
                         displayAndReceiveChoices(engine);
-                        if (engine.hasCurrentPlayerDrawnOrPlayed()) {
-                            log.log("Assigning next player");
-                            engine.assignNextPlayer();
-                        } else {
-                            log.log("Next player has already been assigned, skipping additional assignment.");
+                        long timeoutStart = System.currentTimeMillis();
+
+                        while (!engine.hasCurrentPlayerDrawnOrPlayed()) {
+                            if (System.currentTimeMillis() - timeoutStart > 60000) {
+                                // timeout thing
+                            }
                         }
+                        log.log("Assigning next player");
+                        engine.assignNextPlayer();
                         engine.assessPileSizes();
                     }
                     print("Player " + engine.getWinner() + " has won!");
@@ -242,7 +277,7 @@ public class UNOConsoleDriver {
          * numPlayers = Integer.valueOf(response);
          * }
          * if (response.equals("exit")) {
-         * forceEndGame("User typed \"exit\".");
+         * forceExitGame("User typed \"exit\".");
          * }
          * }
          */
@@ -428,20 +463,20 @@ public class UNOConsoleDriver {
     private static void sendMessage(String ip, String message) {
         for (UNOServerThread c : connections) {
             c.displayMessage(ip, message);
-            System.out.println("sending message to client");
+            //System.out.println("sending message to client");
         }
     }
 
     private static void displayTopCard(UNOEngine e) {
-        if (!isAI(e)) {
+        if (!isAI(e) && engine.getCurrentPlayer() == 0) {
             println("Card to play on: " + e.getTopCard());
         } else {
             silentPrint("Card to play on: " + e.getTopCard());
         }
     }
 
-    private static void forceEndGame(String reason) {
-        log.log("Ending game, reason: " + reason, 1);
+    private static void forceExitGame(String reason) {
+        log.log("Exiting, reason: " + reason, 1);
         log.closeLog();
         System.exit(0);
     }
@@ -518,9 +553,9 @@ public class UNOConsoleDriver {
         log.debug("Supplied regex: \"" + regex + "\"");
 
         do {
-            if (!response.equals("default")) {
+            if (!response.equals("default") && !response.isBlank()) {
                 if (response.equals("exit")) {
-                    forceEndGame("User typed \"exit\".");
+                    forceExitGame("User typed \"exit\".");
                 }
                 print("\"" + response + "\" is not a valid choice. Use either the first letter or the whole word of the command you want to run. " + prompt);
             } else {
@@ -560,198 +595,174 @@ public class UNOConsoleDriver {
     }
 
     private static void displayAndReceiveChoices(UNOEngine e) {
-        boolean hasPlus2 = e.getCurrentHand().hasPlus2();
-        boolean hasPlus4 = e.getCurrentHand().hasPlus4();
-        boolean hasPlus = e.getCurrentHand().hasPlus();
-        if (!isAI(engine)) {
-            print("P" + (e.getCurrentPlayer() + 1) + ": "); // for player 1, prints: "P1: "
-        }
-        if (e.getPendingCardsToDraw() > 0) {
-            if (e.isRULE_STACKING_ALL()) {
-                if (hasPlus) {
-                    String out = "Your choices are to (d)raw " + e.getPendingCardsToDraw() + " cards or to defer the penalty to the next player by (p)laying an additional ";
-                    if (hasPlus2 && !hasPlus4) {
-                        out += "+2 card from your hand on top.";
-                    } else if (hasPlus2 && hasPlus4) {
-                        out += "+2 or +4 card from your hand on top.";
-                    } else if (!hasPlus2 && hasPlus4) {
-                        out += "+4 card from your hand on top.";
-                    }
-                    if (!isAI(engine)) {
-                        println(out);
-                    } else {
-                        silentPrint(out);
-                    }
-                    flush();
-
-                    String response = getResponse("Valid responses: (d)raw or (p)lay: ", generateRegexForHand(e.getCurrentPlayerMatches()), e.getCurrentPlayer(), e); // regex for drawing or playing, valid responses include, but are certainly not limited to: draw, d, play red 3, pr3, p r3, play +2, play wild, pw, and so on and so forth
-                    if (response.equals("d")) {
-                        doPendingDraw(e);
-                    } else if (response.charAt(0) == 'p') {
-                        UNOCard chosen = parseCompactPlayCommand(response);
-                        if (chosen.isWild()) {
-                            e.playCurrentPlayersWildCard(chosen, getNewColor(engine));
-                        } else {
-                            e.playCurrentPlayersNonWildCard(chosen);
+        if (engine.getCurrentPlayer() == 0) {
+            boolean hasPlus2 = e.getCurrentHand().hasPlus2();
+            boolean hasPlus4 = e.getCurrentHand().hasPlus4();
+            boolean hasPlus = e.getCurrentHand().hasPlus();
+            if (!isAI(engine)) {
+                print("P" + (e.getCurrentPlayer() + 1) + ": "); // for player 1, prints: "P1: "
+            }
+            if (e.getPendingCardsToDraw() > 0) {
+                if (e.isRULE_STACKING_ALL()) {
+                    if (hasPlus) {
+                        String out = "Your choices are to (d)raw " + e.getPendingCardsToDraw() + " cards or to defer the penalty to the next player by (p)laying an additional ";
+                        if (hasPlus2 && !hasPlus4) {
+                            out += "+2 card from your hand on top.";
+                        } else if (hasPlus2 && hasPlus4) {
+                            out += "+2 or +4 card from your hand on top.";
+                        } else if (!hasPlus2 && hasPlus4) {
+                            out += "+4 card from your hand on top.";
                         }
+                        if (!isAI(engine)) {
+                            println(out);
+                        } else {
+                            silentPrint(out);
+                        }
+                        flush();
+
+                        String response = getResponse("Valid responses: (d)raw or (p)lay: ", generateRegexForHand(e.getCurrentPlayerMatches()), e.getCurrentPlayer(), e); // regex for drawing or playing, valid responses include, but are certainly not limited to: draw, d, play red 3, pr3, p r3, play +2, play wild, pw, and so on and so forth
+                        if (response.equals("d")) {
+                            doPendingDraw(e);
+                        } else if (response.charAt(0) == 'p') {
+                            UNOCard chosen = parseCompactPlayCommand(response);
+                            if (chosen.isWild()) {
+                                e.playCurrentPlayersWildCard(chosen, getNewColor(engine));
+                            } else {
+                                e.playCurrentPlayersNonWildCard(chosen);
+                            }
+                        }
+                    } else {
+                        println("Automatically drew " + e.getPendingCardsToDraw() + " cards, given no other option.");
+                        flush();
+                        e.receivePendingCards();
                     }
                 } else {
-                    println("Automatically drew " + e.getPendingCardsToDraw() + " cards, given no other option.");
+                    if (e.isRULE_STACKING_SAME()) {
+                        if (e.getNum2CardsToDraw() > 0) {
+                            if (e.getCurrentHand().hasPlus2()) {
+                                if (!isAI(engine)) {
+                                    println("Your choices are to (d)raw " + e.getPendingCardsToDraw() + " cards or to defer to the next player by (p)laying an additional +2 card from your hand on top.");
+                                } else {
+                                    silentPrint("Your choices are to (d)raw " + e.getPendingCardsToDraw() + " cards or to defer to the next player by (p)laying an additional +2 card from your hand on top.");
+                                }
+                            } else {
+                                e.receivePendingCards();
+                            }
+                        } else {
+                            if (e.getCurrentHand().hasPlus4()) {
+                                if (!isAI(engine)) {
+                                    println("Your choices are to (d)raw " + e.getPendingCardsToDraw() + " cards or to defer to the next player by (p)laying an additional +4 card from your hand on top.");
+                                } else {
+                                    silentPrint("Your choices are to (d)raw " + e.getPendingCardsToDraw() + " cards or to defer to the next player by (p)laying an additional +4 card from your hand on top.");
+                                }
+                            } else {
+                                e.receivePendingCards();
+                            }
+                        }
+                    } else {
+                        e.receivePendingCards();
+                    }
                     flush();
-                    e.receivePendingCards();
                 }
             } else {
-                if (e.isRULE_STACKING_SAME()) {
-                    if (e.getNum2CardsToDraw() > 0) {
-                        if (e.getCurrentHand().hasPlus2()) {
-                            if (!isAI(engine)) {
-                                println("Your choices are to (d)raw " + e.getPendingCardsToDraw() + " cards or to defer to the next player by (p)laying an additional +2 card from your hand on top.");
-                            } else {
-                                silentPrint("Your choices are to (d)raw " + e.getPendingCardsToDraw() + " cards or to defer to the next player by (p)laying an additional +2 card from your hand on top.");
-                            }
-                        } else {
-                            e.receivePendingCards();
-                        }
+                ArrayList<UNOCard> options = e.getCurrentPlayerMatches();
+                String tempDebugOptions = "";
+                for (UNOCard c : options) {
+                    tempDebugOptions += c.toString() + " ";
+                }
+                log.debug("Options for P" + (e.getCurrentPlayer() + 1) + " are \"" + tempDebugOptions + "\".");
+                if (options.size() > 1) {
+                    if (!isAI(engine)) {
+                        print("The cards you can play are: ");
+                        displayPlayableCards(e);
                     } else {
-                        if (e.getCurrentHand().hasPlus4()) {
-                            if (!isAI(engine)) {
-                                println("Your choices are to (d)raw " + e.getPendingCardsToDraw() + " cards or to defer to the next player by (p)laying an additional +4 card from your hand on top.");
-                            } else {
-                                silentPrint("Your choices are to (d)raw " + e.getPendingCardsToDraw() + " cards or to defer to the next player by (p)laying an additional +4 card from your hand on top.");
-                            }
+                        silentPrint("The cards you can play are: ");
+                    }
+                } else if (options.isEmpty()) {
+                    if (!isAI(engine)) {
+                        print("You cannot play any cards. ");
+                    } else {
+                        silentPrint("You cannot play any cards. ");
+                    }
+                    if (e.isRULE_DRAW_TILL_PLAYABLE()) {
+                        if (!isAI(engine)) {
+                            println("You must (d)raw until you have a playable card.");
                         } else {
-                            e.receivePendingCards();
+                            silentPrint("You must (d)raw until you have a playable card.");
                         }
+                        UNOCard lastDrawn;
+                        do {
+                            lastDrawn = doDrawCard(e);
+                        } while (e.getCurrentPlayerMatches().isEmpty());
+                        displayHand(e);
+                        if (lastDrawn.isWild()) {
+                            if (!isAI(engine)) {
+                                println("You've played a wild card which means you get to (c)hoose the new color to match.");
+                            } else {
+                                silentPrint("You've played a wild card which means you get to (c)hoose the new color to match.");
+                            }
+                            e.playCurrentPlayersWildCard(lastDrawn, getNewColor(e));
+                        } else {
+                            e.playCurrentPlayersNonWildCard(lastDrawn);
+                        }
+                        return;
+                    } else {
+                        if (!isAI(engine)) {
+                            println("You must draw a card.");
+                        } else {
+                            silentPrint("You must draw a card.");
+                        }
+                        doDrawCard(e);
                     }
                 } else {
-                    e.receivePendingCards();
+                    if (!isAI(engine)) {
+                        print("The only card you can play is: ");
+                        displayPlayableCards(e);
+                    } else {
+                        silentPrint("The only card you can play is: ");
+                    }
                 }
                 flush();
-            }
-        } else {
-            ArrayList<UNOCard> options = e.getCurrentPlayerMatches();
-            String tempDebugOptions = "";
-            for (UNOCard c : options) {
-                tempDebugOptions += c.toString() + " ";
-            }
-            log.debug("Options for P" + (e.getCurrentPlayer() + 1) + " are \"" + tempDebugOptions + "\".");
-            if (options.size() > 1) {
-                if (!isAI(engine)) {
-                    print("The cards you can play are: ");
-                } else {
-                    silentPrint("The cards you can play are: ");
-                }
-            } else if (options.isEmpty()) {
-                if (!isAI(engine)) {
-                    print("You cannot play any cards. ");
-                } else {
-                    silentPrint("You cannot play any cards. ");
-                }
-                if (e.isRULE_DRAW_TILL_PLAYABLE()) {
-                    if (!isAI(engine)) {
-                        println("You must (d)raw until you have a playable card.");
-                    } else {
-                        silentPrint("You must (d)raw until you have a playable card.");
-                    }
-                    UNOCard lastDrawn;
-                    do {
-                        lastDrawn = doDrawCard(e);
-                    } while (e.getCurrentPlayerMatches().isEmpty());
+                String response = getResponse("Will you (d)raw or (p)lay a card? ", generateRegexForHand(e.getCurrentPlayerMatches()), e.getCurrentPlayer(), e);
+                if (response.charAt(0) == 'd') {
+                    doDrawCard(e);
                     displayHand(e);
-                    if (lastDrawn.isWild()) {
+                    return;
+                } else if (response.charAt(0) == 'p') {
+                    log.debug("P" + (e.getCurrentPlayer() + 1) + "'s response: \"" + response + "\"");
+                    UNOCard chosen = parseCompactPlayCommand(response);
+                    if (chosen.isWild()) {
                         if (!isAI(engine)) {
                             println("You've played a wild card which means you get to (c)hoose the new color to match.");
                         } else {
                             silentPrint("You've played a wild card which means you get to (c)hoose the new color to match.");
                         }
-                        e.playCurrentPlayersWildCard(lastDrawn, getNewColor(e));
+                        e.playCurrentPlayersWildCard(chosen, getNewColor(e));
                     } else {
-                        e.playCurrentPlayersNonWildCard(lastDrawn);
-                    }
-                    return;
-                } else {
-                    if (!isAI(engine)) {
-                        println("You must draw a card.");
-                    } else {
-                        silentPrint("You must draw a card.");
-                    }
-                    doDrawCard(e);
-                }
-            } else {
-                if (!isAI(engine)) {
-                    print("The only card you can play is: ");
-                } else {
-                    silentPrint("The only card you can play is: ");
-                }
-            }
-            options = e.getCurrentPlayerMatches();
-            for (int i = 0; i < options.size() - 1; i++) {
-                if (!isAI(engine)) {
-                    print(options.get(i).toString());
-                } else {
-                    silentPrint(options.get(i).toString());
-                }
-                if (options.size() > 2) {
-                    if (!isAI(engine)) {
-                        print(", ");
-                    } else {
-                        silentPrint(", ");
+                        e.playCurrentPlayersNonWildCard(chosen);
                     }
                 }
+                flush();
             }
-            if (options.size() > 1) {
-                if (options.size() == 2) {
-                    if (!isAI(engine)) {
-                        print(" ");
-                    } else {
-                        silentPrint(" ");
-                    }
-                }
-                if (!isAI(engine)) {
-                    print("and ");
-                } else {
-                    silentPrint("and ");
-                }
-            }
-            if (!isAI(engine)) {
-                println(options.get(options.size() - 1) + ".");
-            } else {
-                silentPrint(options.get(options.size() - 1) + ".");
-            }
-            flush();
-            String response = getResponse("Will you (d)raw or (p)lay a card? ", generateRegexForHand(e.getCurrentPlayerMatches()), e.getCurrentPlayer(), e);
-            if (response.charAt(0) == 'd') {
-                doDrawCard(e);
-                displayHand(e);
-                return;
-            } else if (response.charAt(0) == 'p') {
-                log.debug("P" + (e.getCurrentPlayer() + 1) + "'s response: \"" + response + "\"");
-                UNOCard chosen = parseCompactPlayCommand(response);
-                if (chosen.isWild()) {
-                    if (!isAI(engine)) {
-                        println("You've played a wild card which means you get to (c)hoose the new color to match.");
-                    } else {
-                        silentPrint("You've played a wild card which means you get to (c)hoose the new color to match.");
-                    }
-                    e.playCurrentPlayersWildCard(chosen, getNewColor(e));
-                } else {
-                    e.playCurrentPlayersNonWildCard(chosen);
-                }
-            }
-            flush();
+        } else {
+            // Server thread should take care of it
         }
     }
 
     private static String getNewColorFromHuman() {
         String response = "default";
-        Scanner s = new Scanner(System.in);
-        do {
-            println("Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: ");
-            response = s.nextLine().trim().toLowerCase();
-            log.debug("response to getNewColor(): \"" + response + "\"");
-        } while ("bgry".indexOf(response.charAt(0)) == -1); // while the first char of the response is not one of the valid colors, ask for a valid response
-        if (response.equals("exit")) {
-            forceEndGame("User typed \"exit\".");
+        if (engine.getCurrentPlayer() == 0) {
+            Scanner s = new Scanner(System.in);
+            do {
+                println("Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: ");
+                response = s.nextLine().trim().toLowerCase();
+                log.debug("response to getNewColor(): \"" + response + "\"");
+            } while ("bgry".indexOf(response.charAt(0)) == -1); // while the first char of the response is not one of the valid colors, ask for a valid response
+            if (response.equals("exit")) {
+                forceExitGame("User typed \"exit\".");
+            }
+        } else {
+            connections.get(engine.getCurrentPlayer() - 1).getResponse("Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: ", "\\b([bgry])");
         }
         switch (response.charAt(0)) {
             case 'b':
@@ -962,7 +973,18 @@ public class UNOConsoleDriver {
     private static void displayHand(UNOEngine e) {
         if (!isAI(engine)) {
             UNOHand current = e.getCurrentHand();
-            println("Player " + (e.getCurrentPlayer() + 1) + " " + current.toString());
+            if (engine.getCurrentPlayer() == 0) {
+                println("Player " + (e.getCurrentPlayer() + 1) + " " + current.toString());
+            } else {
+                // server thread can take care of it
+                //connections.get(engine.getCurrentPlayer() - 1).displayMessage("Game", ("Player " + (e.getCurrentPlayer() + 1) + " " + current.toString()));
+            }
+        }
+    }
+
+    public static void tell(String message) {
+        for (UNOServerThread s : connections) {
+            s.displayMessage("Game", message);
         }
     }
 
@@ -1115,7 +1137,13 @@ public class UNOConsoleDriver {
 
                 LocalDateTime toMST = LocalDateTime.parse(lastModified, formatter).minusHours(7);
 
-                DateTimeFormatter newFormatter = DateTimeFormatter.ofPattern("MMMM dd, HH:mm");
+                DateTimeFormatter newFormatter;
+                if (toMST.getYear() != LocalDateTime.now().getYear()) {
+                    newFormatter = DateTimeFormatter.ofPattern("MMMM dd, uuuu, HH:mm");
+                } else {
+                    newFormatter = DateTimeFormatter.ofPattern("MMMM dd, HH:mm");
+                }
+
                 updateDate = toMST.format(newFormatter) + " MST";
             } else if (returned.contains("message")) {
                 int messageIndex = returned.indexOf("\"message\": ") + 12;

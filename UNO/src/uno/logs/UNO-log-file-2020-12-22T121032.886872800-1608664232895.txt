@@ -1,9 +1,0 @@
-2020-12-22T12:10:32.897873500 (priority normal) -> ---BEGIN LOG---
-2020-12-22T12:10:33.547871700 (priority normal) -> settings.json file unreadeable as JSON, raw data: "{"ID":"7ddec2b4c8130dd43c246b490996e6192c9eaea1457c31897e3e02abf8a6070b","BANNED_IDS":"","username":"joeMama"}"
-2020-12-22T12:10:38.711031700 (priority normal) -> Created json String: {"ID":"05f57fae22a4f0cd327d4db33840d0eb2becb83db37bc6103c000f77b118059a","BANNED_IDS":"","username":"joeMama"}
-2020-12-22T12:10:38.713036700 (priority normal) -> Wrote to settings.json successfully.
-2020-12-22T12:10:45.807021500 (priority normal) -> Sending username to host "joeMama"
-2020-12-22T12:10:45.809022700 (priority normal) -> Sending ID to host "7ddec2b4c8130dd43c246b490996e6192c9eaea1457c31897e3e02abf8a6070b"
-2020-12-22T12:11:21.211681100 (priority normal) -> ---END LOG---
-2020-12-22T12:11:21.321676600 (priority normal) -> Sending username to host "joeMama"
-2020-12-22T12:11:21.322678 (priority normal) -> Sending ID to host "7ddec2b4c8130dd43c246b490996e6192c9eaea1457c31897e3e02abf8a6070b"

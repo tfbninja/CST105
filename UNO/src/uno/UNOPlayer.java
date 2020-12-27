@@ -41,16 +41,18 @@ public class UNOPlayer {
         return temp;
     }
 
-    public void setID(String newID) {
+    public UNOPlayer setID(String newID) {
         ID = newID;
+        return this;
     }
 
     public String getID() {
         return ID;
     }
 
-    public void setUsername(String username) {
+    public UNOPlayer setUsername(String username) {
         this.username = username;
+        return this;
     }
 
     public String getUsername() {

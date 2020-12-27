@@ -1,0 +1,25 @@
+2020-12-26T19:22:43.554962400 (priority normal) -> ---BEGIN LOG---
+2020-12-26T19:23:01.167989300 (priority  debug) -> Received instruction from client /127.0.0.1:58777, "username:joeMama"
+2020-12-26T19:23:01.168988700 (priority normal) -> Server thread has received username, Player 775860 changed to "joeMama"
+2020-12-26T19:23:01.180990400 (priority  debug) -> Received instruction from client /127.0.0.1:58777, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T19:23:01.187992700 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T19:23:05.411990700 (priority normal) -> Shuffling deck.
+2020-12-26T19:23:05.415991600 (cc of screen   ) -> Would you like to host or join? 
+2020-12-26T19:23:05.419989800 (priority  debug) -> Options for P1 are "green reverse red 2 yellow 2 wild ".
+2020-12-26T19:23:05.421989200 (cc of screen   ) -> Card to play on: green 2 // Player 1 Contents of hand: blue 6, blue 9, green reverse, red 2, red 8, yellow 2, wild // P1: The cards you can play are: green reverse, red 2, yellow 2, and wild. // 
+2020-12-26T19:23:05.424993400 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([r]|reverse){1})|((r|red)\s*([2]){1})|((y|yellow)\s*([2]){1})|((w|wild))))\b)"
+2020-12-26T19:23:12.210986900 (priority  debug) -> rawish response is "p2"
+2020-12-26T19:23:14.162988500 (priority  debug) -> rawish response is "pw"
+2020-12-26T19:23:14.164989300 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-26T19:23:14.165990 (priority  debug) -> simplifyUserResponse() received "pw" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-26T19:23:14.167990100 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pw"
+2020-12-26T19:23:14.168989200 (priority  debug) -> P1's response: "pw"
+2020-12-26T19:23:15.490990200 (priority  debug) -> response to getNewColor(): "r"
+2020-12-26T19:23:15.492989900 (cc of screen   ) -> Will you (d)raw or (p)lay a card? "p2" is not a valid choice. Use either the first letter or the whole word of the command you want to run. Will you (d)raw or (p)lay a card? You've played a wild card which means you get to (c)hoose the new color to match. // Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow:  // The new color is now red // 
+2020-12-26T19:23:15.493990 (priority normal) -> Assigning next player
+2020-12-26T19:23:15.495990400 (priority  debug) -> Engine believes there are 2 players.
+2020-12-26T19:23:15.496991400 (priority  debug) -> Current player 0 indexed is 0
+2020-12-26T19:23:15.497989200 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-26T19:23:15.498989100 (priority  debug) -> Options for 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def are "red 1 red 9 red reverse red +2 ".
+2020-12-26T19:23:15.498989100 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-26T19:23:15.501989 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([19r]|reverse|(\+2|\+)){1})))\b)"

@@ -1,0 +1,30 @@
+2020-12-26T20:01:16.769994900 (priority normal) -> ---BEGIN LOG---
+2020-12-26T20:01:24.926997 (priority  debug) -> Received instruction from client /127.0.0.1:59580, "username:joeMama"
+2020-12-26T20:01:24.927994300 (priority normal) -> Server thread has received username, Player 573367 changed to "joeMama"
+2020-12-26T20:01:24.928993100 (priority  debug) -> Received instruction from client /127.0.0.1:59580, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T20:01:24.929995100 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T20:01:28.008995800 (priority normal) -> Shuffling deck.
+2020-12-26T20:01:28.014996800 (cc of screen   ) -> Would you like to host or join? 
+2020-12-26T20:01:28.016996200 (priority  debug) -> Options for P1 are "".
+2020-12-26T20:01:28.019997800 (priority normal) -> Assigning next player
+2020-12-26T20:01:28.020997600 (priority  debug) -> Engine believes there are 2 players.
+2020-12-26T20:01:28.022996 (priority  debug) -> Current player 0 indexed is 0
+2020-12-26T20:01:28.023995500 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-26T20:01:28.024995700 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-26T20:01:28.026996900 (priority  debug) -> Options for 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def are "green 8 wild ".
+2020-12-26T20:01:28.028996900 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([8]){1})|((w|wild))))\b)"
+2020-12-26T20:01:42.529000800 (priority  debug) -> rawish response is "pg8"
+2020-12-26T20:01:42.529995700 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-26T20:01:42.530999400 (priority  debug) -> simplifyUserResponse() received "pg8" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-26T20:01:42.533998600 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pg8"
+2020-12-26T20:01:42.534996200 (priority  debug) -> P2's response: "pg8"
+2020-12-26T20:02:28.026991900 (priority normal) -> Assigning next player
+2020-12-26T20:02:28.028994400 (priority  debug) -> Engine believes there are 2 players.
+2020-12-26T20:02:28.029995100 (priority  debug) -> Current player 0 indexed is 1
+2020-12-26T20:02:28.030994900 (priority  debug) -> Current player 0 indexed is now 2
+2020-12-26T20:02:28.032995900 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-26T20:02:28.035992100 (priority  debug) -> Options for P1 are "blue 8 yellow 8 ".
+2020-12-26T20:02:28.039995 (cc of screen   ) -> Card to play on: green 4 // Player 1 Contents of hand: blue 8, blue +2, red 5, red +2, yellow 1, yellow 8, yellow skip // P1: You cannot play any cards. You must (d)raw until you have a playable card. // P1 drew a red 0. // P1 drew a yellow 7. // P1 drew a yellow 0. // P1 drew a yellow 5. // P1 drew a green 8. // Player 1 Contents of hand: blue 8, blue +2, green 8, red 0, red 5, red +2, yellow 0, yellow 1, yellow 5, yellow 7, yellow 8, yellow skip // P1 played green 8 // Card to play on: green 8 // P2 played green 8 // Card to play on: green 8 // Player 1 Contents of hand: blue 8, blue +2, red 0, red 5, red +2, yellow 0, yellow 1, yellow 5, yellow 7, yellow 8, yellow skip // P1: The cards you can play are: blue 8 and yellow 8. // 
+2020-12-26T20:02:28.042001800 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([8]){1})|((y|yellow)\s*([8]){1})))\b)"
+2020-12-26T20:02:28.044996700 (priority  debug) -> rawish response is ""
+2020-12-26T20:02:28.045997600 (priority  debug) -> rawish response is ""

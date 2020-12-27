@@ -1,0 +1,7 @@
+2020-12-26T20:16:01.200782600 (priority normal) -> ---BEGIN LOG---
+2020-12-26T20:16:07.727998500 (priority normal) -> Sending username to host "joeMama"
+2020-12-26T20:16:07.729000600 (priority normal) -> Sending ID to host "2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T20:16:20.558636900 (priority normal) -> turn
+2020-12-26T20:16:26.622636300 (priority normal) -> Not turn
+2020-12-26T20:19:15.870417100 (priority normal) -> turn
+2020-12-26T20:19:20.630415 (priority normal) -> Not turn

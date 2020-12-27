@@ -1,0 +1,21 @@
+2020-12-26T18:17:09.324113200 (priority normal) -> ---BEGIN LOG---
+2020-12-26T18:17:21.890997600 (priority  debug) -> Received instruction from client /127.0.0.1:57596, "username:joeMama"
+2020-12-26T18:17:21.891997400 (priority normal) -> Server thread has received username, Player 348120 changed to "joeMama"
+2020-12-26T18:17:21.893998200 (priority  debug) -> Received instruction from client /127.0.0.1:57596, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T18:17:21.894998700 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T18:17:24.793998200 (priority normal) -> Shuffling deck.
+2020-12-26T18:17:24.798999800 (cc of screen   ) -> Would you like to host or join? 
+2020-12-26T18:17:24.800999300 (priority  debug) -> Options for P1 are "red 6 ".
+2020-12-26T18:17:24.802018400 (cc of screen   ) -> Card to play on: red 0 // Player 1 Contents of hand: blue 2, blue 8, blue 9, blue skip, green 3, green 9, red 6 // P1: The only card you can play is: red 6. // 
+2020-12-26T18:17:24.802997100 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([6]){1})))\b)"
+2020-12-26T18:17:32.040998300 (priority  debug) -> rawish response is "d"
+2020-12-26T18:17:32.044005200 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-26T18:17:32.045001200 (priority  debug) -> simplifyUserResponse() received "d" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-26T18:17:32.047001700 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "d"
+2020-12-26T18:17:32.049003600 (priority normal) -> Assigning next player
+2020-12-26T18:17:32.050017600 (priority  debug) -> Current player 0 indexed is 0
+2020-12-26T18:17:32.051003 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-26T18:17:32.052000200 (priority  debug) -> Current player 0 indexed is now 0
+2020-12-26T18:17:32.053996900 (priority  debug) -> Options for P1 are "red 6 red reverse ".
+2020-12-26T18:17:32.054997200 (cc of screen   ) -> Will you (d)raw or (p)lay a card? P1 drew a red reverse. // Player 1 Contents of hand: blue 2, blue 8, blue 9, blue skip, green 3, green 9, red 6, red reverse // Card to play on: red 0 // Player 1 Contents of hand: blue 2, blue 8, blue 9, blue skip, green 3, green 9, red 6, red reverse // P1: The cards you can play are: red 6 and red reverse. // 
+2020-12-26T18:17:32.056998600 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([6r]|reverse){1})))\b)"

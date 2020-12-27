@@ -1,0 +1,10 @@
+2020-12-26T19:04:59.894266100 (priority normal) -> ---BEGIN LOG---
+2020-12-26T19:05:10.085108300 (priority  debug) -> Received instruction from client /127.0.0.1:58458, "username:joeMama"
+2020-12-26T19:05:10.086103600 (priority normal) -> Server thread has received username, Player 247256 changed to "joeMama"
+2020-12-26T19:05:10.087084100 (priority  debug) -> Received instruction from client /127.0.0.1:58458, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T19:05:10.089086600 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T19:05:14.102026300 (priority normal) -> Shuffling deck.
+2020-12-26T19:05:14.107028300 (cc of screen   ) -> Would you like to host or join? 
+2020-12-26T19:05:14.110024900 (priority  debug) -> Options for P1 are "green 1 green 2 green 7 ".
+2020-12-26T19:05:14.112026600 (cc of screen   ) -> Card to play on: green 2 // Player 1 Contents of hand: blue 0, green 1, green 2, green 7, red 1, red reverse, yellow 9 // P1: The cards you can play are: green 1, green 2, and green 7. // green 7. // 
+2020-12-26T19:05:14.114027100 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((g|green)\s*([127]){1})))\b)"

@@ -1,0 +1,20 @@
+2020-12-26T20:52:53.002685300 (priority normal) -> ---BEGIN LOG---
+2020-12-26T20:53:01.360970600 (priority  debug) -> Received instruction from client /127.0.0.1:60218, "username:joeMama"
+2020-12-26T20:53:01.361970100 (priority normal) -> Server thread has received username, Player 050213 changed to "joeMama"
+2020-12-26T20:53:01.362971 (priority  debug) -> Received instruction from client /127.0.0.1:60218, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T20:53:01.363971300 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T20:53:04.692971800 (priority normal) -> Shuffling deck.
+2020-12-26T20:53:04.698973200 (cc of screen   ) -> Would you like to host or join? 
+2020-12-26T20:53:04.700971700 (priority  debug) -> Options for P1 are "red 4 red 6 red reverse ".
+2020-12-26T20:53:04.702969900 (cc of screen   ) -> Card to play on: red 7 // Player 1 Contents of hand: blue skip, green 6, green 9, red 4, red 6, red reverse, yellow 6 // P1: The cards you can play are: red 4, red 6, and red reverse. // 
+2020-12-26T20:53:04.704971600 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([46r]|reverse){1})))\b)"
+2020-12-26T20:57:07.251259900 (priority  debug) -> rawish response is "pr4"
+2020-12-26T20:57:07.256260800 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-26T20:57:07.257260500 (priority  debug) -> simplifyUserResponse() received "pr4" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-26T20:57:07.259261700 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pr4"
+2020-12-26T20:57:07.260256800 (priority  debug) -> P1's response: "pr4"
+2020-12-26T20:57:07.262257700 (cc of screen   ) -> Will you (d)raw or (p)lay a card? P1 played red 4 // 
+2020-12-26T20:57:07.263258300 (priority normal) -> Assigning next player
+2020-12-26T20:57:07.264257500 (priority  debug) -> Player assignment 0 -> 1 -> 1 (total of 2 players.)
+2020-12-26T20:57:07.274256500 (priority  debug) -> Options for 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def are "red 2 red 4 red reverse ".
+2020-12-26T20:57:07.276259300 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((r|red)\s*([24r]|reverse){1})))\b)"

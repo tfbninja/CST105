@@ -3,7 +3,6 @@ package TCP;
 import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.regex.Pattern;
 import uno.*;
@@ -24,6 +23,7 @@ public class UNOServerThread extends Thread {
     private ArrayList<String> pendingChats;
     private boolean hasOverriddenUsername = false;
     private boolean hasOverriddenID = false;
+    private BufferedReader reader;
 
     public UNOServerThread(Socket socket, UNOEngine engine, UNOPlayer selfPlayer) {
         this.socket = socket;
@@ -37,34 +37,40 @@ public class UNOServerThread extends Thread {
         try {
             try {
                 InputStream input = socket.getInputStream();
-                BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+                reader = new BufferedReader(new InputStreamReader(input));
 
                 OutputStream output = socket.getOutputStream();
                 writer = new PrintWriter(output, true);
 
-                String text;
+                String text = "";
 
                 try {
                     do {
-                        text = reader.readLine();
-                        log.debug("Received instruction from client " + socket.getRemoteSocketAddress().toString() + ", \"" + text + "\"");
+                        if (reader.ready()) {
+                            text = reader.readLine();
+                            log.debug("Received instruction from client " + socket.getRemoteSocketAddress().toString() + ", \"" + text + "\"");
 
-                        if (text.startsWith("chat:")) {
-                            pendingChats.add(player.getUsername() + ": " + text.substring(5));
-                            System.out.println(pendingChats.get(pendingChats.size() - 1));
-                        } else if (text.startsWith("username:")) {
-                            log.log("Server thread has received username, " + player.getUsername() + " changed to \"" + text.substring(9) + "\"");
-                            player.setUsername(text.substring(9));
-                            hasOverriddenUsername = true;
-                        } else if (text.startsWith("ID:")) {
-                            log.log("Server thread has received username, " + player.getUsername() + " changed to \"" + text.substring(9) + "\"");
-                            player.setID(text.substring(9));
-                            hasOverriddenID = true;
+                            if (text.startsWith("chat:")) {
+                                pendingChats.add(player.getUsername() + ": " + text.substring(5));
+                                System.out.println(pendingChats.get(pendingChats.size() - 1));
+                            } else if (text.startsWith("username:")) {
+                                log.log("Server thread has received username, " + player.getUsername() + " changed to \"" + text.substring(9) + "\"");
+                                player.setUsername(text.substring(9));
+                                hasOverriddenUsername = true;
+                            } else if (text.startsWith("ID:")) {
+                                log.log("Server thread has received username, " + player.getUsername() + " changed to \"" + text.substring(9) + "\"");
+                                player.setID(text.substring(9));
+                                hasOverriddenID = true;
+                            }
                         }
-                        if (engine.hasStarted() && engine.getCurrentPlayerID().equals(player.getID())) {
-                            displayTopCard();
+                        if (engine.hasStarted() && engine.getCurrentPlayerID().equals(player.getID()) && !engine.hasCurrentPlayerDrawnOrPlayed()) {
+                            writer.println("urturn");
+                            //displayTopCard();
                             displayHand();
                             displayAndReceiveChoices();
+                            writer.println("noturturn");
+                        } else if (engine.hasStarted() && engine.getCurrentPlayer() > 0) {
+                            //System.out.println("current id: " + engine.getCurrentPlayerID() + ", player id: " + player.getID());
                         }
 
                     } while (!text.equals("exit"));
@@ -232,26 +238,32 @@ public class UNOServerThread extends Thread {
         }
     }
 
-    private String getResponse(String prompt, String regex) {
-        Scanner s = new Scanner(System.in);
+    public String getResponse(String prompt, String regex) {
         log.debug("Supplied regex: \"" + regex + "\"");
         String formatted = "";
 
         write(prompt);
         do {
-            if (pendingChats.size() > 0) {
-                String cmd = pendingChats.get(0);
-                formatted = cmd.trim().toLowerCase();
-                log.debug("rawish response is \"" + formatted + "\"");
-                if (!Pattern.matches(regex, formatted)) {
-                    write(prompt);
+            try {
+                if (reader.ready()) {
+                    String cmd = reader.readLine();
+                    formatted = cmd.trim().toLowerCase();
+                    log.debug("rawish response is \"" + formatted + "\"");
+                    if (!Pattern.matches(regex, formatted)) {
+                        write(prompt);
+                    }
                 }
+            } catch (IOException ex) {
+                System.out.println(ex.getLocalizedMessage());
             }
         } while (!Pattern.matches(regex, formatted));
         log.debug("response was accepted as a regex match, returning as simplified version");
         String simplified = simplifyUserResponse(formatted);
         return simplified;
+    }
 
+    private String getPendingChat() {
+        return pendingChats.remove(pendingChats.size() - 1);
     }
 
     private String listCards() {

@@ -1,0 +1,25 @@
+2020-12-26T21:08:52.225116400 (priority normal) -> ---BEGIN LOG---
+2020-12-26T21:08:57.791201900 (priority  debug) -> Received instruction from client /127.0.0.1:60455, "username:joeMama"
+2020-12-26T21:08:57.792201300 (priority normal) -> Server thread has received username, Player 750715 changed to "joeMama"
+2020-12-26T21:08:57.795201600 (priority  debug) -> Received instruction from client /127.0.0.1:60455, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T21:08:57.796200500 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T21:09:01.675200100 (priority normal) -> Shuffling deck.
+2020-12-26T21:09:01.679201100 (cc of screen   ) -> Would you like to host or join? 
+2020-12-26T21:09:01.682201100 (priority  debug) -> Options for P1 are "yellow 1 yellow 2 yellow 9 +4 ".
+2020-12-26T21:09:01.684198700 (cc of screen   ) -> Card to play on: yellow 3 // Player 1 Contents of hand: blue 0, blue 6, green 4, yellow 1, yellow 2, yellow 9, +4 // P1: The cards you can play are: yellow 1, yellow 2, yellow 9, and +4. // 
+2020-12-26T21:09:01.686203 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([129]){1})|(((w|wild(\+4|[+4]))|(\+4)))))\b)"
+2020-12-26T21:09:04.682200300 (priority  debug) -> rawish response is "py1"
+2020-12-26T21:09:04.685203100 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-26T21:09:04.687202100 (priority  debug) -> simplifyUserResponse() received "py1" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-26T21:09:04.689203600 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py1"
+2020-12-26T21:09:04.690202500 (priority  debug) -> P1's response: "py1"
+2020-12-26T21:09:04.692198500 (cc of screen   ) -> Will you (d)raw or (p)lay a card? P1 played yellow 1 // 
+2020-12-26T21:09:04.692198500 (priority normal) -> Assigning next player
+2020-12-26T21:09:04.693199200 (priority  debug) -> Player assignment 0 -> 1 -> 1 (total of 2 players.)
+2020-12-26T21:09:04.695201100 (priority  debug) -> Options for 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def are "yellow 8 wild +4 ".
+2020-12-26T21:09:04.696202600 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([8]){1})|((w|wild)|((w|wild(\+4|[+4]))|(\+4)))))\b)"
+2020-12-26T21:09:09.442203 (priority  debug) -> rawish response is "pw"
+2020-12-26T21:09:09.444204400 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-26T21:09:09.445202100 (priority  debug) -> simplifyUserResponse() received "pw" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-26T21:09:09.447204400 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pw"
+2020-12-26T21:09:09.448200 (priority  debug) -> P2's response: "pw"

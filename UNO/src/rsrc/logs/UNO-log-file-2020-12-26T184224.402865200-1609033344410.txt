@@ -1,0 +1,21 @@
+2020-12-26T18:42:24.413864500 (priority normal) -> ---BEGIN LOG---
+2020-12-26T18:42:34.515001300 (priority  debug) -> Received instruction from client /127.0.0.1:57976, "username:joeMama"
+2020-12-26T18:42:34.516001900 (priority normal) -> Server thread has received username, Player 004278 changed to "joeMama"
+2020-12-26T18:42:34.517999500 (priority  debug) -> Received instruction from client /127.0.0.1:57976, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T18:42:34.518999700 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T18:42:43.624003700 (priority normal) -> Shuffling deck.
+2020-12-26T18:42:43.630005500 (cc of screen   ) -> Would you like to host or join? 
+2020-12-26T18:42:43.634004600 (priority  debug) -> Options for P1 are "yellow 9 wild ".
+2020-12-26T18:42:43.636006600 (cc of screen   ) -> Card to play on: red 9 // Player 1 Contents of hand: blue 5, green 0, green skip, green +2, yellow 9, yellow +2, wild // P1: The cards you can play are: yellow 9 and wild. // wild. // 
+2020-12-26T18:42:43.639011200 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((y|yellow)\s*([9]){1})|((w|wild))))\b)"
+2020-12-26T18:42:50.462934700 (priority  debug) -> rawish response is "py9"
+2020-12-26T18:42:50.467947400 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-26T18:42:50.468937300 (priority  debug) -> simplifyUserResponse() received "py9" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-26T18:42:50.470933900 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py9"
+2020-12-26T18:42:50.471934800 (priority  debug) -> P1's response: "py9"
+2020-12-26T18:42:50.472941700 (cc of screen   ) -> Will you (d)raw or (p)lay a card? P1 played yellow 9 // 
+2020-12-26T18:42:50.473931100 (priority normal) -> Assigning next player
+2020-12-26T18:42:50.474930600 (priority  debug) -> Engine believes there are 2 players.
+2020-12-26T18:42:50.475931600 (priority  debug) -> Current player 0 indexed is 0
+2020-12-26T18:42:50.475931600 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-26T18:42:50.477952400 (priority  debug) -> Current player 0 indexed is now 1

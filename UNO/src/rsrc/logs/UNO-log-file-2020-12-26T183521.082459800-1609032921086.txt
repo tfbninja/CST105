@@ -1,0 +1,19 @@
+2020-12-26T18:35:21.088459400 (priority normal) -> ---BEGIN LOG---
+2020-12-26T18:35:28.381766600 (priority  debug) -> Received instruction from client /127.0.0.1:57840, "username:joeMama"
+2020-12-26T18:35:28.382762700 (priority normal) -> Server thread has received username, Player 656630 changed to "joeMama"
+2020-12-26T18:35:28.383759200 (priority  debug) -> Received instruction from client /127.0.0.1:57840, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T18:35:28.384759800 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T18:35:31.623926600 (priority normal) -> Shuffling deck.
+2020-12-26T18:35:31.627928 (cc of screen   ) -> Would you like to host or join? 
+2020-12-26T18:35:31.630930500 (cc of screen   ) -> Card to play on: red +2 // Player 1 Contents of hand: blue 2, blue skip, blue reverse, red 3, red reverse, +4, +4 // P1: Your choices are to (d)raw 2 cards or to defer the penalty to the next player by (p)laying an additional +4 card from your hand on top. // 
+2020-12-26T18:35:31.635931200 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*((((w|wild(\+4|[+4]))|(\+4))|((w|wild(\+4|[+4]))|(\+4)))))\b)"
+2020-12-26T18:35:42.888139700 (priority  debug) -> rawish response is "p+4"
+2020-12-26T18:35:42.893139500 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-26T18:35:42.894135700 (priority  debug) -> simplifyUserResponse() received "p+4" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-26T18:35:42.896134600 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "p+4"
+2020-12-26T18:35:44.703237800 (priority  debug) -> response to getNewColor(): "blue"
+2020-12-26T18:35:44.705239300 (priority normal) -> Assigning next player
+2020-12-26T18:35:44.706239400 (priority  debug) -> Engine believes there are 2 players.
+2020-12-26T18:35:44.707239 (priority  debug) -> Current player 0 indexed is 0
+2020-12-26T18:35:44.709241800 (priority  debug) -> Current player 0 indexed is now 1
+2020-12-26T18:35:44.710240300 (priority  debug) -> Current player 0 indexed is now 1

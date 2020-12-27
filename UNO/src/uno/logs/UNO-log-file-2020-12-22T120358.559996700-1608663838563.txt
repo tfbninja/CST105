@@ -1,6 +1,0 @@
-2020-12-22T12:03:58.565992600 (priority normal) -> ---BEGIN LOG---
-2020-12-22T12:04:01.252022800 (priority normal) -> Sending username to host "joeMama"
-2020-12-22T12:04:01.253024200 (priority normal) -> Sending ID to host "90dc85c58b020ba530e9bbaab8c64b7c58e053a54b656ba84d1be667bd5fd76d"
-2020-12-22T12:04:20.083689300 (priority normal) -> ---END LOG---
-2020-12-22T12:04:20.191267300 (priority normal) -> Sending username to host "joeMama"
-2020-12-22T12:04:20.192284500 (priority normal) -> Sending ID to host "90dc85c58b020ba530e9bbaab8c64b7c58e053a54b656ba84d1be667bd5fd76d"

@@ -1,0 +1,3 @@
+2020-12-26T21:21:22.553867100 (priority normal) -> ---BEGIN LOG---
+2020-12-26T21:21:25.288869800 (priority   HIGH) -> Exiting, reason: User typed "exit"
+2020-12-26T21:21:25.289869800 (priority normal) -> ---END LOG---
