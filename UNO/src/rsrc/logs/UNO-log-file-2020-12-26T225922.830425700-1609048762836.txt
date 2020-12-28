@@ -1,0 +1,37 @@
+2020-12-26T22:59:22.839432 (priority normal) -> ---BEGIN LOG---
+2020-12-26T22:59:29.589846800 (priority  debug) -> Received instruction from client /127.0.0.1:62004, "username:joeMama"
+2020-12-26T22:59:29.590846400 (priority normal) -> Server thread has received username, Player 241151 changed to "joeMama"
+2020-12-26T22:59:29.593848200 (priority  debug) -> Received instruction from client /127.0.0.1:62004, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T22:59:29.594849600 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T22:59:32.265324100 (priority normal) -> Shuffling deck.
+2020-12-26T22:59:32.271322400 (cc of screen   ) -> Would you like to host or join? 
+2020-12-26T22:59:32.274320 (priority  debug) -> Options for P1 are "blue 0 red 0 yellow +2 wild ".
+2020-12-26T22:59:32.276321100 (cc of screen   ) -> Card to play on: yellow 0 // Player 1 Contents of hand: blue 0, blue 5, blue 8, red 0, red reverse, yellow +2, wild // P1: The cards you can play are: blue 0, red 0, yellow +2, and wild. // 
+2020-12-26T22:59:32.278321500 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([0]|(\+2|\+)){1})|((r|red)\s*([0]|(\+2|\+)){1})|((y|yellow)\s*(|(\+2|\+)){1})|((w|wild))))\b)"
+2020-12-26T22:59:35.952321900 (priority  debug) -> rawish response is "py+2"
+2020-12-26T22:59:35.955323700 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-26T22:59:35.956327300 (priority  debug) -> simplifyUserResponse() received "py+2" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-26T22:59:35.958326 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "py+2"
+2020-12-26T22:59:35.959324800 (priority  debug) -> P1's response: "py+2"
+2020-12-26T22:59:35.962325 (cc of screen   ) -> Will you (d)raw or (p)lay a card? P1 played yellow +2 // 
+2020-12-26T22:59:35.962325 (priority normal) -> Assigning next player
+2020-12-26T22:59:35.964323600 (priority  debug) -> Player assignment 0 -> 1 -> 1 (total of 2 players.)
+2020-12-26T22:59:35.966322700 (priority normal) -> Assigning next player
+2020-12-26T22:59:35.967323200 (priority  debug) -> Player assignment 1 -> 2 -> 0 (total of 2 players.)
+2020-12-26T22:59:35.968324 (priority  debug) -> Player assignment 0 -> 1 -> 1 (total of 2 players.)
+2020-12-26T22:59:35.968324 (priority  debug) -> skipping duplicate assignment of next player
+2020-12-26T22:59:35.970326300 (priority  debug) -> Options for 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def are "".
+2020-12-26T22:59:35.971321300 (priority normal) -> Assigning next player
+2020-12-26T22:59:35.972322100 (priority  debug) -> Player assignment 1 -> 2 -> 0 (total of 2 players.)
+2020-12-26T22:59:35.973325400 (priority  debug) -> Result of playing blue +2: true
+2020-12-26T22:59:35.974322100 (cc of screen   ) -> P2 drew a green reverse. // P2 drew a blue +2. // P2 played blue +2 // Player 1 Contents of hand: blue 0, blue 5, blue 8, red 0, red reverse, wild // P1: Automatically drew 2 cards, given no other option. // 
+2020-12-26T22:59:35.974322100 (priority  debug) -> skipping duplicate assignment of next player
+2020-12-26T22:59:35.975322700 (priority  debug) -> Player assignment 0 -> 1 -> 1 (total of 2 players.)
+2020-12-26T22:59:35.977326200 (priority  debug) -> Options for 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def are "blue 2 blue 4 ".
+2020-12-26T22:59:35.979323800 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([24]){1})))\b)"
+2020-12-26T23:00:35.978323400 (priority  debug) -> Current player (2) timed out.
+2020-12-26T23:00:35.981323600 (priority normal) -> Assigning next player
+2020-12-26T23:00:35.982323300 (priority  debug) -> Player assignment 1 -> 2 -> 0 (total of 2 players.)
+2020-12-26T23:00:35.984323100 (priority  debug) -> Options for P1 are "blue 0 blue 5 blue 8 wild wild ".
+2020-12-26T23:00:35.985323 (cc of screen   ) -> Player 1 Contents of hand: blue 0, blue 5, blue 8, red 0, red 3, red reverse, wild, wild // P1: The cards you can play are: blue 0, blue 5, blue 8, wild, and wild. // 
+2020-12-26T23:00:35.988323400 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([058]){1})|((w|wild)|(w|wild))))\b)"

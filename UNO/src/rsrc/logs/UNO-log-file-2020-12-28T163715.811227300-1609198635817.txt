@@ -1,0 +1,18 @@
+2020-12-28T16:37:15.821224400 (priority normal) -> ---BEGIN LOG---
+2020-12-28T16:37:25.265800600 (priority  debug) -> Received instruction from client /127.0.0.1:50618, "username:joeMama"
+2020-12-28T16:37:25.266797700 (priority normal) -> Server thread has received username, Player 083422 changed to "joeMama"
+2020-12-28T16:37:25.268797 (priority  debug) -> Received instruction from client /127.0.0.1:50618, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-28T16:37:25.269795200 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-28T16:37:29.580797600 (priority normal) -> Shuffling deck.
+2020-12-28T16:37:29.585798300 (priority  debug) -> Player assignment 0 -> 1 -> 1 (total of 2 players.)
+2020-12-28T16:37:29.586797700 (cc of screen   ) -> Would you like to host or join? First card is a skip, skipping P1. // 
+2020-12-28T16:37:29.587798300 (priority  debug) -> Options for 018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def are "blue 3 ".
+2020-12-28T16:37:29.589795600 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([3]){1})))\b)"
+2020-12-28T16:37:38.251799600 (priority  debug) -> rawish response is "pb3"
+2020-12-28T16:37:38.254799100 (priority  debug) -> response was accepted as a regex match, returning as simplified version
+2020-12-28T16:37:38.257817100 (priority  debug) -> simplifyUserResponse() received "pb3" as the only argument, proceeding with abbreviations and removing whitespace.
+2020-12-28T16:37:38.261795700 (priority  debug) -> simplifyUserResponse() has finished abbreviating and will be returning a final result of "pb3"
+2020-12-28T16:37:38.262796600 (priority  debug) -> P2's response: "pb3"
+2020-12-28T16:37:38.264796900 (priority  debug) -> Result of playing blue 3: true
+2020-12-28T16:37:38.265794300 (priority  debug) -> Player assignment 1 -> 2 -> 0 (total of 2 players.)
+2020-12-28T16:37:38.267797100 (priority  debug) -> Received instruction from client /127.0.0.1:50618, ""

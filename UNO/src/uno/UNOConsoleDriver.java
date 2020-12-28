@@ -163,6 +163,10 @@ public class UNOConsoleDriver {
                     }
                     if (isBanned(connections.get(connections.size() - 1).getPlayerID())) {
                         connections.get(connections.size() - 1).displayMessage("host", "You have been banned and cannot join.");
+                        iter = 500;
+                        while (iter > 0) {
+                            iter--;
+                        }
                         socket.close();
                         continue;
                     }
@@ -227,29 +231,35 @@ public class UNOConsoleDriver {
                     }
                 }
                 try {
-                    System.out.println("Preparing game");
                     sendMessage("Game", "Preparing game");
                     engine.prepareGame();
                     for (int i = 0; i < engine.getNumPlayers(); i++) {
                         isAI.add(false); // FIXME, should add AI
                     }
-                    System.out.println("Beginning game");
                     sendMessage("Game", "Beginning game");
                     engine.beginGame();
                     displayTopCard(engine);
 
                     while (!engine.hasAPlayerEmptiedHand()) {
+                        int tempCurrentPlayer = engine.getCurrentPlayer();
                         displayHand(engine);
                         displayAndReceiveChoices(engine);
                         long timeoutStart = System.currentTimeMillis();
 
-                        while (!engine.hasCurrentPlayerDrawnOrPlayed()) {
+                        while (!engine.hasCurrentPlayerDrawnOrPlayed() && engine.getCurrentPlayer() == tempCurrentPlayer) {
                             if (System.currentTimeMillis() - timeoutStart > 60000) {
-                                // timeout thing
+                                log.debug("Current player (" + (engine.getCurrentPlayer() + 1) + ") timed out.");
+                                if (engine.getCurrentPlayer() == 0) {
+                                    sendMessage("Game", username + " timed out, drawing card for them.");
+
+                                } else {
+                                    sendMessage("Game", connections.get(engine.getCurrentPlayer() - 1).getUsername() + " timed out, drawing card for them.");
+                                }
+                                engine.drawCurrentPlayerCards(1);
                             }
                         }
                         log.log("Assigning next player");
-                        engine.assignNextPlayer();
+                        engine.assignNextPlayer(true);
                         engine.assessPileSizes();
                     }
                     print("Player " + engine.getWinner() + " has won!");
@@ -461,6 +471,7 @@ public class UNOConsoleDriver {
     }
 
     private static void sendMessage(String ip, String message) {
+        System.out.println(message);
         for (UNOServerThread c : connections) {
             c.displayMessage(ip, message);
             //System.out.println("sending message to client");
@@ -558,7 +569,7 @@ public class UNOConsoleDriver {
                     forceExitGame("User typed \"exit\".");
                 }
                 print("\"" + response + "\" is not a valid choice. Use either the first letter or the whole word of the command you want to run. " + prompt);
-            } else {
+            } else if (!response.isBlank()) {
                 print(prompt);
             }
             response = s.nextLine().trim().toLowerCase();
@@ -762,7 +773,7 @@ public class UNOConsoleDriver {
                 forceExitGame("User typed \"exit\".");
             }
         } else {
-            connections.get(engine.getCurrentPlayer() - 1).getResponse("Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: ", "\\b([bgry])");
+            response = connections.get(engine.getCurrentPlayer() - 1).getResponse("Enter the new color, (b)lue, (g)reen, (r)ed, or (y)ellow: ", "\\b([bgry])");
         }
         switch (response.charAt(0)) {
             case 'b':
@@ -909,7 +920,11 @@ public class UNOConsoleDriver {
     public static ArrayList<UNOCard> doPendingDraw(UNOEngine e) {
         ArrayList<UNOCard> out = e.receivePendingCards();
         for (UNOCard c : out) {
-            println("P" + (e.getCurrentPlayer() + 1) + " drew a " + c.toString() + ".");
+            if (engine.getCurrentPlayer() == 0) {
+                System.out.println("P" + (e.getCurrentPlayer() + 1) + " drew a " + c.toString() + ".");
+            } else {
+                connections.get(engine.getCurrentPlayer() - 1).displayMessage("Game", "P" + (e.getCurrentPlayer() + 1) + " drew a " + c.toString() + ".");
+            }
         }
         return out;
     }
@@ -978,6 +993,7 @@ public class UNOConsoleDriver {
             } else {
                 // server thread can take care of it
                 //connections.get(engine.getCurrentPlayer() - 1).displayMessage("Game", ("Player " + (e.getCurrentPlayer() + 1) + " " + current.toString()));
+                System.out.println("server will take care of it");
             }
         }
     }

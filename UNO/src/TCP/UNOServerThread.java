@@ -9,9 +9,9 @@ import uno.*;
 import static uno.UNOConsoleDriver.*;
 
 /**
- * This thread is responsible to handle client connection.
+ * This thread is responsible for handling client connections.
  *
- * @author www.codejava.net (template)
+ * @author www.codejava.net (base template)
  * @author Timothy Barber (logic)
  */
 public class UNOServerThread extends Thread {
@@ -68,6 +68,7 @@ public class UNOServerThread extends Thread {
                             //displayTopCard();
                             displayHand();
                             displayAndReceiveChoices();
+                            engine.assignNextPlayer();
                             writer.println("noturturn");
                         } else if (engine.hasStarted() && engine.getCurrentPlayer() > 0) {
                             //System.out.println("current id: " + engine.getCurrentPlayerID() + ", player id: " + player.getID());
@@ -207,9 +208,9 @@ public class UNOServerThread extends Thread {
                     displayHand();
                     if (lastDrawn.isWild()) {
                         write("You've played a wild card which means you get to (c)hoose the new color to match.");
-                        engine.playCurrentPlayersWildCard(lastDrawn, getNewColor(engine));
+                        log.debug("Result of playing " + lastDrawn.toString() + ": " + engine.playCurrentPlayersWildCard(lastDrawn, getNewColor(engine)));
                     } else {
-                        engine.playCurrentPlayersNonWildCard(lastDrawn);
+                        log.debug("Result of playing " + lastDrawn.toString() + ": " + engine.playCurrentPlayersNonWildCard(lastDrawn));
                     }
                     return;
                 } else {
@@ -230,9 +231,9 @@ public class UNOServerThread extends Thread {
                 UNOCard chosen = parseCompactPlayCommand(response);
                 if (chosen.isWild()) {
                     write("You've played a wild card which means you get to (c)hoose the new color to match.");
-                    engine.playCurrentPlayersWildCard(chosen, getNewColor(engine));
+                    log.debug("Result of playing " + chosen.toString() + ": " + engine.playCurrentPlayersWildCard(chosen, getNewColor(engine)));
                 } else {
-                    engine.playCurrentPlayersNonWildCard(chosen);
+                    log.debug("Result of playing " + chosen.toString() + ": " + engine.playCurrentPlayersNonWildCard(chosen));
                 }
             }
         }

@@ -194,7 +194,7 @@ public class UNOEngine {
             num2CardsToDraw++;
         } else if (result.isSkip()) {
             println("First card is a skip, skipping P1.");
-            assignNextPlayer();
+            assignNextPlayer(true);
         }
         started = true;
         flush();
@@ -235,8 +235,8 @@ public class UNOEngine {
         return out;
     }
 
-    public void assignNextPlayer() {
-        if (hasCurrentPlayerDrawnOrPlayed()) {
+    public void assignNextPlayer(boolean override) {
+        if (hasCurrentPlayerDrawnOrPlayed() || override) {
             int startingPlayer = currentPlayer;
             currentPlayer += direction;
             int midPlayer = currentPlayer;
@@ -260,6 +260,10 @@ public class UNOEngine {
         } else {
             debug("skipping duplicate assignment of next player");
         }
+    }
+
+    public void assignNextPlayer() {
+        assignNextPlayer(false);
     }
 
     public boolean hasCurrentPlayerDrawnOrPlayed() {
@@ -393,7 +397,7 @@ public class UNOEngine {
                     if (players.size() > 2) {
                         direction = -direction;
                     } else {
-                        currentPlayer++;
+                        assignNextPlayer(true);
                     }
                 } else if (card.isPlus2() && getPendingCardsToDraw() == 0) {
                     num2CardsToDraw++;

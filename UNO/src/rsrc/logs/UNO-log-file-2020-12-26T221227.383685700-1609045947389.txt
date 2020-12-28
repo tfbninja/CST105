@@ -1,0 +1,11 @@
+2020-12-26T22:12:27.390686600 (priority normal) -> ---BEGIN LOG---
+2020-12-26T22:12:49.900530 (priority  debug) -> Received instruction from client /127.0.0.1:61297, "username:joeMama"
+2020-12-26T22:12:49.903526 (priority normal) -> Server thread has received username, Player 753533 changed to "joeMama"
+2020-12-26T22:12:49.905525600 (priority  debug) -> Received instruction from client /127.0.0.1:61297, "ID:2a6181018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T22:12:49.906526 (priority normal) -> Server thread has received username, joeMama changed to "018f5f25fb56ba9d41f0380b814c4040cb34867dfa17329bc1f3d19def"
+2020-12-26T22:12:53.584723700 (priority normal) -> Shuffling deck.
+2020-12-26T22:12:53.589727200 (priority  debug) -> skipping duplicate assignment of next player
+2020-12-26T22:12:53.590727 (cc of screen   ) -> Would you like to host or join? Would you like to host or join? First card is a skip, skipping P1. // 
+2020-12-26T22:12:53.592726700 (priority  debug) -> Options for P1 are "blue skip green skip yellow skip wild ".
+2020-12-26T22:12:53.594727200 (cc of screen   ) -> Card to play on: green skip // Player 1 Contents of hand: blue 0, blue 3, blue 5, blue skip, green skip, yellow skip, wild // P1: The cards you can play are: blue skip, green skip, yellow skip, and wild. // 
+2020-12-26T22:12:53.596729700 (priority  debug) -> Supplied regex: "\b(d|draw)\b|(\b((p|play){1}\s*(((b|blue)\s*([s]|skip){1})|((g|green)\s*([s]|skip){1})|((y|yellow)\s*([s]|skip){1})|((w|wild))))\b)"
